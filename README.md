@@ -1,32 +1,8 @@
 # Clog Companion
 
-A RuneLite plugin that helps you decide which Collection Log slots to go for next. Every slot
-gets a realistic time estimate — not just its drop rate, but how long each attempt actually
-takes (a clue casket is quick to open, but the clue behind it is not) — and a tier:
-**Easy**, **Medium**, **Long**, or **Grind**. Filter by tier, category, requirements and what
-you already own, sort by fastest, or roll a random target.
-
-## How estimates work
-
-```
-attempts = 1 / rate                         (Expected mode, default)
-         = ln(0.5) / ln(1 - rate)           (Likely mode: the median player)
-minutes  = setupMinutes + attempts × minutesPerAttempt
-```
-
-`minutesPerAttempt` covers everything it takes to roll the drop table once — travel, the boss
-kill, the minigame round, or acquiring *and* solving the clue. Tier thresholds default to
-1 h / 5 h / 25 h and are configurable.
-
-## Data
-
-| File | Origin |
-|---|---|
-| `src/main/resources/com/clogcompanion/clog-items.json` | Generated from the OSRS Wiki (entry structure + each item's drop sources). Do not hand-edit. |
-| `src/main/resources/com/clogcompanion/clog-sources.json` | Hand-curated: per-attempt time, setup time, and requirements for every log entry. |
-
-The generator and its mapping files are maintainer tooling and are intentionally not part of
-the repository — only what the client ships is tracked.
+A RuneLite plugin that helps you decide which Collection Log slots to go for next. Collection log tiers are determined by a few factors such as challenge to obtain, time length, requirements, etc. to fit into the following categories: 
+**Easy**, **Medium**, **Long**, or **Grind**. In the side panel you can filter by tier, category, requirements and what
+you already own, sort by fastest, or roll a random target. For example while it is "quick" to loot a clue scroll they take time to complete, therefore hard clue rewards are weighed a bit higher despite being an easy task to do. Additionally things like charged ice or coagulated venom are harder to do since they require speed killing bosses, so despite it being < 5 minutes to get the kill it is weighed more due to the challenge.
 
 ## Development
 
