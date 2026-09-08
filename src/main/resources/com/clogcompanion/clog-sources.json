@@ -512,7 +512,9 @@
     "FISHING": 35
    }
   },
-  "notes": "Per reward-pool search; a 10 minute game gives roughly five."
+  "notes": "Per reward-pool search; a 10 minute game gives roughly five.",
+  "pointsPerAttempt": 12,
+  "pointsUnit": "spirit flakes"
  },
  {
   "id": "thermonuclear_smoke_devil",
@@ -773,16 +775,18 @@
   "minutesPerAttempt": 20,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per full 10-wave run; most rewards are bought with honour points."
+  "notes": "Per full 10-wave run; most rewards are bought with honour points.",
+  "pointsPerAttempt": 330,
+  "pointsUnit": "honour points"
  },
  {
   "id": "barracuda_trials",
   "name": "Barracuda Trials",
   "category": "MINIGAMES",
-  "minutesPerAttempt": 10,
+  "minutesPerAttempt": 5,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per trial; estimate."
+  "notes": "Per trial attempt; rank rewards need a target time, so a few attempts each."
  },
  {
   "id": "brimhaven_agility_arena",
@@ -795,7 +799,9 @@
     "AGILITY": 20
    }
   },
-  "notes": "Per ~10 tickets; rewards are bought with tickets."
+  "notes": "Per ~10 tickets; rewards are bought with tickets.",
+  "pointsPerAttempt": 10,
+  "pointsUnit": "vouchers"
  },
  {
   "id": "castle_wars",
@@ -804,7 +810,9 @@
   "minutesPerAttempt": 22,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per game including the lobby wait; rewards are bought with tickets."
+  "notes": "Per game including the lobby wait; rewards are bought with tickets.",
+  "pointsPerAttempt": 2.7,
+  "pointsUnit": "tickets"
  },
  {
   "id": "fishing_trawler",
@@ -833,7 +841,9 @@
     "SLEEPING_GIANTS"
    ]
   },
-  "notes": "Per sword; rewards are bought with reputation."
+  "notes": "Per sword; rewards are bought with reputation.",
+  "pointsPerAttempt": 123,
+  "pointsUnit": "reputation"
  },
  {
   "id": "gnome_restaurant",
@@ -858,7 +868,9 @@
     "TEMPLE_OF_THE_EYE"
    ]
   },
-  "notes": "Per reward search; a game gives about three."
+  "notes": "Per reward search; a game gives about three.",
+  "pointsPerAttempt": 1.93,
+  "pointsUnit": "abyssal pearls"
  },
  {
   "id": "hallowed_sepulchre",
@@ -874,7 +886,9 @@
     "SINS_OF_THE_FATHER"
    ]
   },
-  "notes": "Per full run; the grand coffin needs 92 Agility."
+  "notes": "Per full run; the grand coffin needs 92 Agility.",
+  "pointsPerAttempt": 26,
+  "pointsUnit": "hallowed marks"
  },
  {
   "id": "last_man_standing",
@@ -883,7 +897,9 @@
   "minutesPerAttempt": 6,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per game; rewards are bought with points."
+  "notes": "Per game; rewards are bought with points.",
+  "pointsPerAttempt": 2.5,
+  "pointsUnit": "points"
  },
  {
   "id": "magic_training_arena",
@@ -896,7 +912,9 @@
     "MAGIC": 33
    }
   },
-  "notes": "Per ~10 minutes of rooms; rewards are bought with pizazz points."
+  "notes": "Per ~10 minutes of rooms; rewards are bought with pizazz points.",
+  "pointsPerAttempt": 2000,
+  "pointsUnit": "pizazz points"
  },
  {
   "id": "mahogany_homes",
@@ -909,20 +927,24 @@
     "CONSTRUCTION": 20
    }
   },
-  "notes": "Per contract; rewards are bought with carpenter points."
+  "notes": "Per contract; rewards are bought with carpenter points.",
+  "pointsPerAttempt": 4,
+  "pointsUnit": "carpenter points"
  },
  {
   "id": "mastering_mixology",
   "name": "Mastering Mixology",
   "category": "MINIGAMES",
-  "minutesPerAttempt": 3,
+  "minutesPerAttempt": 1,
   "setupMinutes": 0,
   "requirements": {
    "skills": {
     "HERBLORE": 60
    }
   },
-  "notes": "Per order; rewards are bought with resin."
+  "notes": "Per order (~1 min); rewards are bought with resin.",
+  "pointsPerAttempt": 118,
+  "pointsUnit": "resin"
  },
  {
   "id": "pest_control",
@@ -931,7 +953,9 @@
   "minutesPerAttempt": 4,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per game; rewards are bought with commendations."
+  "notes": "Per game; rewards are bought with commendations.",
+  "pointsPerAttempt": 5,
+  "pointsUnit": "commendations"
  },
  {
   "id": "rogues_den",
@@ -967,7 +991,9 @@
   "minutesPerAttempt": 15,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per game; rewards are bought with zeal."
+  "notes": "Per game; rewards are bought with zeal.",
+  "pointsPerAttempt": 50,
+  "pointsUnit": "zeal"
  },
  {
   "id": "temple_trekking",
@@ -993,7 +1019,9 @@
     "FARMING": 34
    }
   },
-  "notes": "Per round; rewards are bought with points."
+  "notes": "Per round; rewards are bought with points.",
+  "pointsPerAttempt": 35,
+  "pointsUnit": "points"
  },
  {
   "id": "trouble_brewing",
@@ -1006,7 +1034,9 @@
     "CABIN_FEVER"
    ]
   },
-  "notes": "Per game; rewards are bought with pieces of eight."
+  "notes": "Per game; rewards are bought with pieces of eight.",
+  "pointsPerAttempt": 120,
+  "pointsUnit": "pieces of eight"
  },
  {
   "id": "vale_totems",
@@ -1031,7 +1061,9 @@
     "BONE_VOYAGE"
    ]
   },
-  "notes": "Per game; rewards are bought with points."
+  "notes": "Per game; rewards are bought with points.",
+  "pointsPerAttempt": 1700,
+  "pointsUnit": "points"
  },
  {
   "id": "aerial_fishing",
@@ -1045,7 +1077,9 @@
     "HUNTER": 35
    }
   },
-  "notes": "Per catch."
+  "notes": "Per catch.",
+  "pointsPerAttempt": 0.0172,
+  "pointsUnit": "molch pearls"
  },
  {
   "id": "all_pets",
@@ -1063,7 +1097,7 @@
   "minutesPerAttempt": 10,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Estimate."
+  "notes": "Per ~10 minutes of charting; god paints unlock after fully charting an ocean."
  },
  {
   "id": "camdozaal",
@@ -1076,7 +1110,7 @@
     "BELOW_ICE_MOUNTAIN"
    ]
   },
-  "notes": "Per action (mining, fishing, or a golem kill)."
+  "notes": "Per action (golem kill, deposit crushed, fish caught)."
  },
  {
   "id": "champions_challenge",
@@ -1085,7 +1119,7 @@
   "minutesPerAttempt": 0.3,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per kill of a monster that drops the scroll."
+  "notes": "Per kill of a monster that drops a scroll (1/5,000)."
  },
  {
   "id": "chompy_bird_hunting",
@@ -1111,7 +1145,9 @@
     "AGILITY": 50
    }
   },
-  "notes": "Per lap; rewards are bought with termites."
+  "notes": "Per lap; rewards are bought with termites.",
+  "pointsPerAttempt": 3.9,
+  "pointsUnit": "termites"
  },
  {
   "id": "creature_creation",
@@ -1151,7 +1187,9 @@
   "minutesPerAttempt": 3,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per forestry event."
+  "notes": "Per forestry event (~1/9 chance of any given event type); ~175 anima-infused bark per event.",
+  "pointsPerAttempt": 175,
+  "pointsUnit": "bark"
  },
  {
   "id": "fossil_island_notes",
@@ -1199,10 +1237,10 @@
   "id": "lost_schematics",
   "name": "Lost Schematics",
   "category": "OTHER",
-  "minutesPerAttempt": 10,
+  "minutesPerAttempt": 15,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Estimate."
+  "notes": "Per island visit: dig the key, then open the lockbox."
  },
  {
   "id": "monkey_backpacks",
@@ -1218,7 +1256,7 @@
     "MONKEY_MADNESS_I"
    ]
   },
-  "notes": "Per Ape Atoll lap; backpacks unlock at lap-count milestones."
+  "notes": "Per full Ape Atoll lap after Monkey Madness II."
  },
  {
   "id": "motherlode_mine",
@@ -1231,25 +1269,27 @@
     "MINING": 30
    }
   },
-  "notes": "Per pay-dirt; rewards are bought with golden nuggets."
+  "notes": "Per pay-dirt; rewards are bought with golden nuggets.",
+  "pointsPerAttempt": 0.0274,
+  "pointsUnit": "golden nuggets"
  },
  {
   "id": "my_notes",
   "name": "My Notes",
   "category": "OTHER",
-  "minutesPerAttempt": 10,
+  "minutesPerAttempt": 0.2,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Estimate."
+  "notes": "Per skeleton rummaged in the Ancient Cavern."
  },
  {
   "id": "ocean_encounters",
   "name": "Ocean Encounters",
   "category": "OTHER",
-  "minutesPerAttempt": 10,
+  "minutesPerAttempt": 30,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Estimate."
+  "notes": "Per giant clam encounter (~1 h cooldown between them)."
  },
  {
   "id": "random_events",
@@ -1276,16 +1316,18 @@
   "minutesPerAttempt": 1,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Per lap; graceful is bought with marks of grace."
+  "notes": "Per lap; graceful is bought with marks of grace.",
+  "pointsPerAttempt": 0.21,
+  "pointsUnit": "marks of grace"
  },
  {
   "id": "sailing_miscellaneous",
   "name": "Sailing Miscellaneous",
   "category": "OTHER",
-  "minutesPerAttempt": 10,
+  "minutesPerAttempt": 3,
   "setupMinutes": 0,
   "requirements": {},
-  "notes": "Estimate."
+  "notes": "Per sea-monster kill or salvage sorted."
  },
  {
   "id": "sea_treasures",
@@ -1316,7 +1358,9 @@
     "MINING": 10
    }
   },
-  "notes": "Per star; rewards are bought with stardust."
+  "notes": "Per star; rewards are bought with stardust.",
+  "pointsPerAttempt": 235,
+  "pointsUnit": "stardust"
  },
  {
   "id": "skilling_pets",

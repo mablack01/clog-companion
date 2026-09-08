@@ -101,8 +101,8 @@
    "timeSourceId": null,
    "itemId": 13261,
    "name": "Angler boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000344,
+   "rateText": "50 molch pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Angler_boots"
   },
   {
@@ -111,8 +111,8 @@
    "timeSourceId": null,
    "itemId": 13258,
    "name": "Angler hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000344,
+   "rateText": "50 molch pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Angler_hat"
   },
   {
@@ -121,8 +121,8 @@
    "timeSourceId": null,
    "itemId": 13259,
    "name": "Angler top",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000344,
+   "rateText": "50 molch pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Angler_top"
   },
   {
@@ -131,8 +131,8 @@
    "timeSourceId": null,
    "itemId": 13260,
    "name": "Angler waders",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000344,
+   "rateText": "50 molch pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Angler_waders"
   },
   {
@@ -141,8 +141,8 @@
    "timeSourceId": null,
    "itemId": 22838,
    "name": "Fish sack",
-   "rate": null,
-   "rateText": "?",
+   "rate": 3.44e-05,
+   "rateText": "500 molch pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Fish_sack"
   },
   {
@@ -151,8 +151,8 @@
    "timeSourceId": null,
    "itemId": 22840,
    "name": "Golden tench",
-   "rate": null,
-   "rateText": "?",
+   "rate": 5e-05,
+   "rateText": "1/20,000 per catch",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Golden_tench"
   },
   {
@@ -161,8 +161,8 @@
    "timeSourceId": null,
    "itemId": 22842,
    "name": "Pearl barbarian rod",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00011466666666666667,
+   "rateText": "150 molch pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pearl_barbarian_rod"
   },
   {
@@ -171,8 +171,8 @@
    "timeSourceId": null,
    "itemId": 22846,
    "name": "Pearl fishing rod",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000172,
+   "rateText": "100 molch pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pearl_fishing_rod"
   },
   {
@@ -181,8 +181,8 @@
    "timeSourceId": null,
    "itemId": 22844,
    "name": "Pearl fly fishing rod",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00014333333333333334,
+   "rateText": "120 molch pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pearl_fly_fishing_rod"
   },
   {
@@ -1171,8 +1171,8 @@
    "timeSourceId": null,
    "itemId": 10564,
    "name": "Granite body",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Kill the Penance Queen once + 95,000 coins",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Granite_body"
   },
   {
@@ -1181,8 +1181,8 @@
    "timeSourceId": null,
    "itemId": 10589,
    "name": "Granite helm",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.020833333333333332,
+   "rateText": "1/32 per high gamble (500 honour points)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Granite_helm"
   },
   {
@@ -1261,8 +1261,8 @@
    "timeSourceId": null,
    "itemId": 31733,
    "name": "Barrel stand",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Tempor Tantrum at Shark time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Barrel_stand"
   },
   {
@@ -1271,8 +1271,8 @@
    "timeSourceId": null,
    "itemId": 31745,
    "name": "Captured wind mote",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Jubbly Jive at Shark time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Captured_wind_mote"
   },
   {
@@ -1281,8 +1281,8 @@
    "timeSourceId": null,
    "itemId": 31744,
    "name": "Fetid key",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Jubbly Jive at Swordfish time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Fetid_key"
   },
   {
@@ -1291,8 +1291,8 @@
    "timeSourceId": null,
    "itemId": 31746,
    "name": "Gurtob's fabric roll",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Jubbly Jive at Marlin time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Gurtob%27s_fabric_roll"
   },
   {
@@ -1301,8 +1301,8 @@
    "timeSourceId": null,
    "itemId": 31758,
    "name": "Gwyna's fabric roll",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Gwenith Glide at Marlin time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Gwyna%27s_fabric_roll"
   },
   {
@@ -1311,8 +1311,8 @@
    "timeSourceId": null,
    "itemId": 31757,
    "name": "Heart of Ithell",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Gwenith Glide at Shark time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Heart_of_Ithell"
   },
   {
@@ -1321,8 +1321,8 @@
    "timeSourceId": null,
    "itemId": 31734,
    "name": "Ralph's fabric roll",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Tempor Tantrum at Marlin time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ralph%27s_fabric_roll"
   },
   {
@@ -1331,8 +1331,8 @@
    "timeSourceId": null,
    "itemId": 31756,
    "name": "Serrated key",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Gwenith Glide at Swordfish time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Serrated_key"
   },
   {
@@ -1341,8 +1341,8 @@
    "timeSourceId": null,
    "itemId": 31732,
    "name": "Stormy key",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3333333333333333,
+   "rateText": "Clear Tempor Tantrum at Swordfish time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Stormy_key"
   },
   {
@@ -1771,18 +1771,18 @@
    "timeSourceId": null,
    "itemId": 32102,
    "name": "Armadylean paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.027777777777777776,
+   "rateText": "Fully chart the Northern Ocean (~78 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Armadylean_paint"
   },
   {
    "id": "boat_paints:barracuda_paint",
    "sourceId": "boat_paints",
-   "timeSourceId": null,
+   "timeSourceId": "barracuda_trials",
    "itemId": 32087,
    "name": "Barracuda paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.004166666666666667,
+   "rateText": "1/240 per Marlin-time Tempor Tantrum",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Barracuda_paint"
   },
   {
@@ -1791,8 +1791,8 @@
    "timeSourceId": null,
    "itemId": 32106,
    "name": "Guthixian paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03333333333333333,
+   "rateText": "Fully chart the Shrouded Ocean (~72 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Guthixian_paint"
   },
   {
@@ -1811,8 +1811,8 @@
    "timeSourceId": null,
    "itemId": 32110,
    "name": "Merchant's paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "Hand in all 5 tradeable paints (buyable)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Merchant%27s_paint"
   },
   {
@@ -1841,8 +1841,8 @@
    "timeSourceId": null,
    "itemId": 32108,
    "name": "Saradominist paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.05555555555555555,
+   "rateText": "Fully chart the Ardent Ocean (~50 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Saradominist_paint"
   },
   {
@@ -1861,8 +1861,8 @@
    "timeSourceId": null,
    "itemId": 32104,
    "name": "Zamorakian paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.041666666666666664,
+   "rateText": "Fully chart the Unquiet Ocean (~60 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Zamorakian_paint"
   },
   {
@@ -1871,8 +1871,8 @@
    "timeSourceId": null,
    "itemId": 29480,
    "name": "Agility arena ticket",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "1 per pillar tagged",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Agility_arena_ticket"
   },
   {
@@ -1881,8 +1881,8 @@
    "timeSourceId": null,
    "itemId": 29482,
    "name": "Brimhaven voucher",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "1 per pillar tagged",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Brimhaven_voucher"
   },
   {
@@ -1891,8 +1891,8 @@
    "timeSourceId": null,
    "itemId": 21076,
    "name": "Graceful boots (Agility Arena)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "250 vouchers",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_boots_%28Agility_Arena%29"
   },
   {
@@ -1901,8 +1901,8 @@
    "timeSourceId": null,
    "itemId": 21064,
    "name": "Graceful cape (Agility Arena)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "250 vouchers",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_cape_%28Agility_Arena%29"
   },
   {
@@ -1911,8 +1911,8 @@
    "timeSourceId": null,
    "itemId": 21073,
    "name": "Graceful gloves (Agility Arena)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "250 vouchers",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_gloves_%28Agility_Arena%29"
   },
   {
@@ -1921,8 +1921,8 @@
    "timeSourceId": null,
    "itemId": 21061,
    "name": "Graceful hood (Agility Arena)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "250 vouchers",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_hood_%28Agility_Arena%29"
   },
   {
@@ -1931,8 +1931,8 @@
    "timeSourceId": null,
    "itemId": 21070,
    "name": "Graceful legs (Agility Arena)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "250 vouchers",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_legs_%28Agility_Arena%29"
   },
   {
@@ -1941,8 +1941,8 @@
    "timeSourceId": null,
    "itemId": 21067,
    "name": "Graceful top (Agility Arena)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "250 vouchers",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_top_%28Agility_Arena%29"
   },
   {
@@ -1951,8 +1951,8 @@
    "timeSourceId": null,
    "itemId": 2997,
    "name": "Pirate's hook",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0125,
+   "rateText": "800 vouchers",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pirate%27s_hook"
   },
   {
@@ -2151,8 +2151,8 @@
    "timeSourceId": null,
    "itemId": 25641,
    "name": "Barronite mace",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.001160092807424594,
+   "rateText": "Guard 1/150 + head 1/200 + handle 1/512, then 1,500 shards",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Barronite_mace"
   },
   {
@@ -2171,8 +2171,8 @@
    "timeSourceId": null,
    "itemId": 4514,
    "name": "Castlewars cloak (Saradomin)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.27,
+   "rateText": "10 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Castlewars_cloak_%28Saradomin%29"
   },
   {
@@ -2181,8 +2181,8 @@
    "timeSourceId": null,
    "itemId": 4516,
    "name": "Castlewars cloak (Zamorak)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.27,
+   "rateText": "10 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Castlewars_cloak_%28Zamorak%29"
   },
   {
@@ -2191,8 +2191,8 @@
    "timeSourceId": null,
    "itemId": 4513,
    "name": "Castlewars hood (Saradomin)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.27,
+   "rateText": "10 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Castlewars_hood_%28Saradomin%29"
   },
   {
@@ -2201,8 +2201,8 @@
    "timeSourceId": null,
    "itemId": 4515,
    "name": "Castlewars hood (Zamorak)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.27,
+   "rateText": "10 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Castlewars_hood_%28Zamorak%29"
   },
   {
@@ -2211,8 +2211,8 @@
    "timeSourceId": null,
    "itemId": 4509,
    "name": "Decorative armour (gold platebody)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0033750000000000004,
+   "rateText": "800 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28gold_platebody%29"
   },
   {
@@ -2221,8 +2221,8 @@
    "timeSourceId": null,
    "itemId": 4510,
    "name": "Decorative armour (gold platelegs)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0045000000000000005,
+   "rateText": "600 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28gold_platelegs%29"
   },
   {
@@ -2231,8 +2231,8 @@
    "timeSourceId": null,
    "itemId": 11895,
    "name": "Decorative armour (gold plateskirt)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0045000000000000005,
+   "rateText": "600 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28gold_plateskirt%29"
   },
   {
@@ -2241,8 +2241,8 @@
    "timeSourceId": null,
    "itemId": 11898,
    "name": "Decorative armour (magic hat)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.135,
+   "rateText": "20 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28magic_hat%29"
   },
   {
@@ -2251,8 +2251,8 @@
    "timeSourceId": null,
    "itemId": 11897,
    "name": "Decorative armour (magic legs)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.09000000000000001,
+   "rateText": "30 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28magic_legs%29"
   },
   {
@@ -2261,8 +2261,8 @@
    "timeSourceId": null,
    "itemId": 11896,
    "name": "Decorative armour (magic top)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0675,
+   "rateText": "40 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28magic_top%29"
   },
   {
@@ -2271,8 +2271,8 @@
    "timeSourceId": null,
    "itemId": 11901,
    "name": "Decorative armour (quiver)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0675,
+   "rateText": "40 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28quiver%29"
   },
   {
@@ -2281,8 +2281,8 @@
    "timeSourceId": null,
    "itemId": 11900,
    "name": "Decorative armour (ranged legs)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.09000000000000001,
+   "rateText": "30 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28ranged_legs%29"
   },
   {
@@ -2291,8 +2291,8 @@
    "timeSourceId": null,
    "itemId": 11899,
    "name": "Decorative armour (ranged top)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0675,
+   "rateText": "40 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28ranged_top%29"
   },
   {
@@ -2301,8 +2301,8 @@
    "timeSourceId": null,
    "itemId": 4069,
    "name": "Decorative armour (red platebody)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.3375,
+   "rateText": "8 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28red_platebody%29"
   },
   {
@@ -2311,8 +2311,8 @@
    "timeSourceId": null,
    "itemId": 4070,
    "name": "Decorative armour (red platelegs)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.45,
+   "rateText": "6 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28red_platelegs%29"
   },
   {
@@ -2321,8 +2321,8 @@
    "timeSourceId": null,
    "itemId": 11893,
    "name": "Decorative armour (red plateskirt)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.45,
+   "rateText": "6 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28red_plateskirt%29"
   },
   {
@@ -2331,8 +2331,8 @@
    "timeSourceId": null,
    "itemId": 4504,
    "name": "Decorative armour (white platebody)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03375,
+   "rateText": "80 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28white_platebody%29"
   },
   {
@@ -2341,8 +2341,8 @@
    "timeSourceId": null,
    "itemId": 4505,
    "name": "Decorative armour (white platelegs)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.045000000000000005,
+   "rateText": "60 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28white_platelegs%29"
   },
   {
@@ -2351,8 +2351,8 @@
    "timeSourceId": null,
    "itemId": 11894,
    "name": "Decorative armour (white plateskirt)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.045000000000000005,
+   "rateText": "60 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_armour_%28white_plateskirt%29"
   },
   {
@@ -2361,8 +2361,8 @@
    "timeSourceId": null,
    "itemId": 25171,
    "name": "Decorative boots (gold)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006750000000000001,
+   "rateText": "400 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_boots_%28gold%29"
   },
   {
@@ -2371,8 +2371,8 @@
    "timeSourceId": null,
    "itemId": 25163,
    "name": "Decorative boots (red)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.675,
+   "rateText": "4 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_boots_%28red%29"
   },
   {
@@ -2381,8 +2381,8 @@
    "timeSourceId": null,
    "itemId": 25167,
    "name": "Decorative boots (white)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0675,
+   "rateText": "40 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_boots_%28white%29"
   },
   {
@@ -2391,8 +2391,8 @@
    "timeSourceId": null,
    "itemId": 25174,
    "name": "Decorative full helm (gold)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0054,
+   "rateText": "500 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_full_helm_%28gold%29"
   },
   {
@@ -2401,8 +2401,8 @@
    "timeSourceId": null,
    "itemId": 25165,
    "name": "Decorative full helm (red)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.54,
+   "rateText": "5 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_full_helm_%28red%29"
   },
   {
@@ -2411,8 +2411,8 @@
    "timeSourceId": null,
    "itemId": 25169,
    "name": "Decorative full helm (white)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0675,
+   "rateText": "40 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_full_helm_%28white%29"
   },
   {
@@ -2421,8 +2421,8 @@
    "timeSourceId": null,
    "itemId": 4511,
    "name": "Decorative helm (gold)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006750000000000001,
+   "rateText": "400 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_helm_%28gold%29"
   },
   {
@@ -2431,8 +2431,8 @@
    "timeSourceId": null,
    "itemId": 4071,
    "name": "Decorative helm (red)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.675,
+   "rateText": "4 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_helm_%28red%29"
   },
   {
@@ -2441,8 +2441,8 @@
    "timeSourceId": null,
    "itemId": 4506,
    "name": "Decorative helm (white)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0675,
+   "rateText": "40 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_helm_%28white%29"
   },
   {
@@ -2451,8 +2451,8 @@
    "timeSourceId": null,
    "itemId": 4512,
    "name": "Decorative shield (gold)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0045000000000000005,
+   "rateText": "600 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_shield_%28gold%29"
   },
   {
@@ -2461,8 +2461,8 @@
    "timeSourceId": null,
    "itemId": 4072,
    "name": "Decorative shield (red)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.45,
+   "rateText": "6 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_shield_%28red%29"
   },
   {
@@ -2471,8 +2471,8 @@
    "timeSourceId": null,
    "itemId": 4507,
    "name": "Decorative shield (white)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.045000000000000005,
+   "rateText": "60 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_shield_%28white%29"
   },
   {
@@ -2481,8 +2481,8 @@
    "timeSourceId": null,
    "itemId": 4508,
    "name": "Decorative sword (gold)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0054,
+   "rateText": "500 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_sword_%28gold%29"
   },
   {
@@ -2491,8 +2491,8 @@
    "timeSourceId": null,
    "itemId": 4068,
    "name": "Decorative sword (red)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.54,
+   "rateText": "5 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_sword_%28red%29"
   },
   {
@@ -2501,8 +2501,8 @@
    "timeSourceId": null,
    "itemId": 4503,
    "name": "Decorative sword (white)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.054000000000000006,
+   "rateText": "50 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Decorative_sword_%28white%29"
   },
   {
@@ -2511,8 +2511,8 @@
    "timeSourceId": null,
    "itemId": 12639,
    "name": "Guthix halo",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.036000000000000004,
+   "rateText": "75 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Guthix_halo"
   },
   {
@@ -2521,8 +2521,8 @@
    "timeSourceId": null,
    "itemId": 4037,
    "name": "Saradomin banner",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.027000000000000003,
+   "rateText": "100 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Saradomin_banner"
   },
   {
@@ -2531,8 +2531,8 @@
    "timeSourceId": null,
    "itemId": 12637,
    "name": "Saradomin halo",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.036000000000000004,
+   "rateText": "75 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Saradomin_halo"
   },
   {
@@ -2541,8 +2541,8 @@
    "timeSourceId": null,
    "itemId": 4039,
    "name": "Zamorak banner",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.027000000000000003,
+   "rateText": "100 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Zamorak_banner"
   },
   {
@@ -2551,8 +2551,8 @@
    "timeSourceId": null,
    "itemId": 12638,
    "name": "Zamorak halo",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.036000000000000004,
+   "rateText": "75 tickets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Zamorak_halo"
   },
   {
@@ -2761,8 +2761,8 @@
    "timeSourceId": null,
    "itemId": 6573,
    "name": "Onyx",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0022222222222222222,
+   "rateText": "1/450 per Tekton (one per raid)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Onyx"
   },
   {
@@ -2811,8 +2811,8 @@
    "timeSourceId": null,
    "itemId": 22396,
    "name": "Xeric's champion",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0005,
+   "rateText": "2,000 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_champion"
   },
   {
@@ -2821,8 +2821,8 @@
    "timeSourceId": null,
    "itemId": 22394,
    "name": "Xeric's general",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0006666666666666666,
+   "rateText": "1,500 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_general"
   },
   {
@@ -2831,8 +2831,8 @@
    "timeSourceId": null,
    "itemId": 22388,
    "name": "Xeric's guard",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "100 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_guard"
   },
   {
@@ -2841,8 +2841,8 @@
    "timeSourceId": null,
    "itemId": 22392,
    "name": "Xeric's sentinel",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.001,
+   "rateText": "1,000 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_sentinel"
   },
   {
@@ -2851,8 +2851,8 @@
    "timeSourceId": null,
    "itemId": 22390,
    "name": "Xeric's warrior",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "500 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_warrior"
   },
   {
@@ -2861,8 +2861,8 @@
    "timeSourceId": null,
    "itemId": 21439,
    "name": "Champion's cape",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.8181818181818182e-05,
+   "rateText": "All 11 champion scrolls (1/5,000 kills each)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Champion%27s_cape"
   },
   {
@@ -3221,8 +3221,8 @@
    "timeSourceId": null,
    "itemId": 30042,
    "name": "Calcified acorn",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.004333333333333333,
+   "rateText": "900 termites",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Calcified_acorn"
   },
   {
@@ -3231,8 +3231,8 @@
    "timeSourceId": null,
    "itemId": 30040,
    "name": "Colossal wyrm teleport scroll",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0975,
+   "rateText": "40 termites",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Colossal_wyrm_teleport_scroll"
   },
   {
@@ -3241,8 +3241,8 @@
    "timeSourceId": null,
    "itemId": 30060,
    "name": "Graceful boots (Varlamore)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006,
+   "rateText": "650 termites",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_boots_%28Varlamore%29"
   },
   {
@@ -3251,8 +3251,8 @@
    "timeSourceId": null,
    "itemId": 30048,
    "name": "Graceful cape (Varlamore)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006,
+   "rateText": "650 termites",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_cape_%28Varlamore%29"
   },
   {
@@ -3261,8 +3261,8 @@
    "timeSourceId": null,
    "itemId": 30057,
    "name": "Graceful gloves (Varlamore)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006,
+   "rateText": "650 termites",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_gloves_%28Varlamore%29"
   },
   {
@@ -3271,8 +3271,8 @@
    "timeSourceId": null,
    "itemId": 30045,
    "name": "Graceful hood (Varlamore)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006,
+   "rateText": "650 termites",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_hood_%28Varlamore%29"
   },
   {
@@ -3281,8 +3281,8 @@
    "timeSourceId": null,
    "itemId": 30054,
    "name": "Graceful legs (Varlamore)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006,
+   "rateText": "650 termites",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_legs_%28Varlamore%29"
   },
   {
@@ -3291,8 +3291,8 @@
    "timeSourceId": null,
    "itemId": 30051,
    "name": "Graceful top (Varlamore)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006,
+   "rateText": "650 termites",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_top_%28Varlamore%29"
   },
   {
@@ -3741,8 +3741,8 @@
    "timeSourceId": null,
    "itemId": 31088,
    "name": "Avernic treads",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0015873015873015873,
+   "rateText": "1/630 per delve 8 completion",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Avernic_treads"
   },
   {
@@ -3771,8 +3771,8 @@
    "timeSourceId": null,
    "itemId": 31115,
    "name": "Eye of Ayak (uncharged)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0015873015873015873,
+   "rateText": "1/630 per delve 8 completion",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Eye_of_Ayak_%28uncharged%29"
   },
   {
@@ -3781,8 +3781,8 @@
    "timeSourceId": null,
    "itemId": 31109,
    "name": "Mokhaiotl cloth",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0015873015873015873,
+   "rateText": "1/630 per delve 8 completion",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Mokhaiotl_cloth"
   },
   {
@@ -6111,8 +6111,8 @@
    "timeSourceId": null,
    "itemId": 23185,
    "name": "Ring of 3rd Age",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0006858710562414266,
+   "rateText": "~1/1,458 per elite casket (Mimic drop)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ring_of_3rd_Age"
   },
   {
@@ -6261,8 +6261,8 @@
    "timeSourceId": null,
    "itemId": 28613,
    "name": "Cape pouch",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.07,
+   "rateText": "2,500 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Cape_pouch"
   },
   {
@@ -6271,8 +6271,8 @@
    "timeSourceId": null,
    "itemId": 28166,
    "name": "Clothes pouch blueprint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0175,
+   "rateText": "10,000 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Clothes_pouch_blueprint"
   },
   {
@@ -6281,8 +6281,8 @@
    "timeSourceId": null,
    "itemId": 28177,
    "name": "Felling axe handle",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0175,
+   "rateText": "10,000 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Felling_axe_handle"
   },
   {
@@ -6291,8 +6291,8 @@
    "timeSourceId": null,
    "itemId": 28175,
    "name": "Forestry boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.07777777777777778,
+   "rateText": "2,250 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Forestry_boots"
   },
   {
@@ -6301,8 +6301,8 @@
    "timeSourceId": null,
    "itemId": 28173,
    "name": "Forestry hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.07142857142857142,
+   "rateText": "2,450 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Forestry_hat"
   },
   {
@@ -6311,8 +6311,8 @@
    "timeSourceId": null,
    "itemId": 28171,
    "name": "Forestry legs",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.06862745098039216,
+   "rateText": "2,550 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Forestry_legs"
   },
   {
@@ -6321,8 +6321,8 @@
    "timeSourceId": null,
    "itemId": 28169,
    "name": "Forestry top",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.06363636363636363,
+   "rateText": "2,750 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Forestry_top"
   },
   {
@@ -6331,8 +6331,8 @@
    "timeSourceId": null,
    "itemId": 28626,
    "name": "Fox whistle",
-   "rate": 0.03333333333333333,
-   "rateText": "1/30",
+   "rate": 0.003703703703703704,
+   "rateText": "1/30 per Poachers event (or 75,000 bark)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Fox_whistle"
   },
   {
@@ -6341,8 +6341,8 @@
    "timeSourceId": null,
    "itemId": 28138,
    "name": "Funky shaped log",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.011666666666666667,
+   "rateText": "15,000 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Funky_shaped_log"
   },
   {
@@ -6351,8 +6351,8 @@
    "timeSourceId": null,
    "itemId": 28663,
    "name": "Golden pheasant egg",
-   "rate": 0.0006666666666666666,
-   "rateText": "1/1,500",
+   "rate": 0.0022222222222222222,
+   "rateText": "~1/50 per Pheasant Control event (or 75,000 bark)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Golden_pheasant_egg"
   },
   {
@@ -6361,8 +6361,8 @@
    "timeSourceId": null,
    "itemId": 28140,
    "name": "Log basket",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.035,
+   "rateText": "5,000 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Log_basket"
   },
   {
@@ -6371,8 +6371,8 @@
    "timeSourceId": null,
    "itemId": 28146,
    "name": "Log brace",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.058333333333333334,
+   "rateText": "3,000 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Log_brace"
   },
   {
@@ -6421,8 +6421,8 @@
    "timeSourceId": null,
    "itemId": 28655,
    "name": "Petal garland",
-   "rate": 0.03333333333333333,
-   "rateText": "1/30",
+   "rate": 0.003703703703703704,
+   "rateText": "1/30 per Enchantment Ritual",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Petal_garland"
   },
   {
@@ -6431,8 +6431,8 @@
    "timeSourceId": null,
    "itemId": 28618,
    "name": "Pheasant boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.25,
+   "rateText": "15 pheasant tail feathers (1/2 per egg)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pheasant_boots"
   },
   {
@@ -6441,8 +6441,8 @@
    "timeSourceId": null,
    "itemId": 28616,
    "name": "Pheasant cape",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.25,
+   "rateText": "15 pheasant tail feathers (1/2 per egg)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pheasant_cape"
   },
   {
@@ -6451,8 +6451,8 @@
    "timeSourceId": null,
    "itemId": 28620,
    "name": "Pheasant hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.25,
+   "rateText": "15 pheasant tail feathers (1/2 per egg)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pheasant_hat"
   },
   {
@@ -6461,8 +6461,8 @@
    "timeSourceId": null,
    "itemId": 28622,
    "name": "Pheasant legs",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.25,
+   "rateText": "15 pheasant tail feathers (1/2 per egg)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pheasant_legs"
   },
   {
@@ -6481,8 +6481,8 @@
    "timeSourceId": null,
    "itemId": 28630,
    "name": "Twitcher's gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.035,
+   "rateText": "5,000 bark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Twitcher%27s_gloves"
   },
   {
@@ -6801,8 +6801,8 @@
    "timeSourceId": null,
    "itemId": 27021,
    "name": "Colossal blade",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0246,
+   "rateText": "5,000 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Colossal_blade"
   },
   {
@@ -6811,8 +6811,8 @@
    "timeSourceId": null,
    "itemId": 27012,
    "name": "Double ammo mould",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0615,
+   "rateText": "2,000 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Double_ammo_mould"
   },
   {
@@ -6821,8 +6821,8 @@
    "timeSourceId": null,
    "itemId": 27014,
    "name": "Kovac's grog",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.41,
+   "rateText": "300 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Kovac%27s_grog"
   },
   {
@@ -6831,8 +6831,8 @@
    "timeSourceId": null,
    "itemId": 27019,
    "name": "Ore pack (Giants' Foundry)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.615,
+   "rateText": "200 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ore_pack_%28Giants%27_Foundry%29"
   },
   {
@@ -6841,8 +6841,8 @@
    "timeSourceId": null,
    "itemId": 27017,
    "name": "Smithing catalyst",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "15 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Smithing_catalyst"
   },
   {
@@ -6851,8 +6851,8 @@
    "timeSourceId": null,
    "itemId": 27027,
    "name": "Smiths boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03514285714285714,
+   "rateText": "3,500 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Smiths_boots"
   },
   {
@@ -6861,8 +6861,8 @@
    "timeSourceId": null,
    "itemId": 27029,
    "name": "Smiths gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03514285714285714,
+   "rateText": "3,500 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Smiths_gloves"
   },
   {
@@ -6871,8 +6871,8 @@
    "timeSourceId": null,
    "itemId": 27025,
    "name": "Smiths trousers",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03075,
+   "rateText": "4,000 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Smiths_trousers"
   },
   {
@@ -6881,8 +6881,8 @@
    "timeSourceId": null,
    "itemId": 27023,
    "name": "Smiths tunic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03075,
+   "rateText": "4,000 reputation",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Smiths_tunic"
   },
   {
@@ -7131,8 +7131,8 @@
    "timeSourceId": null,
    "itemId": 26856,
    "name": "Boots of the Eye",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.007719999999999999,
+   "rateText": "250 abyssal pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Boots_of_the_Eye"
   },
   {
@@ -7151,8 +7151,8 @@
    "timeSourceId": null,
    "itemId": 26820,
    "name": "Guardian's eye",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0006433333333333333,
+   "rateText": "3,000 abyssal pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Guardian%27s_eye"
   },
   {
@@ -7161,8 +7161,8 @@
    "timeSourceId": null,
    "itemId": 26850,
    "name": "Hat of the Eye",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.004824999999999999,
+   "rateText": "400 abyssal pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Hat_of_the_Eye"
   },
   {
@@ -7171,8 +7171,8 @@
    "timeSourceId": null,
    "itemId": 26908,
    "name": "Intricate pouch",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03571428571428571,
+   "rateText": "5/140 per reward search",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Intricate_pouch"
   },
   {
@@ -7191,8 +7191,8 @@
    "timeSourceId": null,
    "itemId": 26815,
    "name": "Ring of the elements",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.004824999999999999,
+   "rateText": "400 abyssal pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ring_of_the_elements"
   },
   {
@@ -7201,8 +7201,8 @@
    "timeSourceId": null,
    "itemId": 26854,
    "name": "Robe bottoms of the Eye",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005514285714285714,
+   "rateText": "350 abyssal pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Robe_bottoms_of_the_Eye"
   },
   {
@@ -7211,8 +7211,8 @@
    "timeSourceId": null,
    "itemId": 26852,
    "name": "Robe top of the Eye",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005514285714285714,
+   "rateText": "350 abyssal pearls",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Robe_top_of_the_Eye"
   },
   {
@@ -7231,8 +7231,8 @@
    "timeSourceId": null,
    "itemId": 24733,
    "name": "Dark acorn",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.008666666666666666,
+   "rateText": "3,000 hallowed marks",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dark_acorn"
   },
   {
@@ -7241,8 +7241,8 @@
    "timeSourceId": null,
    "itemId": 24729,
    "name": "Dark dye",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.08666666666666667,
+   "rateText": "300 hallowed marks",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dark_dye"
   },
   {
@@ -7251,8 +7251,8 @@
    "timeSourceId": null,
    "itemId": 24723,
    "name": "Hallowed focus",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.26,
+   "rateText": "100 hallowed marks",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Hallowed_focus"
   },
   {
@@ -7261,8 +7261,8 @@
    "timeSourceId": null,
    "itemId": 24721,
    "name": "Hallowed grapple",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.26,
+   "rateText": "100 hallowed marks",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Hallowed_grapple"
   },
   {
@@ -7271,8 +7271,8 @@
    "timeSourceId": null,
    "itemId": 24727,
    "name": "Hallowed hammer",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.26,
+   "rateText": "100 hallowed marks",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Hallowed_hammer"
   },
   {
@@ -7291,8 +7291,8 @@
    "timeSourceId": null,
    "itemId": 24731,
    "name": "Hallowed ring",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.104,
+   "rateText": "250 hallowed marks",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Hallowed_ring"
   },
   {
@@ -7301,8 +7301,8 @@
    "timeSourceId": null,
    "itemId": 24725,
    "name": "Hallowed symbol",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.26,
+   "rateText": "100 hallowed marks",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Hallowed_symbol"
   },
   {
@@ -7311,8 +7311,8 @@
    "timeSourceId": null,
    "itemId": 24719,
    "name": "Hallowed token",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "10 hallowed marks",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Hallowed_token"
   },
   {
@@ -7341,8 +7341,8 @@
    "timeSourceId": null,
    "itemId": 24740,
    "name": "Strange old lockpick",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.025,
+   "rateText": "1/40 per floor-5 coffin",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Strange_old_lockpick"
   },
   {
@@ -9331,8 +9331,8 @@
    "timeSourceId": null,
    "itemId": 24201,
    "name": "Ancient halo",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005555555555555556,
+   "rateText": "450 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_halo"
   },
   {
@@ -9341,8 +9341,8 @@
    "timeSourceId": null,
    "itemId": -1,
    "name": "Animation overrides#Godswords",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03333333333333333,
+   "rateText": "75 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Animation_overrides%23Godswords"
   },
   {
@@ -9351,8 +9351,8 @@
    "timeSourceId": null,
    "itemId": 24192,
    "name": "Armadyl halo",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005555555555555556,
+   "rateText": "450 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Armadyl_halo"
   },
   {
@@ -9361,8 +9361,8 @@
    "timeSourceId": null,
    "itemId": 24195,
    "name": "Bandos halo",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005555555555555556,
+   "rateText": "450 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Bandos_halo"
   },
   {
@@ -9371,8 +9371,8 @@
    "timeSourceId": null,
    "itemId": 12757,
    "name": "Blue dark bow paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1,
+   "rateText": "25 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Blue_dark_bow_paint"
   },
   {
@@ -9381,8 +9381,8 @@
    "timeSourceId": null,
    "itemId": 24204,
    "name": "Brassica halo",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005555555555555556,
+   "rateText": "450 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Brassica_halo"
   },
   {
@@ -9391,8 +9391,8 @@
    "timeSourceId": null,
    "itemId": 24191,
    "name": "Deadman's cape#Cosmetic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.015625,
+   "rateText": "160 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Deadman%27s_cape%23Cosmetic"
   },
   {
@@ -9401,8 +9401,8 @@
    "timeSourceId": null,
    "itemId": 24189,
    "name": "Deadman's chest#Cosmetic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.015625,
+   "rateText": "160 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Deadman%27s_chest%23Cosmetic"
   },
   {
@@ -9411,8 +9411,8 @@
    "timeSourceId": null,
    "itemId": 24190,
    "name": "Deadman's legs#Cosmetic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.015625,
+   "rateText": "160 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Deadman%27s_legs%23Cosmetic"
   },
   {
@@ -9421,8 +9421,8 @@
    "timeSourceId": null,
    "itemId": 12800,
    "name": "Dragon pickaxe upgrade kit",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.17857142857142858,
+   "rateText": "14 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_pickaxe_upgrade_kit"
   },
   {
@@ -9431,8 +9431,8 @@
    "timeSourceId": null,
    "itemId": 12769,
    "name": "Frozen whip mix",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1,
+   "rateText": "25 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Frozen_whip_mix"
   },
   {
@@ -9441,8 +9441,8 @@
    "timeSourceId": null,
    "itemId": 12849,
    "name": "Granite clamp",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1,
+   "rateText": "25 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Granite_clamp"
   },
   {
@@ -9451,8 +9451,8 @@
    "timeSourceId": null,
    "itemId": 12759,
    "name": "Green dark bow paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1,
+   "rateText": "25 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Green_dark_bow_paint"
   },
   {
@@ -9461,8 +9461,8 @@
    "timeSourceId": null,
    "itemId": 24217,
    "name": "Guthixian icon",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005,
+   "rateText": "500 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Guthixian_icon"
   },
   {
@@ -9471,8 +9471,8 @@
    "timeSourceId": null,
    "itemId": 21202,
    "name": "Lava staff upgrade kit",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.19230769230769232,
+   "rateText": "13 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Lava_staff_upgrade_kit"
   },
   {
@@ -9481,8 +9481,8 @@
    "timeSourceId": null,
    "itemId": 24229,
    "name": "Ornate maul handle",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.16666666666666666,
+   "rateText": "15 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ornate_maul_handle"
   },
   {
@@ -9491,8 +9491,8 @@
    "timeSourceId": null,
    "itemId": 24198,
    "name": "Seren halo",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005555555555555556,
+   "rateText": "450 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Seren_halo"
   },
   {
@@ -9501,8 +9501,8 @@
    "timeSourceId": null,
    "itemId": 12798,
    "name": "Steam staff upgrade kit",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.19230769230769232,
+   "rateText": "13 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Steam_staff_upgrade_kit"
   },
   {
@@ -9511,8 +9511,8 @@
    "timeSourceId": null,
    "itemId": 24219,
    "name": "Swift blade",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.007142857142857143,
+   "rateText": "350 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Swift_blade"
   },
   {
@@ -9521,8 +9521,8 @@
    "timeSourceId": null,
    "itemId": 24207,
    "name": "Victor's cape (1)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.06666666666666667,
+   "rateText": "1 competitive win",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Victor%27s_cape_%281%29"
   },
   {
@@ -9531,8 +9531,8 @@
    "timeSourceId": null,
    "itemId": 24209,
    "name": "Victor's cape (10)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006666666666666667,
+   "rateText": "10 competitive wins",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Victor%27s_cape_%2810%29"
   },
   {
@@ -9541,8 +9541,8 @@
    "timeSourceId": null,
    "itemId": 24213,
    "name": "Victor's cape (100)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0006666666666666666,
+   "rateText": "100 competitive wins",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Victor%27s_cape_%28100%29"
   },
   {
@@ -9551,8 +9551,8 @@
    "timeSourceId": null,
    "itemId": 24520,
    "name": "Victor's cape (1000)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 6.666666666666667e-05,
+   "rateText": "1,000 competitive wins",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Victor%27s_cape_%281000%29"
   },
   {
@@ -9561,8 +9561,8 @@
    "timeSourceId": null,
    "itemId": 24211,
    "name": "Victor's cape (50)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0013333333333333333,
+   "rateText": "50 competitive wins",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Victor%27s_cape_%2850%29"
   },
   {
@@ -9571,8 +9571,8 @@
    "timeSourceId": null,
    "itemId": 24215,
    "name": "Victor's cape (500)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00013333333333333334,
+   "rateText": "500 competitive wins",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Victor%27s_cape_%28500%29"
   },
   {
@@ -9581,8 +9581,8 @@
    "timeSourceId": null,
    "itemId": 12771,
    "name": "Volcanic whip mix",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1,
+   "rateText": "25 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Volcanic_whip_mix"
   },
   {
@@ -9591,8 +9591,8 @@
    "timeSourceId": null,
    "itemId": 12802,
    "name": "Ward upgrade kit",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.125,
+   "rateText": "20 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ward_upgrade_kit"
   },
   {
@@ -9601,8 +9601,8 @@
    "timeSourceId": null,
    "itemId": 12763,
    "name": "White dark bow paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1,
+   "rateText": "25 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/White_dark_bow_paint"
   },
   {
@@ -9611,8 +9611,8 @@
    "timeSourceId": null,
    "itemId": 12761,
    "name": "Yellow dark bow paint",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1,
+   "rateText": "25 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Yellow_dark_bow_paint"
   },
   {
@@ -9621,8 +9621,8 @@
    "timeSourceId": null,
    "itemId": 33143,
    "name": "Ballistic attractor schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "Quest reward (Animal Magnetism + Pandemonium)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ballistic_attractor_schematic"
   },
   {
@@ -9631,8 +9631,8 @@
    "timeSourceId": null,
    "itemId": 33423,
    "name": "Bosun's workbench schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "Quest reward (The Red Reef)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Bosun%27s_workbench_schematic"
   },
   {
@@ -9641,8 +9641,8 @@
    "timeSourceId": null,
    "itemId": 32406,
    "name": "Dragon cannon schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (76 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_cannon_schematic"
   },
   {
@@ -9651,8 +9651,8 @@
    "timeSourceId": null,
    "itemId": 32409,
    "name": "Dragon helm schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (72 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_helm_schematic"
   },
   {
@@ -9661,8 +9661,8 @@
    "timeSourceId": null,
    "itemId": 32410,
    "name": "Dragon keel schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (87 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_keel_schematic"
   },
   {
@@ -9671,8 +9671,8 @@
    "timeSourceId": null,
    "itemId": 32404,
    "name": "Dragon salvaging hook schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (73 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_salvaging_hook_schematic"
   },
   {
@@ -9681,8 +9681,8 @@
    "timeSourceId": null,
    "itemId": 32403,
    "name": "Eternal brazier schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (76 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Eternal_brazier_schematic"
   },
   {
@@ -9691,8 +9691,8 @@
    "timeSourceId": null,
    "itemId": 32402,
    "name": "Gale catcher schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (51 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Gale_catcher_schematic"
   },
   {
@@ -9701,8 +9701,8 @@
    "timeSourceId": null,
    "itemId": 32405,
    "name": "Rosewood cargo hold schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (64 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rosewood_cargo_hold_schematic"
   },
   {
@@ -9711,8 +9711,8 @@
    "timeSourceId": null,
    "itemId": 32408,
    "name": "Rosewood & cotton sails schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (81 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rosewood_%26_cotton_sails_schematic"
   },
   {
@@ -9721,8 +9721,8 @@
    "timeSourceId": null,
    "itemId": 32407,
    "name": "Rosewood hull schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (56 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rosewood_hull_schematic"
   },
   {
@@ -9731,8 +9731,8 @@
    "timeSourceId": null,
    "itemId": 32401,
    "name": "Salvaging station schematic",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Dig the key, open the lockbox (42 Sailing)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Salvaging_station_schematic"
   },
   {
@@ -9771,8 +9771,8 @@
    "timeSourceId": null,
    "itemId": 6910,
    "name": "Apprentice wand",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.19115202659506456,
+   "rateText": "60/60/600/60 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Apprentice_wand"
   },
   {
@@ -9781,8 +9781,8 @@
    "timeSourceId": null,
    "itemId": 6908,
    "name": "Beginner wand",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5734560797851936,
+   "rateText": "30/30/300/30 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Beginner_wand"
   },
   {
@@ -9791,8 +9791,8 @@
    "timeSourceId": null,
    "itemId": -1,
    "name": "Bones to peaches",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.07339224349533628,
+   "rateText": "200/300/2,000/200 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Bones_to_peaches"
   },
   {
@@ -9801,8 +9801,8 @@
    "timeSourceId": null,
    "itemId": 6920,
    "name": "Infinity boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1433640199462984,
+   "rateText": "120/120/1,200/120 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Infinity_boots"
   },
   {
@@ -9811,8 +9811,8 @@
    "timeSourceId": null,
    "itemId": 6924,
    "name": "Infinity bottoms",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03645785703398872,
+   "rateText": "450/500/5,000/450 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Infinity_bottoms"
   },
   {
@@ -9821,8 +9821,8 @@
    "timeSourceId": null,
    "itemId": 6922,
    "name": "Infinity gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.09060949278381757,
+   "rateText": "175/225/1,500/175 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Infinity_gloves"
   },
   {
@@ -9831,8 +9831,8 @@
    "timeSourceId": null,
    "itemId": 6918,
    "name": "Infinity hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04745466809506805,
+   "rateText": "350/400/3,000/350 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Infinity_hat"
   },
   {
@@ -9841,8 +9841,8 @@
    "timeSourceId": null,
    "itemId": 6916,
    "name": "Infinity top",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04123569162874086,
+   "rateText": "400/450/4,000/400 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Infinity_top"
   },
   {
@@ -9851,8 +9851,8 @@
    "timeSourceId": null,
    "itemId": 6889,
    "name": "Mage's book",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03267223952357537,
+   "rateText": "500/550/6,000/500 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Mage%27s_book"
   },
   {
@@ -9861,8 +9861,8 @@
    "timeSourceId": null,
    "itemId": 6914,
    "name": "Master wand",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03460087485824056,
+   "rateText": "240/240/2,400/240 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Master_wand"
   },
   {
@@ -9871,8 +9871,8 @@
    "timeSourceId": null,
    "itemId": 6912,
    "name": "Teacher wand",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0668873875889222,
+   "rateText": "150/200/1,500/150 pizazz (tele/alch/ench/grave)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Teacher_wand"
   },
   {
@@ -9881,8 +9881,8 @@
    "timeSourceId": null,
    "itemId": 24880,
    "name": "Amy's saw",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.008,
+   "rateText": "500 carpenter points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Amy%27s_saw"
   },
   {
@@ -9891,8 +9891,8 @@
    "timeSourceId": null,
    "itemId": 24878,
    "name": "Carpenter's boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "200 carpenter points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Carpenter%27s_boots"
   },
   {
@@ -9901,8 +9901,8 @@
    "timeSourceId": null,
    "itemId": 24872,
    "name": "Carpenter's helmet",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "400 carpenter points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Carpenter%27s_helmet"
   },
   {
@@ -9911,8 +9911,8 @@
    "timeSourceId": null,
    "itemId": 24874,
    "name": "Carpenter's shirt",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005,
+   "rateText": "800 carpenter points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Carpenter%27s_shirt"
   },
   {
@@ -9921,8 +9921,8 @@
    "timeSourceId": null,
    "itemId": 24876,
    "name": "Carpenter's trousers",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006666666666666667,
+   "rateText": "600 carpenter points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Carpenter%27s_trousers"
   },
   {
@@ -9931,8 +9931,8 @@
    "timeSourceId": null,
    "itemId": 24885,
    "name": "Hosidius blueprints",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "2,000 carpenter points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Hosidius_blueprints"
   },
   {
@@ -9941,8 +9941,8 @@
    "timeSourceId": null,
    "itemId": 24882,
    "name": "Plank sack",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.011428571428571429,
+   "rateText": "350 carpenter points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Plank_sack"
   },
   {
@@ -9951,8 +9951,8 @@
    "timeSourceId": null,
    "itemId": 24884,
    "name": "Supply crate (Mahogany Homes)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.16,
+   "rateText": "25 carpenter points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Supply_crate_%28Mahogany_Homes%29"
   },
   {
@@ -10771,8 +10771,8 @@
    "timeSourceId": null,
    "itemId": 23185,
    "name": "Ring of 3rd Age",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0017543859649122807,
+   "rateText": "~1/570 per master casket (Mimic drop)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ring_of_3rd_Age"
   },
   {
@@ -10901,8 +10901,8 @@
    "timeSourceId": null,
    "itemId": 29986,
    "name": "Alchemist gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.013485714285714285,
+   "rateText": "8,750 resin",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Alchemist_gloves"
   },
   {
@@ -10911,8 +10911,8 @@
    "timeSourceId": null,
    "itemId": 29978,
    "name": "Alchemist labcoat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.013485714285714285,
+   "rateText": "8,750 resin",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Alchemist_labcoat"
   },
   {
@@ -10921,8 +10921,8 @@
    "timeSourceId": null,
    "itemId": 29982,
    "name": "Alchemist pants",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.013485714285714285,
+   "rateText": "8,750 resin",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Alchemist_pants"
   },
   {
@@ -10931,8 +10931,8 @@
    "timeSourceId": null,
    "itemId": 29988,
    "name": "Alchemist's amulet",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.005914786967418546,
+   "rateText": "19,950 resin",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Alchemist%27s_amulet"
   },
   {
@@ -10941,8 +10941,8 @@
    "timeSourceId": null,
    "itemId": 30002,
    "name": "Chugging barrel (disassembled)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002367101303911735,
+   "rateText": "49,850 resin",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chugging_barrel_%28disassembled%29"
   },
   {
@@ -10951,8 +10951,8 @@
    "timeSourceId": null,
    "itemId": 29974,
    "name": "Prescription goggles",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.004729458917835671,
+   "rateText": "24,950 resin",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prescription_goggles"
   },
   {
@@ -10961,8 +10961,8 @@
    "timeSourceId": null,
    "itemId": 29996,
    "name": "Reagent pouch",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002942643391521197,
+   "rateText": "40,100 resin",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Reagent_pouch"
   },
   {
@@ -12121,8 +12121,8 @@
    "timeSourceId": null,
    "itemId": 19707,
    "name": "Amulet of eternal glory",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0002,
+   "rateText": "1/25,000 per glory recharge at the Fountain of Rune",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Amulet_of_eternal_glory"
   },
   {
@@ -12131,8 +12131,8 @@
    "timeSourceId": null,
    "itemId": 7989,
    "name": "Big bass",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "1/1,000 per bass caught",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Big_bass"
   },
   {
@@ -12151,8 +12151,8 @@
    "timeSourceId": null,
    "itemId": 7991,
    "name": "Big swordfish",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.012048192771084338,
+   "rateText": "1/2,500 per swordfish caught",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Big_swordfish"
   },
   {
@@ -12201,8 +12201,8 @@
    "timeSourceId": null,
    "itemId": 11338,
    "name": "Chewed bones",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.038461538461538464,
+   "rateText": "3/128 per mithril dragon",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chewed_bones"
   },
   {
@@ -12381,8 +12381,8 @@
    "timeSourceId": null,
    "itemId": 11942,
    "name": "Ecumenical key",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.16666666666666666,
+   "rateText": "1/60 per Wilderness GWD kill",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ecumenical_key"
   },
   {
@@ -12451,8 +12451,8 @@
    "timeSourceId": null,
    "itemId": 21392,
    "name": "Expert mining gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.007575757575757576,
+   "rateText": "180 minerals across all three pairs (~11 h)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Expert_mining_gloves"
   },
   {
@@ -12591,8 +12591,8 @@
    "timeSourceId": null,
    "itemId": 21649,
    "name": "Merfolk trident",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.041666666666666664,
+   "rateText": "400 mermaid's tears (~2 h)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Merfolk_trident"
   },
   {
@@ -12601,8 +12601,8 @@
    "timeSourceId": null,
    "itemId": 21343,
    "name": "Mining gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03333333333333333,
+   "rateText": "40 unidentified minerals (~2.5 h)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Mining_gloves"
   },
   {
@@ -12701,8 +12701,8 @@
    "timeSourceId": null,
    "itemId": 21345,
    "name": "Superior mining gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.013888888888888888,
+   "rateText": "100 unidentified minerals (~6 h)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Superior_mining_gloves"
   },
   {
@@ -12751,8 +12751,8 @@
    "timeSourceId": null,
    "itemId": 24862,
    "name": "Karamjan monkey (item)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "100 Ape Atoll laps",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Karamjan_monkey_%28item%29"
   },
   {
@@ -12761,8 +12761,8 @@
    "timeSourceId": null,
    "itemId": 24866,
    "name": "Kruk jr",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0006666666666666666,
+   "rateText": "1,500 Ape Atoll laps",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Kruk_jr"
   },
   {
@@ -12771,8 +12771,8 @@
    "timeSourceId": null,
    "itemId": 24864,
    "name": "Maniacal monkey (item)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "500 Ape Atoll laps",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Maniacal_monkey_%28item%29"
   },
   {
@@ -12781,8 +12781,8 @@
    "timeSourceId": null,
    "itemId": 24867,
    "name": "Princely monkey",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0005,
+   "rateText": "2,000 Ape Atoll laps",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Princely_monkey"
   },
   {
@@ -12791,8 +12791,8 @@
    "timeSourceId": null,
    "itemId": 24865,
    "name": "Skeleton monkey (item)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.001,
+   "rateText": "1,000 Ape Atoll laps",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Skeleton_monkey_%28item%29"
   },
   {
@@ -12801,8 +12801,8 @@
    "timeSourceId": null,
    "itemId": 24863,
    "name": "Zombie monkey (item)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.004,
+   "rateText": "250 Ape Atoll laps",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Zombie_monkey_%28item%29"
   },
   {
@@ -12941,8 +12941,8 @@
    "timeSourceId": null,
    "itemId": 12019,
    "name": "Coal bag",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000274,
+   "rateText": "100 golden nuggets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Coal_bag"
   },
   {
@@ -12951,8 +12951,8 @@
    "timeSourceId": null,
    "itemId": 12020,
    "name": "Gem bag",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000274,
+   "rateText": "100 golden nuggets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Gem_bag"
   },
   {
@@ -12961,8 +12961,8 @@
    "timeSourceId": null,
    "itemId": 12016,
    "name": "Prospector boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0009133333333333334,
+   "rateText": "30 golden nuggets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospector_boots"
   },
   {
@@ -12971,8 +12971,8 @@
    "timeSourceId": null,
    "itemId": 12013,
    "name": "Prospector helmet",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0006850000000000001,
+   "rateText": "40 golden nuggets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospector_helmet"
   },
   {
@@ -12981,8 +12981,8 @@
    "timeSourceId": null,
    "itemId": 12014,
    "name": "Prospector jacket",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0004566666666666667,
+   "rateText": "60 golden nuggets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospector_jacket"
   },
   {
@@ -12991,8 +12991,8 @@
    "timeSourceId": null,
    "itemId": 12015,
    "name": "Prospector legs",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000548,
+   "rateText": "50 golden nuggets",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospector_legs"
   },
   {
@@ -13001,8 +13001,8 @@
    "timeSourceId": null,
    "itemId": 11341,
    "name": "Ancient page",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0007898894154818325,
+   "rateText": "26 pages (~1,266 rummages)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_page"
   },
   {
@@ -13101,8 +13101,8 @@
    "timeSourceId": null,
    "itemId": 31782,
    "name": "Big pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Big_pearl"
   },
   {
@@ -13111,8 +13111,8 @@
    "timeSourceId": null,
    "itemId": 31779,
    "name": "Bright pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Bright_pearl"
   },
   {
@@ -13121,8 +13121,8 @@
    "timeSourceId": null,
    "itemId": 31797,
    "name": "Brilliant pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Brilliant_pearl"
   },
   {
@@ -13131,8 +13131,8 @@
    "timeSourceId": null,
    "itemId": 31788,
    "name": "Enormous pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Enormous_pearl"
   },
   {
@@ -13141,8 +13141,8 @@
    "timeSourceId": null,
    "itemId": 31794,
    "name": "Glistening pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Glistening_pearl"
   },
   {
@@ -13151,8 +13151,8 @@
    "timeSourceId": null,
    "itemId": 31785,
    "name": "Huge pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Huge_pearl"
   },
   {
@@ -13161,8 +13161,8 @@
    "timeSourceId": null,
    "itemId": 31800,
    "name": "Radiant pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Radiant_pearl"
   },
   {
@@ -13171,8 +13171,8 @@
    "timeSourceId": null,
    "itemId": 31791,
    "name": "Shimmering pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Shimmering_pearl"
   },
   {
@@ -13181,8 +13181,8 @@
    "timeSourceId": null,
    "itemId": 31776,
    "name": "Shiny pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Shiny_pearl"
   },
   {
@@ -13191,8 +13191,8 @@
    "timeSourceId": null,
    "itemId": 31773,
    "name": "Small pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Small_pearl"
   },
   {
@@ -13201,8 +13201,8 @@
    "timeSourceId": null,
    "itemId": 31770,
    "name": "Tiny pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "Giant clam: deposit an item, collect next encounter",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Tiny_pearl"
   },
   {
@@ -13211,8 +13211,8 @@
    "timeSourceId": null,
    "itemId": 13073,
    "name": "Elite void robe",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.011111111111111112,
+   "rateText": "450 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Elite_void_robe"
   },
   {
@@ -13221,8 +13221,8 @@
    "timeSourceId": null,
    "itemId": 13072,
    "name": "Elite void top",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.011111111111111112,
+   "rateText": "450 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Elite_void_top"
   },
   {
@@ -13231,8 +13231,8 @@
    "timeSourceId": null,
    "itemId": 8842,
    "name": "Void knight gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03333333333333333,
+   "rateText": "150 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Void_knight_gloves"
   },
   {
@@ -13241,8 +13241,8 @@
    "timeSourceId": null,
    "itemId": 8841,
    "name": "Void knight mace",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "250 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Void_knight_mace"
   },
   {
@@ -13251,8 +13251,8 @@
    "timeSourceId": null,
    "itemId": 8840,
    "name": "Void knight robe",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "250 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Void_knight_robe"
   },
   {
@@ -13261,8 +13261,8 @@
    "timeSourceId": null,
    "itemId": 8839,
    "name": "Void knight top",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "250 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Void_knight_top"
   },
   {
@@ -13271,8 +13271,8 @@
    "timeSourceId": null,
    "itemId": 11663,
    "name": "Void mage helm",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.025,
+   "rateText": "200 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Void_mage_helm"
   },
   {
@@ -13281,8 +13281,8 @@
    "timeSourceId": null,
    "itemId": 11665,
    "name": "Void melee helm",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.025,
+   "rateText": "200 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Void_melee_helm"
   },
   {
@@ -13291,8 +13291,8 @@
    "timeSourceId": null,
    "itemId": 11664,
    "name": "Void ranger helm",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.025,
+   "rateText": "200 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Void_ranger_helm"
   },
   {
@@ -13301,8 +13301,8 @@
    "timeSourceId": null,
    "itemId": 11673,
    "name": "Void seal(8)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.5,
+   "rateText": "10 commendations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Void_seal%288%29"
   },
   {
@@ -13341,8 +13341,8 @@
    "timeSourceId": null,
    "itemId": 27622,
    "name": "Frozen cache",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "4/100 per kill",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Frozen_cache"
   },
   {
@@ -13741,8 +13741,8 @@
    "timeSourceId": null,
    "itemId": 5557,
    "name": "Rogue boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.625,
+   "rateText": "5/8 per completion (you pick the piece)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rogue_boots"
   },
   {
@@ -13751,8 +13751,8 @@
    "timeSourceId": null,
    "itemId": 5556,
    "name": "Rogue gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.625,
+   "rateText": "5/8 per completion (you pick the piece)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rogue_gloves"
   },
   {
@@ -13761,8 +13761,8 @@
    "timeSourceId": null,
    "itemId": 5554,
    "name": "Rogue mask",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.625,
+   "rateText": "5/8 per completion (you pick the piece)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rogue_mask"
   },
   {
@@ -13771,8 +13771,8 @@
    "timeSourceId": null,
    "itemId": 5553,
    "name": "Rogue top",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.625,
+   "rateText": "5/8 per completion (you pick the piece)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rogue_top"
   },
   {
@@ -13781,8 +13781,8 @@
    "timeSourceId": null,
    "itemId": 5555,
    "name": "Rogue trousers",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.625,
+   "rateText": "5/8 per completion (you pick the piece)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rogue_trousers"
   },
   {
@@ -13791,8 +13791,8 @@
    "timeSourceId": null,
    "itemId": 11860,
    "name": "Graceful boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0052499999999999995,
+   "rateText": "40 marks of grace",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_boots"
   },
   {
@@ -13801,8 +13801,8 @@
    "timeSourceId": null,
    "itemId": 11852,
    "name": "Graceful cape",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0052499999999999995,
+   "rateText": "40 marks of grace",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_cape"
   },
   {
@@ -13811,8 +13811,8 @@
    "timeSourceId": null,
    "itemId": 11858,
    "name": "Graceful gloves",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.007,
+   "rateText": "30 marks of grace",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_gloves"
   },
   {
@@ -13821,8 +13821,8 @@
    "timeSourceId": null,
    "itemId": 11850,
    "name": "Graceful hood",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.006,
+   "rateText": "35 marks of grace",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_hood"
   },
   {
@@ -13831,8 +13831,8 @@
    "timeSourceId": null,
    "itemId": 11856,
    "name": "Graceful legs",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0035,
+   "rateText": "60 marks of grace",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_legs"
   },
   {
@@ -13841,8 +13841,8 @@
    "timeSourceId": null,
    "itemId": 11854,
    "name": "Graceful top",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0038181818181818182,
+   "rateText": "55 marks of grace",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Graceful_top"
   },
   {
@@ -13851,8 +13851,8 @@
    "timeSourceId": null,
    "itemId": 11849,
    "name": "Mark of Grace",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.21,
+   "rateText": "~1 per 5 laps",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Mark_of_Grace"
   },
   {
@@ -13931,8 +13931,8 @@
    "timeSourceId": null,
    "itemId": 31989,
    "name": "Boat bottle (empty)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "1/500 per barracuda salvage",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Boat_bottle_%28empty%29"
   },
   {
@@ -13941,8 +13941,8 @@
    "timeSourceId": null,
    "itemId": 31949,
    "name": "Bottled storm",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002857142857142857,
+   "rateText": "1/350 per vampyre kraken",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Bottled_storm"
   },
   {
@@ -13951,8 +13951,8 @@
    "timeSourceId": null,
    "itemId": 31961,
    "name": "Broken dragon hook",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "1/500 per great white shark",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Broken_dragon_hook"
   },
   {
@@ -13961,8 +13961,8 @@
    "timeSourceId": null,
    "itemId": 32115,
    "name": "Dragon cannon barrel",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "1/500 per veiled kraken",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_cannon_barrel"
   },
   {
@@ -13971,8 +13971,8 @@
    "timeSourceId": null,
    "itemId": 31916,
    "name": "Dragon cannonball",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.021739130434782608,
+   "rateText": "2/92 per orca",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_cannonball"
   },
   {
@@ -13981,8 +13981,8 @@
    "timeSourceId": null,
    "itemId": 31996,
    "name": "Dragon metal sheet",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "1/100 per frost dragon",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_metal_sheet"
   },
   {
@@ -13991,8 +13991,8 @@
    "timeSourceId": null,
    "itemId": 31406,
    "name": "Dragon nails",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.013333333333333334,
+   "rateText": "1/75 per orca or narwhal",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_nails"
   },
   {
@@ -14001,8 +14001,8 @@
    "timeSourceId": null,
    "itemId": 31946,
    "name": "Echo pearl",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.014285714285714285,
+   "rateText": "1/70 per orca",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Echo_pearl"
   },
   {
@@ -14011,8 +14011,8 @@
    "timeSourceId": null,
    "itemId": 33074,
    "name": "Facility bottle (empty)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0033333333333333335,
+   "rateText": "1/300 per opulent salvage",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Facility_bottle_%28empty%29"
   },
   {
@@ -14021,8 +14021,8 @@
    "timeSourceId": null,
    "itemId": 31954,
    "name": "Narwhal horn",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.05,
+   "rateText": "1/20 per narwhal",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Narwhal_horn"
   },
   {
@@ -14031,8 +14031,8 @@
    "timeSourceId": null,
    "itemId": 31959,
    "name": "Ray barbs",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.05,
+   "rateText": "1/20 per manta ray",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ray_barbs"
   },
   {
@@ -14041,8 +14041,8 @@
    "timeSourceId": null,
    "itemId": 31952,
    "name": "Swift albatross feather",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02857142857142857,
+   "rateText": "1/35 per albatross",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Swift_albatross_feather"
   },
   {
@@ -14198,11 +14198,11 @@
   {
    "id": "scroll_cases:mimic_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "elite_treasure_trails",
    "itemId": 30926,
    "name": "Mimic scroll case",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02857142857142857,
+   "rateText": "One Mimic kill (1/35 per elite casket)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Mimic_scroll_case"
   },
   {
@@ -15311,8 +15311,8 @@
    "timeSourceId": null,
    "itemId": 25539,
    "name": "Celestial ring (uncharged)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1175,
+   "rateText": "2,000 stardust",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Celestial_ring_%28uncharged%29"
   },
   {
@@ -15321,8 +15321,8 @@
    "timeSourceId": null,
    "itemId": 25547,
    "name": "Star fragment",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.07833333333333334,
+   "rateText": "3,000 stardust",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Star_fragment"
   },
   {
@@ -16381,8 +16381,8 @@
    "timeSourceId": null,
    "itemId": 33661,
    "name": "Venator fang",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.05343511450381679,
+   "rateText": "7/131 per venator",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Venator_fang"
   },
   {
@@ -16391,8 +16391,8 @@
    "timeSourceId": null,
    "itemId": 33663,
    "name": "Venator tooth",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.05343511450381679,
+   "rateText": "7/131 per venator",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Venator_tooth"
   },
   {
@@ -16431,8 +16431,8 @@
    "timeSourceId": null,
    "itemId": 25340,
    "name": "Ectoplasmator",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.2,
+   "rateText": "250 zeal",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ectoplasmator"
   },
   {
@@ -16451,8 +16451,8 @@
    "timeSourceId": null,
    "itemId": 25344,
    "name": "Soul cape",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "2,500 zeal",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Soul_cape"
   },
   {
@@ -16541,8 +16541,8 @@
    "timeSourceId": null,
    "itemId": 25598,
    "name": "Spirit angler boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "1,200 spirit flakes",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Spirit_angler_boots"
   },
   {
@@ -16551,8 +16551,8 @@
    "timeSourceId": null,
    "itemId": 25592,
    "name": "Spirit angler headband",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "1,200 spirit flakes",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Spirit_angler_headband"
   },
   {
@@ -16561,8 +16561,8 @@
    "timeSourceId": null,
    "itemId": 25594,
    "name": "Spirit angler top",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "1,200 spirit flakes",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Spirit_angler_top"
   },
   {
@@ -16571,8 +16571,8 @@
    "timeSourceId": null,
    "itemId": 25596,
    "name": "Spirit angler waders",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "1,200 spirit flakes",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Spirit_angler_waders"
   },
   {
@@ -17251,8 +17251,8 @@
    "timeSourceId": null,
    "itemId": 22494,
    "name": "Sinhaza shroud tier 1",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "100 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sinhaza_shroud_tier_1"
   },
   {
@@ -17261,8 +17261,8 @@
    "timeSourceId": null,
    "itemId": 22496,
    "name": "Sinhaza shroud tier 2",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "500 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sinhaza_shroud_tier_2"
   },
   {
@@ -17271,8 +17271,8 @@
    "timeSourceId": null,
    "itemId": 22498,
    "name": "Sinhaza shroud tier 3",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.001,
+   "rateText": "1,000 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sinhaza_shroud_tier_3"
   },
   {
@@ -17281,8 +17281,8 @@
    "timeSourceId": null,
    "itemId": 22500,
    "name": "Sinhaza shroud tier 4",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0006666666666666666,
+   "rateText": "1,500 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sinhaza_shroud_tier_4"
   },
   {
@@ -17291,8 +17291,8 @@
    "timeSourceId": null,
    "itemId": 22502,
    "name": "Sinhaza shroud tier 5",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0005,
+   "rateText": "2,000 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sinhaza_shroud_tier_5"
   },
   {
@@ -17361,8 +17361,8 @@
    "timeSourceId": null,
    "itemId": 13644,
    "name": "Farmer's boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.7,
+   "rateText": "50 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Farmer%27s_boots"
   },
   {
@@ -17371,8 +17371,8 @@
    "timeSourceId": null,
    "itemId": 13640,
    "name": "Farmer's boro trousers",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.28,
+   "rateText": "125 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Farmer%27s_boro_trousers"
   },
   {
@@ -17381,8 +17381,8 @@
    "timeSourceId": null,
    "itemId": 13642,
    "name": "Farmer's jacket",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.23333333333333334,
+   "rateText": "150 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Farmer%27s_jacket"
   },
   {
@@ -17391,8 +17391,8 @@
    "timeSourceId": null,
    "itemId": 13646,
    "name": "Farmer's strawhat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.4666666666666667,
+   "rateText": "75 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Farmer%27s_strawhat"
   },
   {
@@ -17401,8 +17401,8 @@
    "timeSourceId": null,
    "itemId": 13353,
    "name": "Gricoller's can",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.175,
+   "rateText": "200 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Gricoller%27s_can"
   },
   {
@@ -17411,8 +17411,8 @@
    "timeSourceId": null,
    "itemId": 13226,
    "name": "Herb sack",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.14,
+   "rateText": "250 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Herb_sack"
   },
   {
@@ -17421,8 +17421,8 @@
    "timeSourceId": null,
    "itemId": 13639,
    "name": "Seed box",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.14,
+   "rateText": "250 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Seed_box"
   },
   {
@@ -17431,8 +17431,8 @@
    "timeSourceId": null,
    "itemId": 27381,
    "name": "Ancient remnant",
-   "rate": 0.04,
-   "rateText": "1/25",
+   "rate": 1.0,
+   "rateText": "Deathless 450+ raid, all Wardens invocations",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_remnant"
   },
   {
@@ -17441,8 +17441,8 @@
    "timeSourceId": null,
    "itemId": 27283,
    "name": "Breach of the Scarab",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "1/50 per raid (scales up to 3x by 75 KC)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Breach_of_the_Scarab"
   },
   {
@@ -17451,8 +17451,8 @@
    "timeSourceId": null,
    "itemId": 27293,
    "name": "Cache of runes",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.1111111111111111,
+   "rateText": "~1/9 per non-unique raid",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Cache_of_runes"
   },
   {
@@ -17461,8 +17461,8 @@
    "timeSourceId": null,
    "itemId": 27248,
    "name": "Cursed phalanx",
-   "rate": 0.04,
-   "rateText": "1/25",
+   "rate": 1.0,
+   "rateText": "Deathless 500+ raid (guaranteed)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Cursed_phalanx"
   },
   {
@@ -17481,8 +17481,8 @@
    "timeSourceId": null,
    "itemId": 27285,
    "name": "Eye of the Corruptor",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "1/50 per raid (scales up to 3x by 75 KC)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Eye_of_the_Corruptor"
   },
   {
@@ -17491,8 +17491,8 @@
    "timeSourceId": null,
    "itemId": 27257,
    "name": "Icthlarin's shroud (tier 1)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01,
+   "rateText": "100 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Icthlarin%27s_shroud_%28tier_1%29"
   },
   {
@@ -17501,8 +17501,8 @@
    "timeSourceId": null,
    "itemId": 27259,
    "name": "Icthlarin's shroud (tier 2)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "500 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Icthlarin%27s_shroud_%28tier_2%29"
   },
   {
@@ -17511,8 +17511,8 @@
    "timeSourceId": null,
    "itemId": 27261,
    "name": "Icthlarin's shroud (tier 3)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.001,
+   "rateText": "1,000 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Icthlarin%27s_shroud_%28tier_3%29"
   },
   {
@@ -17521,8 +17521,8 @@
    "timeSourceId": null,
    "itemId": 27263,
    "name": "Icthlarin's shroud (tier 4)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0006666666666666666,
+   "rateText": "1,500 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Icthlarin%27s_shroud_%28tier_4%29"
   },
   {
@@ -17531,8 +17531,8 @@
    "timeSourceId": null,
    "itemId": 27265,
    "name": "Icthlarin's shroud (tier 5)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0005,
+   "rateText": "2,000 raids",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Icthlarin%27s_shroud_%28tier_5%29"
   },
   {
@@ -17541,8 +17541,8 @@
    "timeSourceId": null,
    "itemId": 30893,
    "name": "Jewel of Amascut",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "1/50 per raid (scales up to 3x by 75 KC)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Jewel_of_Amascut"
   },
   {
@@ -17611,8 +17611,8 @@
    "timeSourceId": null,
    "itemId": 27255,
    "name": "Menaphite ornament kit",
-   "rate": 0.04,
-   "rateText": "1/25",
+   "rate": 1.0,
+   "rateText": "Deathless 425+ raid (guaranteed)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Menaphite_ornament_kit"
   },
   {
@@ -17631,8 +17631,8 @@
    "timeSourceId": null,
    "itemId": 27377,
    "name": "Remnant of Akkha",
-   "rate": 0.04,
-   "rateText": "1/25",
+   "rate": 1.0,
+   "rateText": "Deathless 450+ raid, all Akkha invocations, path 4",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Remnant_of_Akkha"
   },
   {
@@ -17641,8 +17641,8 @@
    "timeSourceId": null,
    "itemId": 27378,
    "name": "Remnant of Ba-Ba",
-   "rate": 0.04,
-   "rateText": "1/25",
+   "rate": 1.0,
+   "rateText": "Deathless 450+ raid, all Ba-Ba invocations, path 4",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Remnant_of_Ba-Ba"
   },
   {
@@ -17651,8 +17651,8 @@
    "timeSourceId": null,
    "itemId": 27379,
    "name": "Remnant of Kephri",
-   "rate": 0.04,
-   "rateText": "1/25",
+   "rate": 1.0,
+   "rateText": "Deathless 450+ raid, all Kephri invocations, path 4",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Remnant_of_Kephri"
   },
   {
@@ -17661,8 +17661,8 @@
    "timeSourceId": null,
    "itemId": 27380,
    "name": "Remnant of Zebak",
-   "rate": 0.04,
-   "rateText": "1/25",
+   "rate": 1.0,
+   "rateText": "Deathless 450+ raid, all Zebak invocations, path 4",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Remnant_of_Zebak"
   },
   {
@@ -17731,8 +17731,8 @@
    "timeSourceId": null,
    "itemId": 8956,
    "name": "Black naval shirt",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Black_naval_shirt"
   },
   {
@@ -17741,8 +17741,8 @@
    "timeSourceId": null,
    "itemId": 8995,
    "name": "Black navy slacks",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Black_navy_slacks"
   },
   {
@@ -17751,8 +17751,8 @@
    "timeSourceId": null,
    "itemId": 8963,
    "name": "Black tricorn hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.24,
+   "rateText": "500 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Black_tricorn_hat"
   },
   {
@@ -17761,8 +17761,8 @@
    "timeSourceId": null,
    "itemId": 8952,
    "name": "Blue naval shirt",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Blue_naval_shirt"
   },
   {
@@ -17771,8 +17771,8 @@
    "timeSourceId": null,
    "itemId": 8991,
    "name": "Blue navy slacks",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Blue_navy_slacks"
   },
   {
@@ -17781,8 +17781,8 @@
    "timeSourceId": null,
    "itemId": 8959,
    "name": "Blue tricorn hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.24,
+   "rateText": "500 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Blue_tricorn_hat"
   },
   {
@@ -17791,8 +17791,8 @@
    "timeSourceId": null,
    "itemId": 8968,
    "name": "Bronze fist flag",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04,
+   "rateText": "3,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Bronze_fist_flag"
   },
   {
@@ -17801,8 +17801,8 @@
    "timeSourceId": null,
    "itemId": 8955,
    "name": "Brown naval shirt",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Brown_naval_shirt"
   },
   {
@@ -17811,8 +17811,8 @@
    "timeSourceId": null,
    "itemId": 8994,
    "name": "Brown navy slacks",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Brown_navy_slacks"
   },
   {
@@ -17821,8 +17821,8 @@
    "timeSourceId": null,
    "itemId": 8962,
    "name": "Brown tricorn hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.24,
+   "rateText": "500 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Brown_tricorn_hat"
   },
   {
@@ -17831,8 +17831,8 @@
    "timeSourceId": null,
    "itemId": 8966,
    "name": "Cutthroat flag",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.06,
+   "rateText": "2,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Cutthroat_flag"
   },
   {
@@ -17841,8 +17841,8 @@
    "timeSourceId": null,
    "itemId": 8967,
    "name": "Gilded smile flag",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.06,
+   "rateText": "2,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Gilded_smile_flag"
   },
   {
@@ -17851,8 +17851,8 @@
    "timeSourceId": null,
    "itemId": 8953,
    "name": "Green naval shirt",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Green_naval_shirt"
   },
   {
@@ -17861,8 +17861,8 @@
    "timeSourceId": null,
    "itemId": 8992,
    "name": "Green navy slacks",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Green_navy_slacks"
   },
   {
@@ -17871,8 +17871,8 @@
    "timeSourceId": null,
    "itemId": 8960,
    "name": "Green tricorn hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.24,
+   "rateText": "500 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Green_tricorn_hat"
   },
   {
@@ -17881,8 +17881,8 @@
    "timeSourceId": null,
    "itemId": 8958,
    "name": "Grey naval shirt",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Grey_naval_shirt"
   },
   {
@@ -17891,8 +17891,8 @@
    "timeSourceId": null,
    "itemId": 8997,
    "name": "Grey navy slacks",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Grey_navy_slacks"
   },
   {
@@ -17901,8 +17901,8 @@
    "timeSourceId": null,
    "itemId": 8965,
    "name": "Grey tricorn hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.24,
+   "rateText": "500 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Grey_tricorn_hat"
   },
   {
@@ -17911,8 +17911,8 @@
    "timeSourceId": null,
    "itemId": 8969,
    "name": "Lucky shot flag",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.03,
+   "rateText": "4,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Lucky_shot_flag"
   },
   {
@@ -17921,8 +17921,8 @@
    "timeSourceId": null,
    "itemId": 8971,
    "name": "Phasmatys flag",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "6,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Phasmatys_flag"
   },
   {
@@ -17931,8 +17931,8 @@
    "timeSourceId": null,
    "itemId": 8957,
    "name": "Purple naval shirt",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Purple_naval_shirt"
   },
   {
@@ -17941,8 +17941,8 @@
    "timeSourceId": null,
    "itemId": 8996,
    "name": "Purple navy slacks",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Purple_navy_slacks"
   },
   {
@@ -17951,8 +17951,8 @@
    "timeSourceId": null,
    "itemId": 8964,
    "name": "Purple tricorn hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.24,
+   "rateText": "500 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Purple_tricorn_hat"
   },
   {
@@ -17961,8 +17961,8 @@
    "timeSourceId": null,
    "itemId": 8954,
    "name": "Red naval shirt",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Red_naval_shirt"
   },
   {
@@ -17971,8 +17971,8 @@
    "timeSourceId": null,
    "itemId": 8993,
    "name": "Red navy slacks",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.12,
+   "rateText": "1,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Red_navy_slacks"
   },
   {
@@ -17981,8 +17981,8 @@
    "timeSourceId": null,
    "itemId": 8961,
    "name": "Red tricorn hat",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.24,
+   "rateText": "500 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Red_tricorn_hat"
   },
   {
@@ -17991,8 +17991,8 @@
    "timeSourceId": null,
    "itemId": 8941,
    "name": "Rum (blue)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "20 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rum_%28blue%29"
   },
   {
@@ -18001,8 +18001,8 @@
    "timeSourceId": null,
    "itemId": 8940,
    "name": "Rum (red)",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "20 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rum_%28red%29"
   },
   {
@@ -18011,8 +18011,8 @@
    "timeSourceId": null,
    "itemId": 8988,
    "name": "The stuff",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "50 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/The_stuff"
   },
   {
@@ -18021,8 +18021,8 @@
    "timeSourceId": null,
    "itemId": 8970,
    "name": "Treasure flag",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.024,
+   "rateText": "5,000 pieces of eight",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Treasure_flag"
   },
   {
@@ -18391,8 +18391,8 @@
    "timeSourceId": null,
    "itemId": 21697,
    "name": "Ash covered tome",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0425,
+   "rateText": "40,000 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ash_covered_tome"
   },
   {
@@ -18411,8 +18411,8 @@
    "timeSourceId": null,
    "itemId": 21539,
    "name": "Large water container",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.17,
+   "rateText": "10,000 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Large_water_container"
   },
   {
@@ -18421,8 +18421,8 @@
    "timeSourceId": null,
    "itemId": 12016,
    "name": "Prospector boots",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.08095238095238096,
+   "rateText": "21,000 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospector_boots"
   },
   {
@@ -18431,8 +18431,8 @@
    "timeSourceId": null,
    "itemId": 12013,
    "name": "Prospector helmet",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.06538461538461539,
+   "rateText": "26,000 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospector_helmet"
   },
   {
@@ -18441,8 +18441,8 @@
    "timeSourceId": null,
    "itemId": 12014,
    "name": "Prospector jacket",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.04358974358974359,
+   "rateText": "39,000 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospector_jacket"
   },
   {
@@ -18451,8 +18451,8 @@
    "timeSourceId": null,
    "itemId": 12015,
    "name": "Prospector legs",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.05,
+   "rateText": "34,000 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospector_legs"
   },
   {
@@ -18461,8 +18461,8 @@
    "timeSourceId": null,
    "itemId": 21541,
    "name": "Volcanic mine teleport",
-   "rate": null,
-   "rateText": "?",
+   "rate": 1.0,
+   "rateText": "200 points",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Volcanic_mine_teleport"
   },
   {
@@ -18651,8 +18651,8 @@
    "timeSourceId": null,
    "itemId": 30803,
    "name": "Dossier",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.08333333333333333,
+   "rateText": "~1/12 per kill",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dossier"
   },
   {
@@ -18661,8 +18661,8 @@
    "timeSourceId": null,
    "itemId": 30763,
    "name": "Forgotten lockbox",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.030303030303030304,
+   "rateText": "~1/33 per kill",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Forgotten_lockbox"
   },
   {
@@ -18771,8 +18771,8 @@
    "timeSourceId": null,
    "itemId": 23908,
    "name": "Zalcano shard",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.001,
+   "rateText": "1/750–1/1,500 per kill by contribution",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Zalcano_shard"
   },
   {
