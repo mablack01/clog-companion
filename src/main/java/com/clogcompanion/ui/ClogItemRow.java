@@ -60,6 +60,8 @@ class ClogItemRow extends JPanel
 		right.add(tierLabel);
 		add(right, BorderLayout.EAST);
 
+		setMaximumSize(new Dimension(Integer.MAX_VALUE, getPreferredSize().height));
+
 		String notes = slot.getSource().getNotes();
 		setToolTipText(notes == null || notes.isEmpty() ? "Open wiki page" : notes + " — click for the wiki page");
 		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));

@@ -51,7 +51,7 @@ public class ClogPanel extends PluginPanel
 
 	public ClogPanel(ItemManager itemManager, ClogFilter filter, Runnable onFilterPersist)
 	{
-		super(false);
+		super();
 		this.itemManager = itemManager;
 		this.filter = filter;
 		this.onFilterPersist = onFilterPersist;

@@ -1,6 +1,7 @@
 package com.clogcompanion;
 
 import com.clogcompanion.account.AccountStateReader;
+import com.clogcompanion.account.ObtainedTracker;
 import com.clogcompanion.data.ClogDataset;
 import com.clogcompanion.engine.ClogFilter;
 import com.clogcompanion.engine.DifficultyEngine;
@@ -11,15 +12,21 @@ import com.clogcompanion.ui.ClogPanel;
 import com.google.gson.Gson;
 import com.google.inject.Provides;
 import java.awt.image.BufferedImage;
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
 import javax.swing.SwingUtilities;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import net.runelite.api.ChatMessageType;
 import net.runelite.api.Client;
 import net.runelite.api.GameState;
+import net.runelite.api.Item;
+import net.runelite.api.events.ChatMessage;
 import net.runelite.api.events.GameStateChanged;
+import net.runelite.api.events.ItemContainerChanged;
+import net.runelite.api.events.ScriptPreFired;
+import net.runelite.api.gameval.InventoryID;
 import net.runelite.client.callback.ClientThread;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
@@ -30,6 +37,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.util.ImageUtil;
+import net.runelite.client.util.Text;
 
 @Slf4j
 @PluginDescriptor(
@@ -39,6 +47,9 @@ import net.runelite.client.util.ImageUtil;
 )
 public class ClogCompanionPlugin extends Plugin
 {
+	/** Runs once per obtained item when the game populates the collection log. */
+	private static final int COLLECTION_ITEM_SCRIPT = 4100;
+
 	@Inject
 	private ClogCompanionConfig config;
 	@Inject
@@ -57,6 +68,7 @@ public class ClogCompanionPlugin extends Plugin
 	@Getter
 	private ClogDataset dataset;
 	private ClogFilter filter;
+	private ObtainedTracker obtained;
 	private ClogPanel panel;
 	private NavigationButton navButton;
 
@@ -65,6 +77,7 @@ public class ClogCompanionPlugin extends Plugin
 	{
 		dataset = ClogDataset.load(gson);
 		log.debug("Clog Companion loaded {} slots across {} entries", dataset.getItems().size(), dataset.getSources().size());
+		obtained = new ObtainedTracker(dataset, configManager, gson);
 		filter = new ClogFilter();
 		filter.setHideObtained(config.hideObtained());
 		filter.setOnlyMeetsRequirements(config.onlyMeetsRequirements());
@@ -92,7 +105,58 @@ public class ClogCompanionPlugin extends Plugin
 	@Subscribe
 	public void onGameStateChanged(GameStateChanged event)
 	{
-		if (event.getGameState() == GameState.LOGGED_IN || event.getGameState() == GameState.LOGIN_SCREEN)
+		if (event.getGameState() == GameState.LOGGED_IN)
+		{
+			obtained.load();
+			refresh();
+		}
+		else if (event.getGameState() == GameState.LOGIN_SCREEN)
+		{
+			obtained.clear();
+			refresh();
+		}
+	}
+
+	/** The game transmits every obtained item as one container when the collection log is opened. */
+	@Subscribe
+	public void onItemContainerChanged(ItemContainerChanged event)
+	{
+		if (event.getContainerId() != InventoryID.COLLECTION_TRANSMIT)
+		{
+			return;
+		}
+		List<Integer> ids = new ArrayList<>();
+		for (Item item : event.getItemContainer().getItems())
+		{
+			if (item.getId() > 0)
+			{
+				ids.add(item.getId());
+			}
+		}
+		log.debug("Collection log transmit: {} items", ids.size());
+		obtained.markAll(ids);
+		refresh();
+	}
+
+	@Subscribe
+	public void onScriptPreFired(ScriptPreFired event)
+	{
+		if (event.getScriptId() != COLLECTION_ITEM_SCRIPT)
+		{
+			return;
+		}
+		Object[] args = event.getScriptEvent().getArguments();
+		if (args.length > 1 && args[1] instanceof Integer && obtained.markItemId((Integer) args[1]))
+		{
+			log.debug("Collection log script marked item {}", args[1]);
+			refresh();
+		}
+	}
+
+	@Subscribe
+	public void onChatMessage(ChatMessage event)
+	{
+		if (event.getType() == ChatMessageType.GAMEMESSAGE && obtained.onChatMessage(Text.removeTags(event.getMessage())))
 		{
 			refresh();
 		}
@@ -122,8 +186,9 @@ public class ClogCompanionPlugin extends Plugin
 		{
 			boolean loggedIn = client.getGameState() == GameState.LOGGED_IN;
 			AccountState state = loggedIn ? AccountStateReader.read(client) : AccountState.empty();
-			List<RatedSlot> rated = new SlotRater(dataset, engine()).rateAll(state, Collections.emptySet());
-			String status = loggedIn ? "Requirements checked against this account" : "Log in to check requirements";
+			List<RatedSlot> rated = new SlotRater(dataset, engine()).rateAll(state, obtained.obtainedSlotIds());
+			String status = !loggedIn ? "Log in to check requirements"
+				: obtained.isSynced() ? "Synced with this account's log" : "Open your Collection Log once to sync";
 			SwingUtilities.invokeLater(() ->
 			{
 				if (panel != null)

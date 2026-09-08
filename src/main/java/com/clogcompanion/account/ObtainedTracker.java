@@ -1,0 +1,115 @@
+package com.clogcompanion.account;
+
+import com.clogcompanion.data.ClogDataset;
+import com.clogcompanion.model.ClogItem;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import lombok.extern.slf4j.Slf4j;
+import net.runelite.client.config.ConfigManager;
+
+/**
+ * Which slots the current account owns, fed by the game's collection log transmit (whole log,
+ * when the log is opened) and the "New item added" chat line, persisted per RuneScape profile.
+ */
+@Slf4j
+public class ObtainedTracker
+{
+	static final String GROUP = "clog-companion";
+	static final String KEY = "obtainedItemIds";
+	private static final Pattern NEW_ITEM = Pattern.compile("New item added to your collection log: (.+)");
+
+	private final ClogDataset dataset;
+	private final ConfigManager configManager;
+	private final Gson gson;
+	private final Set<Integer> itemIds = new HashSet<>();
+	private boolean synced;
+
+	public ObtainedTracker(ClogDataset dataset, ConfigManager configManager, Gson gson)
+	{
+		this.dataset = dataset;
+		this.configManager = configManager;
+		this.gson = gson;
+	}
+
+	/** True once the whole log has been read at least once for this profile. */
+	public boolean isSynced()
+	{
+		return synced;
+	}
+
+	public Set<String> obtainedSlotIds()
+	{
+		return dataset.getItems().stream().filter(i -> itemIds.contains(i.getItemId())).map(ClogItem::getId).collect(Collectors.toSet());
+	}
+
+	/** Whole-log read: every item id the game reports as obtained. */
+	public void markAll(Collection<Integer> ids)
+	{
+		itemIds.addAll(ids);
+		synced = true;
+		save();
+	}
+
+	public boolean markItemId(int id)
+	{
+		boolean changed = itemIds.add(id);
+		if (changed)
+		{
+			save();
+		}
+		return changed;
+	}
+
+	/** Handles the "New item added to your collection log: X" game message; returns true if it matched. */
+	public boolean onChatMessage(String message)
+	{
+		Matcher m = NEW_ITEM.matcher(message);
+		if (!m.find())
+		{
+			return false;
+		}
+		for (ClogItem item : dataset.byName(m.group(1).trim()))
+		{
+			itemIds.add(item.getItemId());
+		}
+		save();
+		return true;
+	}
+
+	public void load()
+	{
+		itemIds.clear();
+		Set<Integer> saved = configManager.getRSProfileConfiguration(GROUP, KEY, new TypeToken<Set<Integer>>()
+		{
+		}.getType());
+		if (saved != null)
+		{
+			itemIds.addAll(saved);
+		}
+		synced = !itemIds.isEmpty();
+		log.debug("Loaded {} obtained item ids", itemIds.size());
+	}
+
+	public void clear()
+	{
+		itemIds.clear();
+		synced = false;
+	}
+
+	private void save()
+	{
+		configManager.setRSProfileConfiguration(GROUP, KEY, gson.toJson(itemIds));
+	}
+
+	Set<Integer> itemIds()
+	{
+		return Collections.unmodifiableSet(itemIds);
+	}
+}
