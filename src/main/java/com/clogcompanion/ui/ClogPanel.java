@@ -2,15 +2,18 @@ package com.clogcompanion.ui;
 
 import com.clogcompanion.engine.ClogFilter;
 import com.clogcompanion.engine.ClogSorter;
+import com.clogcompanion.engine.DifficultyEngine;
 import com.clogcompanion.engine.RatedSlot;
 import com.clogcompanion.model.Category;
 import com.clogcompanion.model.Tier;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Insets;
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -24,6 +27,7 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JToggleButton;
+import javax.swing.SwingUtilities;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import net.runelite.client.game.ItemManager;
@@ -44,17 +48,25 @@ public class ClogPanel extends PluginPanel
 	private final JLabel count = new JLabel();
 	private final JPanel list = new JPanel();
 	private final JButton more = new JButton("Show 50 more");
+	private final JButton roll = new JButton("Roll");
+	private RollDialog dialog;
 	private final JComboBox<ClogSorter> sort = new JComboBox<>(ClogSorter.values());
 	private List<RatedSlot> slots = Collections.emptyList();
 	private List<RatedSlot> visible = Collections.emptyList();
 	private int shown;
 
-	public ClogPanel(ItemManager itemManager, ClogFilter filter, Runnable onFilterPersist)
+	private final JPanel pinned = new JPanel(new BorderLayout(6, 0));
+	private final Consumer<RatedSlot> onPin;
+	private final Runnable onUnpin;
+
+	public ClogPanel(ItemManager itemManager, ClogFilter filter, Runnable onFilterPersist, Consumer<RatedSlot> onPin, Runnable onUnpin)
 	{
 		super(false);
 		this.itemManager = itemManager;
 		this.filter = filter;
 		this.onFilterPersist = onFilterPersist;
+		this.onPin = onPin;
+		this.onUnpin = onUnpin;
 		setLayout(new BorderLayout());
 		setBackground(ColorScheme.DARK_GRAY_COLOR);
 
@@ -70,6 +82,11 @@ public class ClogPanel extends PluginPanel
 		status.setFont(FontManager.getRunescapeSmallFont());
 		status.setForeground(ColorScheme.LIGHT_GRAY_COLOR);
 		top.add(status);
+		pinned.setBackground(ColorScheme.DARKER_GRAY_COLOR);
+		pinned.setBorder(BorderFactory.createEmptyBorder(4, 6, 4, 6));
+		pinned.setVisible(false);
+		top.add(Box.createVerticalStrut(4));
+		top.add(pinned);
 		top.add(Box.createVerticalStrut(6));
 
 		JPanel tiers = new JPanel(new GridLayout(1, 0, 2, 0));
@@ -173,7 +190,18 @@ public class ClogPanel extends PluginPanel
 		top.add(Box.createVerticalStrut(4));
 		count.setFont(FontManager.getRunescapeSmallFont());
 		count.setForeground(ColorScheme.LIGHT_GRAY_COLOR);
-		top.add(count);
+		JPanel countRow = new JPanel(new BorderLayout());
+		countRow.setOpaque(false);
+		countRow.add(count, BorderLayout.WEST);
+		roll.setFocusPainted(false);
+		roll.addActionListener(e ->
+		{
+			closeRoll();
+			dialog = new RollDialog(SwingUtilities.getWindowAncestor(this), itemManager, visible, onPin);
+			dialog.setVisible(true);
+		});
+		countRow.add(roll, BorderLayout.EAST);
+		top.add(countRow);
 		add(top, BorderLayout.NORTH);
 
 		list.setLayout(new BoxLayout(list, BoxLayout.Y_AXIS));
@@ -209,6 +237,45 @@ public class ClogPanel extends PluginPanel
 		status.setText(text);
 	}
 
+	public void closeRoll()
+	{
+		if (dialog != null)
+		{
+			dialog.dispose();
+			dialog = null;
+		}
+	}
+
+	/** Shows the pinned target above the filters; null hides the strip. */
+	public void setPinned(RatedSlot slot)
+	{
+		pinned.removeAll();
+		pinned.setVisible(slot != null);
+		if (slot != null)
+		{
+			pinned.add(ClogItemRow.iconLabel(itemManager, slot, 36, 32), BorderLayout.WEST);
+			JPanel text = new JPanel(new GridLayout(0, 1));
+			text.setOpaque(false);
+			JLabel name = new JLabel((slot.isObtained() ? "Done! " : "Going for: ") + slot.getItem().getName());
+			name.setFont(FontManager.getRunescapeBoldFont());
+			name.setForeground(slot.isObtained() ? ColorScheme.PROGRESS_COMPLETE_COLOR : ColorScheme.BRAND_ORANGE);
+			JLabel where = new JLabel(slot.getSource().getName() + "  ·  " + DifficultyEngine.formatMinutes(slot.getMinutes()));
+			where.setFont(FontManager.getRunescapeSmallFont());
+			where.setForeground(ColorScheme.LIGHT_GRAY_COLOR);
+			text.add(name);
+			text.add(where);
+			pinned.add(text, BorderLayout.CENTER);
+			JButton unpin = new JButton("×");
+			unpin.setToolTipText("Unpin");
+			unpin.setFocusPainted(false);
+			unpin.setMargin(new Insets(0, 4, 0, 4));
+			unpin.addActionListener(e -> onUnpin.run());
+			pinned.add(unpin, BorderLayout.EAST);
+		}
+		pinned.revalidate();
+		pinned.repaint();
+	}
+
 	private void persistAndApply()
 	{
 		onFilterPersist.run();
@@ -231,6 +298,8 @@ public class ClogPanel extends PluginPanel
 	{
 		list.removeAll();
 		count.setText(visible.size() + " of " + slots.size() + " slots");
+		roll.setEnabled(!visible.isEmpty());
+		roll.setToolTipText(visible.isEmpty() ? "Nothing matches your filters" : "Pick a random slot from the list below");
 		for (RatedSlot slot : visible.subList(0, Math.min(shown, visible.size())))
 		{
 			list.add(new ClogItemRow(slot, itemManager));

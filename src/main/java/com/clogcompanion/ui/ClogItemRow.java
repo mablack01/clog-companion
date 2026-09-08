@@ -31,13 +31,7 @@ class ClogItemRow extends JPanel
 		setBackground(ColorScheme.DARKER_GRAY_COLOR);
 		setBorder(BorderFactory.createEmptyBorder(4, 6, 4, 6));
 
-		JLabel icon = new JLabel();
-		icon.setPreferredSize(new Dimension(36, 32));
-		if (slot.getItem().getItemId() > 0)
-		{
-			itemManager.getImage(slot.getItem().getItemId()).addTo(icon);
-		}
-		add(icon, BorderLayout.WEST);
+		add(iconLabel(itemManager, slot, 36, 32), BorderLayout.WEST);
 
 		JPanel text = new JPanel(new GridLayout(0, 1));
 		text.setOpaque(false);
@@ -51,8 +45,7 @@ class ClogItemRow extends JPanel
 
 		JPanel right = new JPanel(new GridLayout(0, 1));
 		right.setOpaque(false);
-		String time = slot.getMinutes().isPresent() ? DifficultyEngine.formatMinutes(slot.getMinutes().getAsDouble()) : "?";
-		JLabel timeLabel = label(time, ColorScheme.TEXT_COLOR, FontManager.getRunescapeFont());
+		JLabel timeLabel = label(DifficultyEngine.formatMinutes(slot.getMinutes()), ColorScheme.TEXT_COLOR, FontManager.getRunescapeFont());
 		timeLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		JLabel tierLabel = label(slot.getTier().name(), tierColor(slot.getTier()), FontManager.getRunescapeSmallFont());
 		tierLabel.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -96,6 +89,18 @@ class ClogItemRow extends JPanel
 		l.setForeground(color);
 		l.setFont(font);
 		return l;
+	}
+
+	static JLabel iconLabel(ItemManager itemManager, RatedSlot slot, int width, int height)
+	{
+		JLabel icon = new JLabel();
+		icon.setPreferredSize(new Dimension(width, height));
+		icon.setHorizontalAlignment(SwingConstants.CENTER);
+		if (slot.getItem().getItemId() > 0)
+		{
+			itemManager.getImage(slot.getItem().getItemId()).addTo(icon);
+		}
+		return icon;
 	}
 
 	static Color tierColor(Tier tier)

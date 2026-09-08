@@ -53,6 +53,8 @@ public class ClogCompanionPlugin extends Plugin
 {
 	/** Clientscript the game runs once per owned item while populating the collection log interface. */
 	private static final int COLLECTION_ITEM_SCRIPT = 4100;
+	/** Pinned target, stored per RuneScape profile like the owned set. */
+	private static final String PINNED_KEY = "pinnedSlot";
 	/** Config keys that change ratings; other keys in the group are UI state or our own persistence. */
 	private static final Set<String> RATING_KEYS = new HashSet<>(Arrays.asList(
 		"estimateMode", "easyMaxMinutes", "mediumMaxMinutes", "longMaxMinutes"));
@@ -89,7 +91,7 @@ public class ClogCompanionPlugin extends Plugin
 		filter = new ClogFilter();
 		filter.setHideObtained(config.hideObtained());
 		filter.setOnlyMeetsRequirements(config.onlyMeetsRequirements());
-		panel = new ClogPanel(itemManager, filter, this::persistFilter);
+		panel = new ClogPanel(itemManager, filter, this::persistFilter, this::pin, () -> pin(null));
 		BufferedImage icon = ImageUtil.loadImageResource(getClass(), "icon.png");
 		navButton = NavigationButton.builder()
 			.tooltip("Clog Companion")
@@ -110,6 +112,7 @@ public class ClogCompanionPlugin extends Plugin
 	{
 		clientToolbar.removeNavigation(navButton);
 		navButton = null;
+		panel.closeRoll();
 		panel = null;
 		filter = null;
 		obtained = null;
@@ -224,15 +227,31 @@ public class ClogCompanionPlugin extends Plugin
 			List<RatedSlot> rated = new SlotRater(data, engine()).rateAll(state, owned.obtainedSlotIds());
 			String status = !loggedIn ? "Log in to check requirements"
 				: owned.isSynced() ? "Synced with this account's log" : "Open your Collection Log once to sync";
+			String pinnedId = configManager.getRSProfileConfiguration(ClogCompanionConfig.GROUP, PINNED_KEY);
+			RatedSlot pinnedSlot = rated.stream().filter(r -> r.getItem().getId().equals(pinnedId)).findFirst().orElse(null);
 			SwingUtilities.invokeLater(() ->
 			{
 				if (panel != null)
 				{
 					panel.setStatus(status);
+					panel.setPinned(pinnedSlot);
 					panel.setSlots(rated);
 				}
 			});
 		});
+	}
+
+	private void pin(RatedSlot slot)
+	{
+		if (slot == null)
+		{
+			configManager.unsetRSProfileConfiguration(ClogCompanionConfig.GROUP, PINNED_KEY);
+		}
+		else
+		{
+			configManager.setRSProfileConfiguration(ClogCompanionConfig.GROUP, PINNED_KEY, slot.getItem().getId());
+		}
+		refresh();
 	}
 
 	private void persistFilter()
