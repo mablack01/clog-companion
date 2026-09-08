@@ -6,5 +6,6 @@ build
 .classpath
 nbactions.xml
 nb-configuration.xml
-nbproject/docs/superpowers/
+nbproject/
+docs/superpowers/
 tools/
