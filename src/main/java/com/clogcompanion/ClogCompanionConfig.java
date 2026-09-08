@@ -61,4 +61,16 @@ public interface ClogCompanionConfig extends Config
 	{
 		return 1500;
 	}
+
+	@ConfigItem(keyName = "hideObtained", name = "", description = "", hidden = true)
+	default boolean hideObtained()
+	{
+		return true;
+	}
+
+	@ConfigItem(keyName = "onlyMeetsRequirements", name = "", description = "", hidden = true)
+	default boolean onlyMeetsRequirements()
+	{
+		return false;
+	}
 }
