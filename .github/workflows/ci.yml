@@ -20,4 +20,4 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - run: ./gradlew build --no-daemon
       - name: Plugin Hub review-budget gate
-        run: python3 tools/token-budget.py --ceiling "$(tr -dc '0-9' < .github/token-ceiling)"
+        run: python3 .github/token-budget.py --ceiling "$(tr -dc '0-9' < .github/token-ceiling)"

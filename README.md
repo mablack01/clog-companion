@@ -22,20 +22,15 @@ kill, the minigame round, or acquiring *and* solving the clue. Tier thresholds d
 
 | File | Origin |
 |---|---|
-| `src/main/resources/com/clogcompanion/clog-items.json` | Generated from the OSRS Wiki by `tools/generate_clog_data.py`. Do not hand-edit. |
+| `src/main/resources/com/clogcompanion/clog-items.json` | Generated from the OSRS Wiki (entry structure + each item's drop sources). Do not hand-edit. |
 | `src/main/resources/com/clogcompanion/clog-sources.json` | Hand-curated: per-attempt time, setup time, and requirements for every log entry. |
-| `tools/rate_overrides.json` | Rates the wiki's drop tables don't express (minigame rewards, clue uniques). |
-| `tools/entry_pages.json` | Log entry → wiki page, where the names differ. |
-
-Regenerate with `python3 tools/generate_clog_data.py` (stdlib only; responses are cached in
-`tools/.cache/`). The script prints any entry missing from `clog-sources.json`.
 
 ## Development
 
 ```bash
 ./gradlew test            # unit tests, including a data-integrity check
 ./gradlew run             # launch a RuneLite dev client with the plugin loaded
-python3 tools/token-budget.py   # Plugin Hub review-budget estimate (src/main/java only)
+python3 .github/token-budget.py   # Plugin Hub review-budget estimate (src/main/java only)
 ```
 
 Data and tests are free for the Plugin Hub's review budget; only `src/main/java` counts, so
