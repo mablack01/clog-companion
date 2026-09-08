@@ -69,7 +69,7 @@ public class ClogCompanionPlugin extends Plugin
 		filter.setHideObtained(config.hideObtained());
 		filter.setOnlyMeetsRequirements(config.onlyMeetsRequirements());
 		panel = new ClogPanel(itemManager, filter, this::persistFilter);
-		BufferedImage icon = ImageUtil.loadImageResource(getClass(), "/icon.png");
+		BufferedImage icon = ImageUtil.loadImageResource(getClass(), "icon.png");
 		navButton = NavigationButton.builder()
 			.tooltip("Clog Companion")
 			.icon(ImageUtil.resizeImage(icon, 16, 16))
