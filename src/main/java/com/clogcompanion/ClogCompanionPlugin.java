@@ -89,7 +89,7 @@ public class ClogCompanionPlugin extends Plugin
 		filter = new ClogFilter();
 		filter.setHideObtained(config.hideObtained());
 		filter.setOnlyMeetsRequirements(config.onlyMeetsRequirements());
-		panel = new ClogPanel(itemManager, filter, this::persistFilter);
+		panel = new ClogPanel(itemManager, filter, this::persistFilter, this::pin, () -> pin(null));
 		BufferedImage icon = ImageUtil.loadImageResource(getClass(), "icon.png");
 		navButton = NavigationButton.builder()
 			.tooltip("Clog Companion")
@@ -224,15 +224,24 @@ public class ClogCompanionPlugin extends Plugin
 			List<RatedSlot> rated = new SlotRater(data, engine()).rateAll(state, owned.obtainedSlotIds());
 			String status = !loggedIn ? "Log in to check requirements"
 				: owned.isSynced() ? "Synced with this account's log" : "Open your Collection Log once to sync";
+			String pinnedId = config.pinnedSlot();
+			RatedSlot pinnedSlot = rated.stream().filter(r -> r.getItem().getId().equals(pinnedId)).findFirst().orElse(null);
 			SwingUtilities.invokeLater(() ->
 			{
 				if (panel != null)
 				{
 					panel.setStatus(status);
+					panel.setPinned(pinnedSlot);
 					panel.setSlots(rated);
 				}
 			});
 		});
+	}
+
+	private void pin(RatedSlot slot)
+	{
+		configManager.setConfiguration(ClogCompanionConfig.GROUP, "pinnedSlot", slot == null ? "" : slot.getItem().getId());
+		refresh();
 	}
 
 	private void persistFilter()
