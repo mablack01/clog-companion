@@ -15551,68 +15551,68 @@
   {
    "id": "scroll_cases:major_beginner_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "beginner_treasure_trails",
    "itemId": 30904,
    "name": "Major beginner scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.01,
+   "rateText": "100 beginner clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Major_beginner_scroll_case",
-   "challenge": null
+   "challenge": 1
   },
   {
    "id": "scroll_cases:major_easy_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "easy_treasure_trails",
    "itemId": 30908,
    "name": "Major easy scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.005,
+   "rateText": "200 easy clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Major_easy_scroll_case",
-   "challenge": null
+   "challenge": 1
   },
   {
    "id": "scroll_cases:major_elite_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "elite_treasure_trails",
    "itemId": 30920,
    "name": "Major elite scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.006666666666666667,
+   "rateText": "150 elite clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Major_elite_scroll_case",
-   "challenge": null
+   "challenge": 3
   },
   {
    "id": "scroll_cases:major_hard_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "hard_treasure_trails",
    "itemId": 30916,
    "name": "Major hard scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.006666666666666667,
+   "rateText": "150 hard clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Major_hard_scroll_case",
-   "challenge": null
+   "challenge": 2
   },
   {
    "id": "scroll_cases:major_master_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "master_treasure_trails",
    "itemId": 30924,
    "name": "Major master scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.013333333333333334,
+   "rateText": "75 master clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Major_master_scroll_case",
-   "challenge": null
+   "challenge": 4
   },
   {
    "id": "scroll_cases:major_medium_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "medium_treasure_trails",
    "itemId": 30912,
    "name": "Major medium scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.004,
+   "rateText": "250 medium clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Major_medium_scroll_case",
-   "challenge": null
+   "challenge": 2
   },
   {
    "id": "scroll_cases:mimic_scroll_case",
@@ -15628,68 +15628,68 @@
   {
    "id": "scroll_cases:minor_beginner_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "beginner_treasure_trails",
    "itemId": 30902,
    "name": "Minor beginner scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.02,
+   "rateText": "50 beginner clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Minor_beginner_scroll_case",
-   "challenge": null
+   "challenge": 1
   },
   {
    "id": "scroll_cases:minor_easy_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "easy_treasure_trails",
    "itemId": 30906,
    "name": "Minor easy scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.01,
+   "rateText": "100 easy clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Minor_easy_scroll_case",
-   "challenge": null
+   "challenge": 1
   },
   {
    "id": "scroll_cases:minor_elite_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "elite_treasure_trails",
    "itemId": 30918,
    "name": "Minor elite scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.02,
+   "rateText": "50 elite clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Minor_elite_scroll_case",
-   "challenge": null
+   "challenge": 3
   },
   {
    "id": "scroll_cases:minor_hard_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "hard_treasure_trails",
    "itemId": 30914,
    "name": "Minor hard scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.02,
+   "rateText": "50 hard clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Minor_hard_scroll_case",
-   "challenge": null
+   "challenge": 2
   },
   {
    "id": "scroll_cases:minor_master_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "master_treasure_trails",
    "itemId": 30922,
    "name": "Minor master scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.04,
+   "rateText": "25 master clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Minor_master_scroll_case",
-   "challenge": null
+   "challenge": 4
   },
   {
    "id": "scroll_cases:minor_medium_scroll_case",
    "sourceId": "scroll_cases",
-   "timeSourceId": null,
+   "timeSourceId": "medium_treasure_trails",
    "itemId": 30910,
    "name": "Minor medium scroll case",
-   "rate": 1.0,
-   "rateText": "Always",
+   "rate": 0.01,
+   "rateText": "100 medium clues completed",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Minor_medium_scroll_case",
-   "challenge": null
+   "challenge": 2
   },
   {
    "id": "scurrius:scurrius_spine",
