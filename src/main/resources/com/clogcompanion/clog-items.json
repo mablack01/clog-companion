@@ -6378,7 +6378,7 @@
   {
    "id": "forestry:lumberjack_boots",
    "sourceId": "forestry",
-   "timeSourceId": "temple_trekking",
+   "timeSourceId": null,
    "itemId": 10933,
    "name": "Lumberjack boots",
    "rate": 0.25,
@@ -6388,7 +6388,7 @@
   {
    "id": "forestry:lumberjack_hat",
    "sourceId": "forestry",
-   "timeSourceId": "temple_trekking",
+   "timeSourceId": null,
    "itemId": 10941,
    "name": "Lumberjack hat",
    "rate": 0.25,
@@ -6398,7 +6398,7 @@
   {
    "id": "forestry:lumberjack_legs",
    "sourceId": "forestry",
-   "timeSourceId": "temple_trekking",
+   "timeSourceId": null,
    "itemId": 10940,
    "name": "Lumberjack legs",
    "rate": 0.25,
@@ -6408,7 +6408,7 @@
   {
    "id": "forestry:lumberjack_top",
    "sourceId": "forestry",
-   "timeSourceId": "temple_trekking",
+   "timeSourceId": null,
    "itemId": 10939,
    "name": "Lumberjack top",
    "rate": 0.25,
@@ -12271,8 +12271,8 @@
    "timeSourceId": null,
    "itemId": 11335,
    "name": "Dragon full helm",
-   "rate": 0.00390625,
-   "rateText": "1/256",
+   "rate": 3.0517578125e-05,
+   "rateText": "1/32,768",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_full_helm"
   },
   {
@@ -12311,8 +12311,8 @@
    "timeSourceId": null,
    "itemId": 1249,
    "name": "Dragon spear",
-   "rate": 0.022222222222222223,
-   "rateText": "1/45",
+   "rate": 0.001953125,
+   "rateText": "1/512",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_spear"
   },
   {
@@ -12681,8 +12681,8 @@
    "timeSourceId": null,
    "itemId": 2366,
    "name": "Shield left half",
-   "rate": 0.022222222222222223,
-   "rateText": "1/45",
+   "rate": 0.01,
+   "rateText": "1/100",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Shield_left_half"
   },
   {
@@ -13621,8 +13621,8 @@
    "timeSourceId": null,
    "itemId": 22302,
    "name": "Ancient effigy",
-   "rate": 0.004,
-   "rateText": "1/250",
+   "rate": 0.000125,
+   "rateText": "1/8,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_effigy"
   },
   {
@@ -13631,8 +13631,8 @@
    "timeSourceId": null,
    "itemId": 21807,
    "name": "Ancient emblem",
-   "rate": 0.04,
-   "rateText": "1/25",
+   "rate": 0.0007500018750046876,
+   "rateText": "1/1,333",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_emblem"
   },
   {
@@ -13641,8 +13641,8 @@
    "timeSourceId": null,
    "itemId": 22299,
    "name": "Ancient medallion",
-   "rate": 0.009,
-   "rateText": "1/111",
+   "rate": 0.000125,
+   "rateText": "1/8,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_medallion"
   },
   {
@@ -13651,8 +13651,8 @@
    "timeSourceId": null,
    "itemId": 22305,
    "name": "Ancient relic",
-   "rate": 0.002,
-   "rateText": "1/500",
+   "rate": 0.000125,
+   "rateText": "1/8,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_relic"
   },
   {
@@ -13661,8 +13661,8 @@
    "timeSourceId": null,
    "itemId": 21813,
    "name": "Ancient statuette",
-   "rate": 0.015,
-   "rateText": "1/67",
+   "rate": 0.00025,
+   "rateText": "1/4,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_statuette"
   },
   {
@@ -13671,8 +13671,8 @@
    "timeSourceId": null,
    "itemId": 21810,
    "name": "Ancient totem",
-   "rate": 0.03,
-   "rateText": "1/33",
+   "rate": 0.0005,
+   "rateText": "1/2,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Ancient_totem"
   },
   {
@@ -15488,21 +15488,21 @@
   {
    "id": "slayer:abyssal_head",
    "sourceId": "slayer",
-   "timeSourceId": "abyssal_sire",
+   "timeSourceId": null,
    "itemId": 7979,
    "name": "Abyssal head",
-   "rate": 0.000390625,
-   "rateText": "1/2,560",
+   "rate": 0.00016666666666666666,
+   "rateText": "1/6,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Abyssal_head"
   },
   {
    "id": "slayer:abyssal_whip",
    "sourceId": "slayer",
-   "timeSourceId": "abyssal_sire",
+   "timeSourceId": null,
    "itemId": 4151,
    "name": "Abyssal whip",
-   "rate": 0.0009375,
-   "rateText": "1/1,067",
+   "rate": 0.005859375,
+   "rateText": "1/171",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Abyssal_whip"
   },
   {
@@ -15768,7 +15768,7 @@
   {
    "id": "slayer:draconic_visage",
    "sourceId": "slayer",
-   "timeSourceId": "king_black_dragon",
+   "timeSourceId": null,
    "itemId": 11286,
    "name": "Draconic visage",
    "rate": 0.0002,
@@ -15788,7 +15788,7 @@
   {
    "id": "slayer:dragon_chainbody",
    "sourceId": "slayer",
-   "timeSourceId": "kalphite_queen",
+   "timeSourceId": null,
    "itemId": 3140,
    "name": "Dragon chainbody",
    "rate": 0.0078125,
@@ -15798,21 +15798,21 @@
   {
    "id": "slayer:dragon_harpoon",
    "sourceId": "slayer",
-   "timeSourceId": "tempoross",
+   "timeSourceId": null,
    "itemId": 21028,
    "name": "Dragon harpoon",
-   "rate": 0.000125,
-   "rateText": "1/8,000",
+   "rate": 0.0005,
+   "rateText": "1/2,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_harpoon"
   },
   {
    "id": "slayer:dragon_knife",
    "sourceId": "slayer",
-   "timeSourceId": "alchemical_hydra",
+   "timeSourceId": null,
    "itemId": 22804,
    "name": "Dragon knife",
-   "rate": 0.0004997501249375312,
-   "rateText": "1/2,001",
+   "rate": 0.0015,
+   "rateText": "1/667",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_knife"
   },
   {
@@ -15838,11 +15838,11 @@
   {
    "id": "slayer:dragon_thrownaxe",
    "sourceId": "slayer",
-   "timeSourceId": "alchemical_hydra",
+   "timeSourceId": null,
    "itemId": 20849,
    "name": "Dragon thrownaxe",
-   "rate": 0.0005,
-   "rateText": "1/2,000",
+   "rate": 0.0015,
+   "rateText": "1/667",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_thrownaxe"
   },
   {
@@ -15928,7 +15928,7 @@
   {
    "id": "slayer:frozen_tear",
    "sourceId": "slayer",
-   "timeSourceId": "amoxliatl",
+   "timeSourceId": null,
    "itemId": 29895,
    "name": "Frozen tear",
    "rate": 0.6,
@@ -15938,7 +15938,7 @@
   {
    "id": "slayer:glacial_temotli",
    "sourceId": "slayer",
-   "timeSourceId": "amoxliatl",
+   "timeSourceId": null,
    "itemId": 29889,
    "name": "Glacial temotli",
    "rate": 0.01,
@@ -15961,8 +15961,8 @@
    "timeSourceId": null,
    "itemId": 10589,
    "name": "Granite helm",
-   "rate": 0.03125,
-   "rateText": "1/32",
+   "rate": 0.0078125,
+   "rateText": "1/128",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Granite_helm"
   },
   {
@@ -15998,7 +15998,7 @@
   {
    "id": "slayer:gryphon_feather",
    "sourceId": "slayer",
-   "timeSourceId": "shellbane_gryphon",
+   "timeSourceId": null,
    "itemId": 31235,
    "name": "Gryphon feather",
    "rate": 1.0,
@@ -16018,7 +16018,7 @@
   {
    "id": "slayer:hydra_tail",
    "sourceId": "slayer",
-   "timeSourceId": "alchemical_hydra",
+   "timeSourceId": null,
    "itemId": 22988,
    "name": "Hydra tail",
    "rate": 0.001949317738791423,
@@ -16028,7 +16028,7 @@
   {
    "id": "slayer:hydras_eye",
    "sourceId": "slayer",
-   "timeSourceId": "alchemical_hydra",
+   "timeSourceId": null,
    "itemId": 22973,
    "name": "Hydra's eye",
    "rate": 0.005521811154058531,
@@ -16038,7 +16038,7 @@
   {
    "id": "slayer:hydras_fang",
    "sourceId": "slayer",
-   "timeSourceId": "alchemical_hydra",
+   "timeSourceId": null,
    "itemId": 22971,
    "name": "Hydra's fang",
    "rate": 0.005521811154058531,
@@ -16048,7 +16048,7 @@
   {
    "id": "slayer:hydras_heart",
    "sourceId": "slayer",
-   "timeSourceId": "alchemical_hydra",
+   "timeSourceId": null,
    "itemId": 22969,
    "name": "Hydra's heart",
    "rate": 0.005521811154058531,
@@ -16078,7 +16078,7 @@
   {
    "id": "slayer:kraken_tentacle",
    "sourceId": "slayer",
-   "timeSourceId": "kraken",
+   "timeSourceId": null,
    "itemId": 12004,
    "name": "Kraken tentacle",
    "rate": 0.0025,
@@ -16308,17 +16308,17 @@
   {
    "id": "slayer:occult_necklace",
    "sourceId": "slayer",
-   "timeSourceId": "thermonuclear_smoke_devil",
+   "timeSourceId": null,
    "itemId": 12002,
    "name": "Occult necklace",
-   "rate": 0.002857142857142857,
-   "rateText": "1/350",
+   "rate": 0.005859375,
+   "rateText": "1/171",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Occult_necklace"
   },
   {
    "id": "slayer:pendant_of_ates_inert",
    "sourceId": "slayer",
-   "timeSourceId": "amoxliatl",
+   "timeSourceId": null,
    "itemId": 29892,
    "name": "Pendant of Ates (inert)",
    "rate": 0.04,
@@ -16361,8 +16361,8 @@
    "timeSourceId": null,
    "itemId": 29455,
    "name": "Teleport anchoring scroll",
-   "rate": 0.0036363636363636364,
-   "rateText": "1/275",
+   "rate": 5e-05,
+   "rateText": "1/20,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Teleport_anchoring_scroll"
   },
   {

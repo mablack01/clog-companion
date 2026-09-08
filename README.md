@@ -25,6 +25,9 @@ kill, the minigame round, or acquiring *and* solving the clue. Tier thresholds d
 | `src/main/resources/com/clogcompanion/clog-items.json` | Generated from the OSRS Wiki (entry structure + each item's drop sources). Do not hand-edit. |
 | `src/main/resources/com/clogcompanion/clog-sources.json` | Hand-curated: per-attempt time, setup time, and requirements for every log entry. |
 
+The generator and its mapping files are maintainer tooling and are intentionally not part of
+the repository — only what the client ships is tracked.
+
 ## Development
 
 ```bash

@@ -12,7 +12,7 @@ plausible rate for Java, so main-only at 4.12 is the working model. This script
 reproduced 200,998 against their 200,915 -- a 0.04% error.
 
 Re-calibrate CHARS_PER_TOKEN whenever the bot reports a fresh number:
-    ./tools/token-budget.py --calibrate 200915
+    ./.github/token-budget.py --calibrate 200915
 
 Two counter-intuitive rules this measures the consequences of:
   1. Splitting a file makes the count WORSE -- each new file adds a package
@@ -20,14 +20,15 @@ Two counter-intuitive rules this measures the consequences of:
   2. Comments and tests are free. Never delete either to buy budget.
 
 Usage:
-    ./tools/token-budget.py                          # totals + worst offenders
-    ./tools/token-budget.py --baseline b.json --save # record a baseline
-    ./tools/token-budget.py --baseline b.json        # diff against it
-    ./tools/token-budget.py --ceiling 195000         # exit 1 if over (CI gate)
-    ./tools/token-budget.py --baseline b.json --markdown  # PR-comment table
+    ./.github/token-budget.py                          # totals + worst offenders
+    ./.github/token-budget.py --baseline b.json --save # record a baseline
+    ./.github/token-budget.py --baseline b.json        # diff against it
+    ./.github/token-budget.py --ceiling 195000         # exit 1 if over (CI gate)
+    ./.github/token-budget.py --baseline b.json --markdown  # PR-comment table
 """
 
 import argparse
+from typing import Optional
 import json
 import os
 import re
@@ -106,7 +107,7 @@ def diff(files: dict, baseline: dict) -> None:
         print(f"  {delta:>+9,.0f}  {path} {state}".rstrip())
 
 
-def markdown(files: dict, baseline: dict | None, ceiling: int) -> str:
+def markdown(files: dict, baseline: Optional[dict], ceiling: int) -> str:
     """PR-comment table. Shows what this branch actually bought."""
     now = sum(files.values())
     out = ["<!-- token-budget -->", "### Plugin token budget", ""]

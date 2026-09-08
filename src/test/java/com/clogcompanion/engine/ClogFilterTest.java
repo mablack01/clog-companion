@@ -63,6 +63,14 @@ public class ClogFilterTest
 	}
 
 	@Test
+	public void nullSearchMeansNoFilter()
+	{
+		ClogFilter f = new ClogFilter();
+		f.setSearch(null);
+		assertEquals(3, names(f).size());
+	}
+
+	@Test
 	public void searchMatchesSourceNameToo()
 	{
 		ClogFilter f = new ClogFilter();

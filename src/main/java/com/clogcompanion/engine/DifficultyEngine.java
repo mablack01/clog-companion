@@ -64,7 +64,7 @@ public class DifficultyEngine
 		}
 		if (mode == EstimateMode.LIKELY)
 		{
-			return Math.log(1 - LIKELY_PROBABILITY) / Math.log(1 - rate);
+			return Math.max(1, Math.log(1 - LIKELY_PROBABILITY) / Math.log1p(-rate));
 		}
 		return 1 / rate;
 	}

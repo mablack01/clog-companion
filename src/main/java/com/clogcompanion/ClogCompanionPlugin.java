@@ -43,7 +43,10 @@ public class ClogCompanionPlugin extends Plugin
 
 	public DifficultyEngine engine()
 	{
-		return new DifficultyEngine(config.estimateMode(), config.easyMaxMinutes(), config.mediumMaxMinutes(), config.longMaxMinutes());
+		int easy = config.easyMaxMinutes();
+		int medium = Math.max(easy, config.mediumMaxMinutes());
+		int longMax = Math.max(medium, config.longMaxMinutes());
+		return new DifficultyEngine(config.estimateMode(), easy, medium, longMax);
 	}
 
 	@Provides

@@ -38,6 +38,13 @@ public class DifficultyEngineTest
 	}
 
 	@Test
+	public void likelyModeNeverEstimatesUnderOneAttempt()
+	{
+		// ln(0.5)/ln(0.25) = 0.5 attempts; a drop still costs at least one attempt.
+		assertEquals(40.0, LIKELY.expectedMinutes(item(0.75), source(40.0, 0.0)).getAsDouble(), 1e-9);
+	}
+
+	@Test
 	public void setupIsAddedOnce()
 	{
 		assertEquals(100 + 10, EXPECTED.expectedMinutes(item(1.0), source(10.0, 100.0)).getAsDouble(), 1e-9);

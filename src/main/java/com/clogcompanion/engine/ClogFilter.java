@@ -37,7 +37,7 @@ public class ClogFilter
 		{
 			return false;
 		}
-		String q = search.trim().toLowerCase(Locale.ROOT);
+		String q = search == null ? "" : search.trim().toLowerCase(Locale.ROOT);
 		return q.isEmpty()
 			|| s.getItem().getName().toLowerCase(Locale.ROOT).contains(q)
 			|| s.getSource().getName().toLowerCase(Locale.ROOT).contains(q);

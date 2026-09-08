@@ -55,6 +55,11 @@ public final class RequirementChecker
 			{
 				sb.append(' ');
 			}
+			if (word.matches("[ivx]+"))
+			{
+				sb.append(word.toUpperCase(Locale.ROOT));
+				continue;
+			}
 			sb.append(Character.toUpperCase(word.charAt(0))).append(word, 1, word.length());
 		}
 		return sb.toString();

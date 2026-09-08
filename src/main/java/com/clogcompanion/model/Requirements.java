@@ -7,7 +7,7 @@ import lombok.Value;
 
 /**
  * Skill, quest and diary requirements for a collection log source. Names are the
- * {@code Skill}, {@code Quest} and {@code Varbits.DIARY_*} constant names.
+ * {@code Skill} and {@code Quest} constant names and the {@code DIARY_<REGION>_<TIER>} keys of {@code Diaries}.
  */
 @Value
 public class Requirements

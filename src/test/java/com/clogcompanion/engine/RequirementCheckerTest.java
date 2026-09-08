@@ -49,6 +49,6 @@ public class RequirementCheckerTest
 	@Test
 	public void titleCasesMultiWordConstants()
 	{
-		assertEquals("Desert Treasure Ii", RequirementChecker.titleCase("DESERT_TREASURE_II"));
+		assertEquals("Desert Treasure II The Fallen Empire", RequirementChecker.titleCase("DESERT_TREASURE_II__THE_FALLEN_EMPIRE"));
 	}
 }

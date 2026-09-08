@@ -2,7 +2,6 @@ package com.clogcompanion.data;
 
 import com.clogcompanion.model.ClogItem;
 import com.clogcompanion.model.ClogSource;
-import com.clogcompanion.model.Diaries;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
@@ -109,6 +108,10 @@ public class ClogDataset
 		List<String> problems = new ArrayList<>();
 		for (ClogItem item : items)
 		{
+			if (byId.get(item.getId()) != item)
+			{
+				problems.add(item.getId() + ": duplicate id");
+			}
 			if (!sources.containsKey(item.getSourceId()))
 			{
 				problems.add(item.getId() + ": unknown sourceId " + item.getSourceId());
@@ -120,6 +123,10 @@ public class ClogDataset
 		}
 		for (ClogSource s : sources.values())
 		{
+			if (s.getCategory() == null)
+			{
+				problems.add(s.getId() + ": unknown category");
+			}
 			for (String skill : s.getRequirements().getSkills().keySet())
 			{
 				if (!isEnum(Skill.class, skill))
