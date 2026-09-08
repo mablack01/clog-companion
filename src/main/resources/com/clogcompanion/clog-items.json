@@ -1,7 +1,7 @@
 {
  "_generated": {
   "wikiRevision": 15330455,
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "generator": "tools/generate_clog_data.py"
  },
  "items": [
@@ -328,11 +328,11 @@
   {
    "id": "all_pets:baby_chinchompa",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 13324,
    "name": "Baby chinchompa",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00885,
+   "rateText": "~1/113 per hour (black chinchompas)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Baby_chinchompa"
   },
   {
@@ -358,11 +358,11 @@
   {
    "id": "all_pets:beaver",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 13322,
    "name": "Beaver",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0105,
+   "rateText": "~1/95 per hour (1.5-tick teaks)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Beaver"
   },
   {
@@ -428,21 +428,21 @@
   {
    "id": "all_pets:dom",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "doom_of_mokhaiotl",
    "itemId": 31130,
    "name": "Dom",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "1/500 per delve 8 completion",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dom"
   },
   {
    "id": "all_pets:giant_squirrel",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 20659,
    "name": "Giant Squirrel",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00247,
+   "rateText": "~1/405 per hour (Ardougne rooftops)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Squirrel"
   },
   {
@@ -468,21 +468,21 @@
   {
    "id": "all_pets:herbi",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 21509,
    "name": "Herbi",
-   "rate": 0.00015384615384615385,
-   "rateText": "1/6,500",
+   "rate": 0.0096,
+   "rateText": "1/6,500 per herbiboar (~62/hr)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Herbi"
   },
   {
    "id": "all_pets:heron",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 13320,
    "name": "Heron",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01358,
+   "rateText": "~1/74 per hour (2-tick sharks)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Heron"
   },
   {
@@ -588,11 +588,11 @@
   {
    "id": "all_pets:mr_mcgroot",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 34040,
    "name": "Mr McGroot",
-   "rate": 2.5e-05,
-   "rateText": "1/40,000",
+   "rate": 0.0237,
+   "rateText": "~1/42 per hour (Wyrmscraig goats)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Mr_McGroot"
   },
   {
@@ -808,31 +808,31 @@
   {
    "id": "all_pets:rift_guardian",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 20665,
    "name": "Rift guardian",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00541,
+   "rateText": "~1/185 per hour (lava runes; not GOTR)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rift_guardian"
   },
   {
    "id": "all_pets:rock_golem",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 13321,
    "name": "Rock golem",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00435,
+   "rateText": "~1/230 per hour (Motherlode Mine)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rock_golem"
   },
   {
    "id": "all_pets:rocky",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 20663,
    "name": "Rocky",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01171,
+   "rateText": "~1/85 per hour (Ardougne knights)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rocky"
   },
   {
@@ -888,11 +888,11 @@
   {
    "id": "all_pets:soup",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 31283,
    "name": "Soup",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00256,
+   "rateText": "~1/391 per hour (Aldarin courier tasks)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Soup"
   },
   {
@@ -908,11 +908,11 @@
   {
    "id": "all_pets:tangleroot",
    "sourceId": "all_pets",
-   "timeSourceId": null,
+   "timeSourceId": "skilling_pets",
    "itemId": 20661,
    "name": "Tangleroot",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000125,
+   "rateText": "~1/8,000 per hour (farm runs; growth-gated)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Tangleroot"
   },
   {
@@ -3032,7 +3032,7 @@
    "itemId": 2979,
    "name": "Chompy bird hat (bowman)",
    "rate": 0.025,
-   "rateText": "1/40",
+   "rateText": "40 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28bowman%29"
   },
   {
@@ -3042,7 +3042,7 @@
    "itemId": 2989,
    "name": "Chompy bird hat (bowmaster)",
    "rate": 0.0014285714285714286,
-   "rateText": "1/700",
+   "rateText": "700 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28bowmaster%29"
   },
   {
@@ -3052,7 +3052,7 @@
    "itemId": 2993,
    "name": "Chompy bird hat (dragon archer)",
    "rate": 0.00044444444444444447,
-   "rateText": "1/2,250",
+   "rateText": "2,250 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28dragon_archer%29"
   },
   {
@@ -3062,7 +3062,7 @@
    "itemId": 2991,
    "name": "Chompy bird hat (expert)",
    "rate": 0.0007692307692307692,
-   "rateText": "1/1,300",
+   "rateText": "1,300 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28expert%29"
   },
   {
@@ -3072,7 +3072,7 @@
    "itemId": 2995,
    "name": "Chompy bird hat (expert dragon archer)",
    "rate": 0.00025,
-   "rateText": "1/4,000",
+   "rateText": "4,000 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28expert_dragon_archer%29"
   },
   {
@@ -3082,7 +3082,7 @@
    "itemId": 2994,
    "name": "Chompy bird hat (expert ogre dragon archer)",
    "rate": 0.0003333333333333333,
-   "rateText": "1/3,000",
+   "rateText": "3,000 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28expert_ogre_dragon_archer%29"
   },
   {
@@ -3092,7 +3092,7 @@
    "itemId": 2987,
    "name": "Chompy bird hat (forester)",
    "rate": 0.0025,
-   "rateText": "1/400",
+   "rateText": "400 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28forester%29"
   },
   {
@@ -3102,7 +3102,7 @@
    "itemId": 2983,
    "name": "Chompy bird hat (marksman)",
    "rate": 0.008,
-   "rateText": "1/125",
+   "rateText": "125 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28marksman%29"
   },
   {
@@ -3112,7 +3112,7 @@
    "itemId": 2978,
    "name": "Chompy bird hat (ogre bowman)",
    "rate": 0.03333333333333333,
-   "rateText": "1/30",
+   "rateText": "30 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28ogre_bowman%29"
   },
   {
@@ -3122,7 +3122,7 @@
    "itemId": 2988,
    "name": "Chompy bird hat (ogre bowmaster)",
    "rate": 0.0019230769230769232,
-   "rateText": "1/520",
+   "rateText": "520 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28ogre_bowmaster%29"
   },
   {
@@ -3132,7 +3132,7 @@
    "itemId": 2992,
    "name": "Chompy bird hat (ogre dragon archer)",
    "rate": 0.000588235294117647,
-   "rateText": "1/1,700",
+   "rateText": "1,700 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28ogre_dragon_archer%29"
   },
   {
@@ -3142,7 +3142,7 @@
    "itemId": 2990,
    "name": "Chompy bird hat (ogre expert)",
    "rate": 0.001,
-   "rateText": "1/1,000",
+   "rateText": "1,000 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28ogre_expert%29"
   },
   {
@@ -3152,7 +3152,7 @@
    "itemId": 2986,
    "name": "Chompy bird hat (ogre forester)",
    "rate": 0.0033333333333333335,
-   "rateText": "1/300",
+   "rateText": "300 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28ogre_forester%29"
   },
   {
@@ -3162,7 +3162,7 @@
    "itemId": 2982,
    "name": "Chompy bird hat (ogre marksman)",
    "rate": 0.010526315789473684,
-   "rateText": "1/95",
+   "rateText": "95 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28ogre_marksman%29"
   },
   {
@@ -3172,7 +3172,7 @@
    "itemId": 2984,
    "name": "Chompy bird hat (ogre woodsman)",
    "rate": 0.0058823529411764705,
-   "rateText": "1/170",
+   "rateText": "170 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28ogre_woodsman%29"
   },
   {
@@ -3182,7 +3182,7 @@
    "itemId": 2980,
    "name": "Chompy bird hat (ogre yeoman)",
    "rate": 0.02,
-   "rateText": "1/50",
+   "rateText": "50 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28ogre_yeoman%29"
   },
   {
@@ -3192,7 +3192,7 @@
    "itemId": 2985,
    "name": "Chompy bird hat (woodsman)",
    "rate": 0.0044444444444444444,
-   "rateText": "1/225",
+   "rateText": "225 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28woodsman%29"
   },
   {
@@ -3202,7 +3202,7 @@
    "itemId": 2981,
    "name": "Chompy bird hat (yeoman)",
    "rate": 0.014285714285714285,
-   "rateText": "1/70",
+   "rateText": "70 chompy kills",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_bird_hat_%28yeoman%29"
   },
   {
@@ -3761,8 +3761,8 @@
    "timeSourceId": null,
    "itemId": 31130,
    "name": "Dom",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.002,
+   "rateText": "1/500 per delve 8 completion",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dom"
   },
   {
@@ -15331,8 +15331,8 @@
    "timeSourceId": null,
    "itemId": 13324,
    "name": "Baby chinchompa",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00885,
+   "rateText": "~1/113 per hour (black chinchompas)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Baby_chinchompa"
   },
   {
@@ -15341,8 +15341,8 @@
    "timeSourceId": null,
    "itemId": 13322,
    "name": "Beaver",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.0105,
+   "rateText": "~1/95 per hour (1.5-tick teaks)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Beaver"
   },
   {
@@ -15351,8 +15351,8 @@
    "timeSourceId": null,
    "itemId": 20659,
    "name": "Giant Squirrel",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00247,
+   "rateText": "~1/405 per hour (Ardougne rooftops)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Giant_Squirrel"
   },
   {
@@ -15361,8 +15361,8 @@
    "timeSourceId": null,
    "itemId": 13320,
    "name": "Heron",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01358,
+   "rateText": "~1/74 per hour (2-tick sharks)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Heron"
   },
   {
@@ -15371,8 +15371,8 @@
    "timeSourceId": null,
    "itemId": 20665,
    "name": "Rift guardian",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00541,
+   "rateText": "~1/185 per hour (lava runes; not GOTR)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rift_guardian"
   },
   {
@@ -15381,8 +15381,8 @@
    "timeSourceId": null,
    "itemId": 13321,
    "name": "Rock golem",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00435,
+   "rateText": "~1/230 per hour (Motherlode Mine)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rock_golem"
   },
   {
@@ -15391,8 +15391,8 @@
    "timeSourceId": null,
    "itemId": 20663,
    "name": "Rocky",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.01171,
+   "rateText": "~1/85 per hour (Ardougne knights)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Rocky"
   },
   {
@@ -15401,8 +15401,8 @@
    "timeSourceId": null,
    "itemId": 31283,
    "name": "Soup",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.00256,
+   "rateText": "~1/391 per hour (Aldarin courier tasks)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Soup"
   },
   {
@@ -15411,8 +15411,8 @@
    "timeSourceId": null,
    "itemId": 20661,
    "name": "Tangleroot",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.000125,
+   "rateText": "~1/8,000 per hour (farm runs; growth-gated)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Tangleroot"
   },
   {
