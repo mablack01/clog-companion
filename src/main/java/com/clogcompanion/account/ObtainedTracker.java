@@ -4,7 +4,6 @@ import com.clogcompanion.data.ClogDataset;
 import com.clogcompanion.model.ClogItem;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -15,8 +14,9 @@ import lombok.extern.slf4j.Slf4j;
 import net.runelite.client.config.ConfigManager;
 
 /**
- * Which slots the current account owns, fed by the game's collection log transmit (whole log,
- * when the log is opened) and the "New item added" chat line, persisted per RuneScape profile.
+ * Which slots the current account owns, fed by the game's collection log population script
+ * (one call per owned item when the log is opened) and the "New item added" chat line,
+ * persisted per RuneScape profile.
  */
 @Slf4j
 public class ObtainedTracker
@@ -30,6 +30,7 @@ public class ObtainedTracker
 	private final Gson gson;
 	private final Set<Integer> itemIds = new HashSet<>();
 	private boolean synced;
+	private boolean dirty;
 
 	public ObtainedTracker(ClogDataset dataset, ConfigManager configManager, Gson gson)
 	{
@@ -49,22 +50,24 @@ public class ObtainedTracker
 		return dataset.getItems().stream().filter(i -> itemIds.contains(i.getItemId())).map(ClogItem::getId).collect(Collectors.toSet());
 	}
 
-	/** Whole-log read: every item id the game reports as obtained. */
-	public void markAll(Collection<Integer> ids)
-	{
-		itemIds.addAll(ids);
-		synced = true;
-		save();
-	}
-
+	/** From the game's collection log population script; call {@link #flush()} once the burst ends. */
 	public boolean markItemId(int id)
 	{
-		boolean changed = itemIds.add(id);
-		if (changed)
+		synced = true;
+		dirty |= itemIds.add(id);
+		return dirty;
+	}
+
+	/** Persists pending marks; returns true if anything was written. */
+	public boolean flush()
+	{
+		if (!dirty)
 		{
-			save();
+			return false;
 		}
-		return changed;
+		dirty = false;
+		save();
+		return true;
 	}
 
 	/** Handles the "New item added to your collection log: X" game message; returns true if it matched. */

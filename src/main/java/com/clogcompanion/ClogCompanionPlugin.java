@@ -12,7 +12,6 @@ import com.clogcompanion.ui.ClogPanel;
 import com.google.gson.Gson;
 import com.google.inject.Provides;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
 import javax.swing.SwingUtilities;
@@ -21,12 +20,10 @@ import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.ChatMessageType;
 import net.runelite.api.Client;
 import net.runelite.api.GameState;
-import net.runelite.api.Item;
 import net.runelite.api.events.ChatMessage;
 import net.runelite.api.events.GameStateChanged;
-import net.runelite.api.events.ItemContainerChanged;
+import net.runelite.api.events.GameTick;
 import net.runelite.api.events.ScriptPreFired;
-import net.runelite.api.gameval.InventoryID;
 import net.runelite.client.callback.ClientThread;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
@@ -117,27 +114,6 @@ public class ClogCompanionPlugin extends Plugin
 		}
 	}
 
-	/** The game transmits every obtained item as one container when the collection log is opened. */
-	@Subscribe
-	public void onItemContainerChanged(ItemContainerChanged event)
-	{
-		if (event.getContainerId() != InventoryID.COLLECTION_TRANSMIT)
-		{
-			return;
-		}
-		List<Integer> ids = new ArrayList<>();
-		for (Item item : event.getItemContainer().getItems())
-		{
-			if (item.getId() > 0)
-			{
-				ids.add(item.getId());
-			}
-		}
-		log.debug("Collection log transmit: {} items", ids.size());
-		obtained.markAll(ids);
-		refresh();
-	}
-
 	@Subscribe
 	public void onScriptPreFired(ScriptPreFired event)
 	{
@@ -146,9 +122,18 @@ public class ClogCompanionPlugin extends Plugin
 			return;
 		}
 		Object[] args = event.getScriptEvent().getArguments();
-		if (args.length > 1 && args[1] instanceof Integer && obtained.markItemId((Integer) args[1]))
+		if (args.length > 1 && args[1] instanceof Integer)
 		{
-			log.debug("Collection log script marked item {}", args[1]);
+			obtained.markItemId((Integer) args[1]);
+		}
+	}
+
+	/** The population script fires hundreds of times in one tick; persist and re-rate once. */
+	@Subscribe
+	public void onGameTick(GameTick event)
+	{
+		if (obtained.flush())
+		{
 			refresh();
 		}
 	}

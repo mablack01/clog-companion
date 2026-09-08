@@ -6,6 +6,7 @@ import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import com.clogcompanion.data.ClogDataset;
@@ -40,13 +41,18 @@ public class ObtainedTrackerTest
 	}
 
 	@Test
-	public void wholeLogReadMarksSyncedAndPersists()
+	public void scriptMarksAreSyncedAndPersistedOnceOnFlush()
 	{
 		ConfigManager cm = mock(ConfigManager.class);
 		ObtainedTracker t = new ObtainedTracker(DATA, cm, new Gson());
 		assertFalse(t.isSynced());
-		t.markAll(Arrays.asList(12921, 4708));
+		t.markItemId(12921);
+		t.markItemId(4708);
+		t.markItemId(4708);
 		assertTrue(t.isSynced());
+		assertTrue(t.flush());
+		assertFalse("nothing new to write", t.flush());
+		verify(cm, times(1)).setRSProfileConfiguration(eq("clog-companion"), eq("obtainedItemIds"), any());
 		assertTrue(t.obtainedSlotIds().contains("zulrah:pet_snakeling"));
 		assertTrue(t.obtainedSlotIds().contains("barrows_chests:ahrims_hood"));
 	}
