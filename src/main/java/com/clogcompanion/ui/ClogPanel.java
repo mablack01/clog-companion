@@ -49,6 +49,7 @@ public class ClogPanel extends PluginPanel
 	private final JPanel list = new JPanel();
 	private final JButton more = new JButton("Show 50 more");
 	private final JButton roll = new JButton("Roll");
+	private RollDialog dialog;
 	private final JComboBox<ClogSorter> sort = new JComboBox<>(ClogSorter.values());
 	private List<RatedSlot> slots = Collections.emptyList();
 	private List<RatedSlot> visible = Collections.emptyList();
@@ -193,8 +194,12 @@ public class ClogPanel extends PluginPanel
 		countRow.setOpaque(false);
 		countRow.add(count, BorderLayout.WEST);
 		roll.setFocusPainted(false);
-		roll.setToolTipText("Pick a random slot from the list below");
-		roll.addActionListener(e -> new RollDialog(SwingUtilities.getWindowAncestor(this), itemManager, visible, onPin).setVisible(true));
+		roll.addActionListener(e ->
+		{
+			closeRoll();
+			dialog = new RollDialog(SwingUtilities.getWindowAncestor(this), itemManager, visible, onPin);
+			dialog.setVisible(true);
+		});
 		countRow.add(roll, BorderLayout.EAST);
 		top.add(countRow);
 		add(top, BorderLayout.NORTH);
@@ -232,6 +237,15 @@ public class ClogPanel extends PluginPanel
 		status.setText(text);
 	}
 
+	public void closeRoll()
+	{
+		if (dialog != null)
+		{
+			dialog.dispose();
+			dialog = null;
+		}
+	}
+
 	/** Shows the pinned target above the filters; null hides the strip. */
 	public void setPinned(RatedSlot slot)
 	{
@@ -239,20 +253,13 @@ public class ClogPanel extends PluginPanel
 		pinned.setVisible(slot != null);
 		if (slot != null)
 		{
-			JLabel icon = new JLabel();
-			icon.setPreferredSize(new Dimension(36, 32));
-			if (slot.getItem().getItemId() > 0)
-			{
-				itemManager.getImage(slot.getItem().getItemId()).addTo(icon);
-			}
-			pinned.add(icon, BorderLayout.WEST);
+			pinned.add(ClogItemRow.iconLabel(itemManager, slot, 36, 32), BorderLayout.WEST);
 			JPanel text = new JPanel(new GridLayout(0, 1));
 			text.setOpaque(false);
 			JLabel name = new JLabel((slot.isObtained() ? "Done! " : "Going for: ") + slot.getItem().getName());
 			name.setFont(FontManager.getRunescapeBoldFont());
 			name.setForeground(slot.isObtained() ? ColorScheme.PROGRESS_COMPLETE_COLOR : ColorScheme.BRAND_ORANGE);
-			JLabel where = new JLabel(slot.getSource().getName() + "  ·  " + (slot.getMinutes().isPresent()
-				? DifficultyEngine.formatMinutes(slot.getMinutes().getAsDouble()) : "?"));
+			JLabel where = new JLabel(slot.getSource().getName() + "  ·  " + DifficultyEngine.formatMinutes(slot.getMinutes()));
 			where.setFont(FontManager.getRunescapeSmallFont());
 			where.setForeground(ColorScheme.LIGHT_GRAY_COLOR);
 			text.add(name);
@@ -292,6 +299,7 @@ public class ClogPanel extends PluginPanel
 		list.removeAll();
 		count.setText(visible.size() + " of " + slots.size() + " slots");
 		roll.setEnabled(!visible.isEmpty());
+		roll.setToolTipText(visible.isEmpty() ? "Nothing matches your filters" : "Pick a random slot from the list below");
 		for (RatedSlot slot : visible.subList(0, Math.min(shown, visible.size())))
 		{
 			list.add(new ClogItemRow(slot, itemManager));

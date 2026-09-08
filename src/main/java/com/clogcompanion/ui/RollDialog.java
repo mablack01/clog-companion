@@ -33,12 +33,16 @@ class RollDialog extends JDialog
 	private final JButton pin = new JButton("Go for it");
 	private final JButton again = new JButton("Roll again");
 	private Timer timer;
+	private int winner;
+	private int frame;
+	private int current;
 
 	RollDialog(Window owner, ItemManager itemManager, List<RatedSlot> pool, Consumer<RatedSlot> onPin)
 	{
 		super(owner, "Roll a target");
 		this.itemManager = itemManager;
 		this.pool = pool;
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
 		JPanel content = new JPanel(new BorderLayout(0, 8));
 		content.setBackground(ColorScheme.DARK_GRAY_COLOR);
@@ -76,8 +80,6 @@ class RollDialog extends JDialog
 		spin();
 	}
 
-	private int winner;
-
 	private void spin()
 	{
 		if (timer != null)
@@ -87,27 +89,27 @@ class RollDialog extends JDialog
 		pin.setEnabled(false);
 		again.setEnabled(false);
 		winner = RollAnimation.pick(random, pool.size());
+		frame = 0;
+		current = RollAnimation.next(random, pool.size(), winner);
 		List<Integer> delays = RollAnimation.delays();
-		int[] frame = {0};
-		int[] current = {winner};
 		timer = new Timer(delays.get(0), null);
 		timer.setRepeats(false);
 		timer.addActionListener(e ->
 		{
-			boolean last = frame[0] >= delays.size() - 1;
-			current[0] = last ? winner : RollAnimation.next(random, pool.size(), current[0]);
-			show(pool.get(current[0]));
+			boolean last = frame >= delays.size() - 1;
+			current = last ? winner : RollAnimation.next(random, pool.size(), current);
+			show(pool.get(current));
 			if (last)
 			{
 				pin.setEnabled(true);
 				again.setEnabled(true);
 				return;
 			}
-			frame[0]++;
-			timer.setInitialDelay(delays.get(frame[0]));
+			frame++;
+			timer.setInitialDelay(delays.get(frame));
 			timer.restart();
 		});
-		show(pool.get(winner));
+		show(pool.get(current));
 		timer.start();
 	}
 
@@ -119,8 +121,7 @@ class RollDialog extends JDialog
 			itemManager.getImage(slot.getItem().getItemId()).addTo(icon);
 		}
 		name.setText(slot.getItem().getName());
-		String time = slot.getMinutes().isPresent() ? DifficultyEngine.formatMinutes(slot.getMinutes().getAsDouble()) : "?";
-		detail.setText(slot.getSource().getName() + "  ·  " + time + "  ·  " + slot.getTier());
+		detail.setText(slot.getSource().getName() + "  ·  " + DifficultyEngine.formatMinutes(slot.getMinutes()) + "  ·  " + slot.getTier());
 	}
 
 	@Override

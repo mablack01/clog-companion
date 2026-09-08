@@ -14,6 +14,7 @@ public class RollAnimationTest
 	{
 		List<Integer> d = RollAnimation.delays();
 		assertTrue(d.get(0) <= 50);
+		assertTrue("enough frames to read as a spin", d.size() >= 10);
 		assertEquals(400, (int) d.get(d.size() - 1));
 		for (int i = 1; i < d.size(); i++)
 		{

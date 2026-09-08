@@ -73,10 +73,4 @@ public interface ClogCompanionConfig extends Config
 	{
 		return false;
 	}
-
-	@ConfigItem(keyName = "pinnedSlot", name = "", description = "", hidden = true)
-	default String pinnedSlot()
-	{
-		return "";
-	}
 }

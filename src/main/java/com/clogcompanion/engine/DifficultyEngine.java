@@ -69,6 +69,11 @@ public class DifficultyEngine
 		return 1 / rate;
 	}
 
+	public static String formatMinutes(OptionalDouble minutes)
+	{
+		return minutes.isPresent() ? formatMinutes(minutes.getAsDouble()) : "?";
+	}
+
 	public static String formatMinutes(double minutes)
 	{
 		long total = Math.round(minutes);
