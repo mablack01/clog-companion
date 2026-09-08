@@ -19,8 +19,8 @@ public class ClogFilterTest
 {
 	private static RatedSlot slot(String name, Category cat, Tier tier, double minutes, boolean obtained, List<String> unmet)
 	{
-		ClogSource src = new ClogSource("s", "Src", cat, 1, 0, Requirements.none(), null);
-		ClogItem it = new ClogItem("s:" + name, "s", 1, name, 0.5, "1/2", null);
+		ClogSource src = new ClogSource("s", "Src", cat, 1.0, 0.0, Requirements.none(), null);
+		ClogItem it = new ClogItem("s:" + name, "s", null, 1, name, 0.5, "1/2", null);
 		return new RatedSlot(it, src, tier, OptionalDouble.of(minutes), unmet, obtained);
 	}
 

@@ -13,9 +13,9 @@ public class ClogSource
 	String name;
 	Category category;
 	/** Wall-clock minutes for one roll of the drop table, including everything needed to get that roll. */
-	Integer minutesPerAttempt;
+	Double minutesPerAttempt;
 	/** One-time cost before the first attempt. */
-	Integer setupMinutes;
+	Double setupMinutes;
 	Requirements requirements;
 	String notes;
 

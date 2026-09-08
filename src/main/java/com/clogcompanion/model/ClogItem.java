@@ -11,6 +11,8 @@ public class ClogItem
 {
 	String id;
 	String sourceId;
+	/** Source whose per-attempt time applies when it differs from the entry (catch-all entries); null = sourceId. */
+	String timeSourceId;
 	int itemId;
 	String name;
 	/** Probability per attempt of the source; 1.0 = guaranteed, null = unknown. */

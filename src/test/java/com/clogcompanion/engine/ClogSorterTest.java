@@ -17,8 +17,8 @@ public class ClogSorterTest
 {
 	private static RatedSlot slot(String name, Double rate, OptionalDouble minutes)
 	{
-		ClogSource src = new ClogSource("s", "Src", Category.BOSSES, 1, 0, Requirements.none(), null);
-		ClogItem it = new ClogItem("s:" + name, "s", 1, name, rate, "", null);
+		ClogSource src = new ClogSource("s", "Src", Category.BOSSES, 1.0, 0.0, Requirements.none(), null);
+		ClogItem it = new ClogItem("s:" + name, "s", null, 1, name, rate, "", null);
 		return new RatedSlot(it, src, minutes.isPresent() ? Tier.EASY : Tier.UNRATED, minutes, Collections.emptyList(), false);
 	}
 
