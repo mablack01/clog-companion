@@ -8,7 +8,6 @@ import com.clogcompanion.model.Tier;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.List;
@@ -23,6 +22,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JToggleButton;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
@@ -51,7 +51,7 @@ public class ClogPanel extends PluginPanel
 
 	public ClogPanel(ItemManager itemManager, ClogFilter filter, Runnable onFilterPersist)
 	{
-		super();
+		super(false);
 		this.itemManager = itemManager;
 		this.filter = filter;
 		this.onFilterPersist = onFilterPersist;
@@ -110,7 +110,7 @@ public class ClogPanel extends PluginPanel
 			@Override
 			public java.awt.Component getListCellRendererComponent(JList<?> l, Object v, int i, boolean s, boolean f)
 			{
-				return super.getListCellRendererComponent(l, v == null ? "All categories" : titleCase(v.toString()), i, s, f);
+				return super.getListCellRendererComponent(l, v == null ? "All categories" : v, i, s, f);
 			}
 		});
 		category.addActionListener(e ->
@@ -179,7 +179,15 @@ public class ClogPanel extends PluginPanel
 		list.setLayout(new BoxLayout(list, BoxLayout.Y_AXIS));
 		list.setBackground(ColorScheme.DARK_GRAY_COLOR);
 		list.setBorder(BorderFactory.createEmptyBorder(0, 8, 8, 8));
-		add(list, BorderLayout.CENTER);
+		// NORTH placement keeps rows at their preferred height; the scroll pane keeps the filters fixed.
+		JPanel listWrapper = new JPanel(new BorderLayout());
+		listWrapper.setBackground(ColorScheme.DARK_GRAY_COLOR);
+		listWrapper.add(list, BorderLayout.NORTH);
+		JScrollPane scroll = new JScrollPane(listWrapper);
+		scroll.setBorder(null);
+		scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		scroll.getVerticalScrollBar().setUnitIncrement(16);
+		add(scroll, BorderLayout.CENTER);
 
 		more.setFocusPainted(false);
 		more.addActionListener(e ->
@@ -189,10 +197,11 @@ public class ClogPanel extends PluginPanel
 		});
 	}
 
+	/** Background re-rate: keeps the user's paging position. */
 	public void setSlots(List<RatedSlot> slots)
 	{
 		this.slots = slots;
-		apply();
+		apply(false);
 	}
 
 	public void setStatus(String text)
@@ -208,8 +217,13 @@ public class ClogPanel extends PluginPanel
 
 	private void apply()
 	{
+		apply(true);
+	}
+
+	private void apply(boolean resetPaging)
+	{
 		visible = slots.stream().filter(filter::test).sorted((ClogSorter) sort.getSelectedItem()).collect(Collectors.toList());
-		shown = PAGE;
+		shown = resetPaging ? PAGE : Math.max(PAGE, shown);
 		render();
 	}
 
@@ -217,8 +231,7 @@ public class ClogPanel extends PluginPanel
 	{
 		list.removeAll();
 		count.setText(visible.size() + " of " + slots.size() + " slots");
-		List<RatedSlot> page = new ArrayList<>(visible.subList(0, Math.min(shown, visible.size())));
-		for (RatedSlot slot : page)
+		for (RatedSlot slot : visible.subList(0, Math.min(shown, visible.size())))
 		{
 			list.add(new ClogItemRow(slot, itemManager));
 			list.add(Box.createVerticalStrut(3));
@@ -238,10 +251,5 @@ public class ClogPanel extends PluginPanel
 		box.setForeground(ColorScheme.TEXT_COLOR);
 		box.setFont(FontManager.getRunescapeSmallFont());
 		return box;
-	}
-
-	private static String titleCase(String constant)
-	{
-		return constant.charAt(0) + constant.substring(1).toLowerCase();
 	}
 }

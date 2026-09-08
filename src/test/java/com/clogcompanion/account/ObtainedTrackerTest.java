@@ -18,6 +18,7 @@ import java.util.HashSet;
 import java.util.Set;
 import net.runelite.client.config.ConfigManager;
 import org.junit.Test;
+import org.mockito.ArgumentCaptor;
 
 public class ObtainedTrackerTest
 {
@@ -32,6 +33,7 @@ public class ObtainedTrackerTest
 		ConfigManager cm = mock(ConfigManager.class);
 		ObtainedTracker t = new ObtainedTracker(DATA, cm, new Gson());
 		assertFalse(t.onChatMessage("Your collection log has already accounted for that item."));
+		assertFalse("unknown item: nothing to persist", t.onChatMessage("New item added to your collection log: Not an item"));
 		assertTrue(t.onChatMessage("New item added to your collection log: Dragon pickaxe"));
 		Set<String> slots = t.obtainedSlotIds();
 		assertTrue(slots.contains("king_black_dragon:dragon_pickaxe"));
@@ -52,7 +54,9 @@ public class ObtainedTrackerTest
 		assertTrue(t.isSynced());
 		assertTrue(t.flush());
 		assertFalse("nothing new to write", t.flush());
-		verify(cm, times(1)).setRSProfileConfiguration(eq("clog-companion"), eq("obtainedItemIds"), any());
+		ArgumentCaptor<String> json = ArgumentCaptor.forClass(String.class);
+		verify(cm, times(1)).setRSProfileConfiguration(eq("clog-companion"), eq("obtainedItemIds"), json.capture());
+		assertTrue(json.getValue().contains("12921") && json.getValue().contains("4708"));
 		assertTrue(t.obtainedSlotIds().contains("zulrah:pet_snakeling"));
 		assertTrue(t.obtainedSlotIds().contains("barrows_chests:ahrims_hood"));
 	}

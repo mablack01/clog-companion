@@ -78,12 +78,16 @@ public class ObtainedTracker
 		{
 			return false;
 		}
+		boolean changed = false;
 		for (ClogItem item : dataset.byName(m.group(1).trim()))
 		{
-			itemIds.add(item.getItemId());
+			changed |= itemIds.add(item.getItemId());
 		}
-		save();
-		return true;
+		if (changed)
+		{
+			save();
+		}
+		return changed;
 	}
 
 	public void load()

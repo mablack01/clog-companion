@@ -3,6 +3,7 @@ package com.clogcompanion;
 import com.clogcompanion.account.AccountStateReader;
 import com.clogcompanion.account.ObtainedTracker;
 import com.clogcompanion.data.ClogDataset;
+import com.clogcompanion.data.Diaries;
 import com.clogcompanion.engine.ClogFilter;
 import com.clogcompanion.engine.DifficultyEngine;
 import com.clogcompanion.engine.RatedSlot;
@@ -12,7 +13,10 @@ import com.clogcompanion.ui.ClogPanel;
 import com.google.gson.Gson;
 import com.google.inject.Provides;
 import java.awt.image.BufferedImage;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import javax.inject.Inject;
 import javax.swing.SwingUtilities;
 import lombok.Getter;
@@ -24,10 +28,13 @@ import net.runelite.api.events.ChatMessage;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.GameTick;
 import net.runelite.api.events.ScriptPreFired;
+import net.runelite.api.events.StatChanged;
+import net.runelite.api.events.VarbitChanged;
 import net.runelite.client.callback.ClientThread;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
+import net.runelite.client.events.RuneScapeProfileChanged;
 import net.runelite.client.game.ItemManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
@@ -44,8 +51,11 @@ import net.runelite.client.util.Text;
 )
 public class ClogCompanionPlugin extends Plugin
 {
-	/** Runs once per obtained item when the game populates the collection log. */
+	/** Clientscript the game runs once per owned item while populating the collection log interface. */
 	private static final int COLLECTION_ITEM_SCRIPT = 4100;
+	/** Config keys that change ratings; other keys in the group are UI state or our own persistence. */
+	private static final Set<String> RATING_KEYS = new HashSet<>(Arrays.asList(
+		"estimateMode", "easyMaxMinutes", "mediumMaxMinutes", "longMaxMinutes"));
 
 	@Inject
 	private ClogCompanionConfig config;
@@ -64,10 +74,11 @@ public class ClogCompanionPlugin extends Plugin
 
 	@Getter
 	private ClogDataset dataset;
-	private ClogFilter filter;
 	private ObtainedTracker obtained;
+	private ClogFilter filter;
 	private ClogPanel panel;
 	private NavigationButton navButton;
+	private boolean accountDirty;
 
 	@Override
 	protected void startUp()
@@ -87,6 +98,10 @@ public class ClogCompanionPlugin extends Plugin
 			.panel(panel)
 			.build();
 		clientToolbar.addNavigation(navButton);
+		if (client.getGameState() == GameState.LOGGED_IN)
+		{
+			obtained.load();
+		}
 		refresh();
 	}
 
@@ -96,18 +111,30 @@ public class ClogCompanionPlugin extends Plugin
 		clientToolbar.removeNavigation(navButton);
 		navButton = null;
 		panel = null;
+		filter = null;
+		obtained = null;
 		dataset = null;
+	}
+
+	/** Owned items are per account: (re)load when RuneLite resolves the profile, clear when it goes away. */
+	@Subscribe
+	public void onRuneScapeProfileChanged(RuneScapeProfileChanged event)
+	{
+		if (event.getNewProfile() == null)
+		{
+			obtained.clear();
+		}
+		else
+		{
+			obtained.load();
+		}
+		refresh();
 	}
 
 	@Subscribe
 	public void onGameStateChanged(GameStateChanged event)
 	{
-		if (event.getGameState() == GameState.LOGGED_IN)
-		{
-			obtained.load();
-			refresh();
-		}
-		else if (event.getGameState() == GameState.LOGIN_SCREEN)
+		if (event.getGameState() == GameState.LOGIN_SCREEN)
 		{
 			obtained.clear();
 			refresh();
@@ -115,25 +142,51 @@ public class ClogCompanionPlugin extends Plugin
 	}
 
 	@Subscribe
+	public void onConfigChanged(ConfigChanged event)
+	{
+		if (ClogCompanionConfig.GROUP.equals(event.getGroup()) && RATING_KEYS.contains(event.getKey()))
+		{
+			refresh();
+		}
+	}
+
+	@Subscribe
 	public void onScriptPreFired(ScriptPreFired event)
 	{
-		if (event.getScriptId() != COLLECTION_ITEM_SCRIPT)
+		if (event.getScriptId() != COLLECTION_ITEM_SCRIPT || event.getScriptEvent() == null)
 		{
 			return;
 		}
 		Object[] args = event.getScriptEvent().getArguments();
-		if (args.length > 1 && args[1] instanceof Integer)
+		if (args != null && args.length > 1 && args[1] instanceof Integer)
 		{
 			obtained.markItemId((Integer) args[1]);
 		}
 	}
 
-	/** The population script fires hundreds of times in one tick; persist and re-rate once. */
+	@Subscribe
+	public void onStatChanged(StatChanged event)
+	{
+		accountDirty = true;
+	}
+
+	@Subscribe
+	public void onVarbitChanged(VarbitChanged event)
+	{
+		if (Diaries.BY_NAME.containsValue(event.getVarbitId()))
+		{
+			accountDirty = true;
+		}
+	}
+
+	/** Script bursts and stat storms both settle here: persist and re-rate at most once per tick. */
 	@Subscribe
 	public void onGameTick(GameTick event)
 	{
-		if (obtained.flush())
+		boolean synced = obtained.flush();
+		if (synced || accountDirty)
 		{
+			accountDirty = false;
 			refresh();
 		}
 	}
@@ -142,15 +195,6 @@ public class ClogCompanionPlugin extends Plugin
 	public void onChatMessage(ChatMessage event)
 	{
 		if (event.getType() == ChatMessageType.GAMEMESSAGE && obtained.onChatMessage(Text.removeTags(event.getMessage())))
-		{
-			refresh();
-		}
-	}
-
-	@Subscribe
-	public void onConfigChanged(ConfigChanged event)
-	{
-		if (ClogCompanionConfig.GROUP.equals(event.getGroup()))
 		{
 			refresh();
 		}
@@ -169,11 +213,17 @@ public class ClogCompanionPlugin extends Plugin
 	{
 		clientThread.invokeLater(() ->
 		{
+			ClogDataset data = dataset;
+			ObtainedTracker owned = obtained;
+			if (data == null || owned == null)
+			{
+				return;
+			}
 			boolean loggedIn = client.getGameState() == GameState.LOGGED_IN;
 			AccountState state = loggedIn ? AccountStateReader.read(client) : AccountState.empty();
-			List<RatedSlot> rated = new SlotRater(dataset, engine()).rateAll(state, obtained.obtainedSlotIds());
+			List<RatedSlot> rated = new SlotRater(data, engine()).rateAll(state, owned.obtainedSlotIds());
 			String status = !loggedIn ? "Log in to check requirements"
-				: obtained.isSynced() ? "Synced with this account's log" : "Open your Collection Log once to sync";
+				: owned.isSynced() ? "Synced with this account's log" : "Open your Collection Log once to sync";
 			SwingUtilities.invokeLater(() ->
 			{
 				if (panel != null)
