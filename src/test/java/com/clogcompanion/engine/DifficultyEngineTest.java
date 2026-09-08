@@ -16,12 +16,12 @@ public class DifficultyEngineTest
 
 	private static ClogSource source(Double perAttempt, Double setup)
 	{
-		return new ClogSource("s", "S", Category.BOSSES, perAttempt, setup, Requirements.none(), null);
+		return new ClogSource("s", "S", Category.BOSSES, perAttempt, setup, Requirements.none(), null, null);
 	}
 
 	private static ClogItem item(Double rate)
 	{
-		return new ClogItem("s:i", "s", null, 1, "I", rate, "1/x", null);
+		return new ClogItem("s:i", "s", null, 1, "I", rate, "1/x", null, null);
 	}
 
 	@Test
@@ -84,6 +84,19 @@ public class DifficultyEngineTest
 		assertEquals(Tier.GRIND, EXPECTED.tier(item(1.0 / 28988), source(25.0, 0.0)));
 		assertEquals(Tier.LONG, EXPECTED.tier(item(1.0 / 50), source(25.0, 0.0)));
 		assertEquals(Tier.MEDIUM, EXPECTED.tier(item(1.0 / 5), source(25.0, 0.0)));
+	}
+
+	@Test
+	public void challengeRaisesTheTierFloorButNeverLowersIt()
+	{
+		ClogSource easyBoss = new ClogSource("s", "S", Category.BOSSES, 1.5, 0.0, Requirements.none(), 4, null);
+		assertEquals(Tier.LONG, EXPECTED.tier(item(1.0), easyBoss));
+		ClogSource grind = new ClogSource("s", "S", Category.BOSSES, 2000.0, 0.0, Requirements.none(), 2, null);
+		assertEquals(Tier.GRIND, EXPECTED.tier(item(1.0), grind));
+		ClogItem conditional = new ClogItem("s:i", "s", null, 1, "I", 1.0, "Always", null, 5);
+		assertEquals(Tier.GRIND, EXPECTED.tier(conditional, source(3.0, 0.0)));
+		assertEquals(5, DifficultyEngine.challenge(conditional, easyBoss));
+		assertEquals(Tier.UNRATED, EXPECTED.tier(item(null), easyBoss));
 	}
 
 	@Test

@@ -14,6 +14,7 @@ public class RatedSlot
 	ClogItem item;
 	ClogSource source;
 	Tier tier;
+	int challenge;
 	OptionalDouble minutes;
 	List<String> unmet;
 	boolean obtained;

@@ -121,7 +121,8 @@ class RollDialog extends JDialog
 			itemManager.getImage(slot.getItem().getItemId()).addTo(icon);
 		}
 		name.setText(slot.getItem().getName());
-		detail.setText(slot.getSource().getName() + "  ·  " + DifficultyEngine.formatMinutes(slot.getMinutes()) + "  ·  " + slot.getTier());
+		detail.setText(slot.getSource().getName() + "  ·  " + DifficultyEngine.formatMinutes(slot.getMinutes()) + "  ·  " + slot.getTier()
+			+ " " + ClogItemRow.challengeDots(slot.getChallenge()));
 	}
 
 	@Override

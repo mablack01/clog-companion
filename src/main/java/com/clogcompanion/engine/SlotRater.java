@@ -27,7 +27,7 @@ public class SlotRater
 	{
 		ClogSource entry = dataset.sourceOf(item);
 		ClogSource time = dataset.timeSourceOf(item);
-		return new RatedSlot(item, entry, engine.tier(item, time), engine.expectedMinutes(item, time),
+		return new RatedSlot(item, entry, engine.tier(item, time), DifficultyEngine.challenge(item, time), engine.expectedMinutes(item, time),
 			RequirementChecker.unmet(time.getRequirements(), state), obtainedIds.contains(item.getId()));
 	}
 

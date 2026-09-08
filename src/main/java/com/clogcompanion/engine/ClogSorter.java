@@ -4,6 +4,15 @@ import java.util.Comparator;
 
 public enum ClogSorter implements Comparator<RatedSlot>
 {
+	EASIEST("Easiest first")
+	{
+		@Override
+		public int compare(RatedSlot a, RatedSlot b)
+		{
+			int byTier = Integer.compare(a.getTier().ordinal(), b.getTier().ordinal());
+			return byTier != 0 ? byTier : FASTEST.compare(a, b);
+		}
+	},
 	FASTEST("Fastest first")
 	{
 		@Override
