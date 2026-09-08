@@ -36,7 +36,8 @@ class ClogItemRow extends JPanel
 		JPanel text = new JPanel(new GridLayout(0, 1));
 		text.setOpaque(false);
 		text.add(label(slot.getItem().getName(), ColorScheme.TEXT_COLOR, FontManager.getRunescapeBoldFont()));
-		text.add(label(slot.getSource().getName() + "  ·  " + slot.getItem().getRateText(), ColorScheme.LIGHT_GRAY_COLOR, FontManager.getRunescapeSmallFont()));
+		String detail = slot.getSource().getName() + "  ·  " + slot.getItem().getRateText();
+		text.add(label(detail, ColorScheme.LIGHT_GRAY_COLOR, FontManager.getRunescapeSmallFont()));
 		if (!slot.getUnmet().isEmpty())
 		{
 			text.add(label(String.join(", ", slot.getUnmet()), ColorScheme.PROGRESS_ERROR_COLOR, FontManager.getRunescapeSmallFont()));
@@ -56,7 +57,7 @@ class ClogItemRow extends JPanel
 		setMaximumSize(new Dimension(Integer.MAX_VALUE, getPreferredSize().height));
 
 		String notes = slot.getSource().getNotes();
-		setToolTipText(notes == null || notes.isEmpty() ? "Open wiki page" : notes + " — click for the wiki page");
+		setToolTipText("<html>" + detail + (notes == null || notes.isEmpty() ? "" : "<br>" + notes) + "<br><i>Click for the wiki page</i></html>");
 		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		addMouseListener(new MouseAdapter()
 		{

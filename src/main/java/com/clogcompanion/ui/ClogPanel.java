@@ -10,6 +10,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Insets;
+import java.awt.Rectangle;
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.List;
@@ -27,6 +28,7 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JToggleButton;
+import javax.swing.Scrollable;
 import javax.swing.SwingUtilities;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
@@ -207,8 +209,9 @@ public class ClogPanel extends PluginPanel
 		list.setLayout(new BoxLayout(list, BoxLayout.Y_AXIS));
 		list.setBackground(ColorScheme.DARK_GRAY_COLOR);
 		list.setBorder(BorderFactory.createEmptyBorder(0, 8, 8, 8));
-		// NORTH placement keeps rows at their preferred height; the scroll pane keeps the filters fixed.
-		JPanel listWrapper = new JPanel(new BorderLayout());
+		// NORTH placement keeps rows at their preferred height; tracking the viewport width keeps
+		// rows from growing past the panel, so long text truncates instead of pushing the time column off.
+		JPanel listWrapper = new ViewportWidthPanel();
 		listWrapper.setBackground(ColorScheme.DARK_GRAY_COLOR);
 		listWrapper.add(list, BorderLayout.NORTH);
 		JScrollPane scroll = new JScrollPane(listWrapper);
@@ -311,6 +314,44 @@ public class ClogPanel extends PluginPanel
 		}
 		list.revalidate();
 		list.repaint();
+	}
+
+	private static class ViewportWidthPanel extends JPanel implements Scrollable
+	{
+		ViewportWidthPanel()
+		{
+			super(new BorderLayout());
+		}
+
+		@Override
+		public Dimension getPreferredScrollableViewportSize()
+		{
+			return getPreferredSize();
+		}
+
+		@Override
+		public int getScrollableUnitIncrement(Rectangle r, int o, int d)
+		{
+			return 16;
+		}
+
+		@Override
+		public int getScrollableBlockIncrement(Rectangle r, int o, int d)
+		{
+			return r.height;
+		}
+
+		@Override
+		public boolean getScrollableTracksViewportWidth()
+		{
+			return true;
+		}
+
+		@Override
+		public boolean getScrollableTracksViewportHeight()
+		{
+			return false;
+		}
 	}
 
 	private static JCheckBox check(String text, boolean selected)
