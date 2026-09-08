@@ -1,7 +1,11 @@
 package com.clogcompanion;
 
+import com.clogcompanion.data.ClogDataset;
+import com.clogcompanion.engine.DifficultyEngine;
+import com.google.gson.Gson;
 import com.google.inject.Provides;
 import javax.inject.Inject;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.plugins.Plugin;
@@ -18,16 +22,28 @@ public class ClogCompanionPlugin extends Plugin
 	@Inject
 	private ClogCompanionConfig config;
 
+	@Inject
+	private Gson gson;
+
+	@Getter
+	private ClogDataset dataset;
+
 	@Override
 	protected void startUp()
 	{
-		log.debug("Clog Companion started");
+		dataset = ClogDataset.load(gson);
+		log.debug("Clog Companion loaded {} slots across {} entries", dataset.getItems().size(), dataset.getSources().size());
 	}
 
 	@Override
 	protected void shutDown()
 	{
-		log.debug("Clog Companion stopped");
+		dataset = null;
+	}
+
+	public DifficultyEngine engine()
+	{
+		return new DifficultyEngine(config.estimateMode(), config.easyMaxMinutes(), config.mediumMaxMinutes(), config.longMaxMinutes());
 	}
 
 	@Provides
