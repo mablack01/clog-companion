@@ -17551,8 +17551,8 @@
    "timeSourceId": null,
    "itemId": 27289,
    "name": "Jewel of the Sun",
-   "rate": null,
-   "rateText": "?",
+   "rate": 0.02,
+   "rateText": "1/50 per raid (scales up to 3x by 75 KC)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Jewel_of_the_Sun"
   },
   {
