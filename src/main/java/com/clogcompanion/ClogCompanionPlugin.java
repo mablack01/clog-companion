@@ -171,7 +171,9 @@ public class ClogCompanionPlugin extends Plugin
 		Object[] args = event.getScriptEvent().getArguments();
 		if (args != null && args.length > 1 && args[1] instanceof Integer)
 		{
-			obtained.markItemId((Integer) args[1]);
+			int itemId = (Integer) args[1];
+			obtained.markItemId(itemId);
+			obtained.markItemName(itemManager.getItemComposition(itemId).getName());
 		}
 	}
 

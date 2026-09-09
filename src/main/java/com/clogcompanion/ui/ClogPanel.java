@@ -113,10 +113,11 @@ public class ClogPanel extends PluginPanel
 
 		JPanel tiers = new JPanel(new GridLayout(1, 0, 2, 0));
 		tiers.setOpaque(false);
-		for (Tier tier : Tier.values())
+		for (Tier tier : EnumSet.range(Tier.EASY, Tier.GRIND))
 		{
-			JToggleButton b = new JToggleButton(tier == Tier.UNRATED ? "?" : tier.name().substring(0, 1), true);
-			b.setToolTipText(tier.name());
+			JToggleButton b = new JToggleButton(tier.toString(), true);
+			b.setFont(FontManager.getRunescapeSmallFont());
+			b.setMargin(new Insets(2, 0, 2, 0));
 			b.setForeground(ClogItemRow.tierColor(tier));
 			b.setFocusPainted(false);
 			b.addActionListener(e ->
@@ -224,6 +225,10 @@ public class ClogPanel extends PluginPanel
 		});
 		countRow.add(roll, BorderLayout.EAST);
 		top.add(countRow);
+		for (java.awt.Component c : top.getComponents())
+		{
+			((javax.swing.JComponent) c).setAlignmentX(LEFT_ALIGNMENT);
+		}
 		clearDone.setFocusPainted(false);
 		clearDone.setToolTipText("Remove tracked slots you now own");
 		clearDone.addActionListener(e ->
@@ -232,6 +237,7 @@ public class ClogPanel extends PluginPanel
 			apply();
 		});
 		clearDone.setVisible(false);
+		clearDone.setAlignmentX(LEFT_ALIGNMENT);
 		top.add(clearDone);
 		add(top, BorderLayout.NORTH);
 
