@@ -128,16 +128,17 @@ public class ClogCompanionPlugin extends Plugin
 	@Subscribe
 	public void onRuneScapeProfileChanged(RuneScapeProfileChanged event)
 	{
-		if (event.getNewProfile() == null)
+		boolean gone = event.getNewProfile() == null;
+		if (gone)
 		{
 			obtained.clear();
-			tracked.clear();
 		}
 		else
 		{
 			obtained.load();
-			tracked.load();
 		}
+		// The tracked list is EDT-owned (row buttons mutate it); queue before refresh() queues its own EDT work.
+		SwingUtilities.invokeLater(() -> trackedProfile(gone));
 		refresh();
 	}
 
@@ -147,7 +148,7 @@ public class ClogCompanionPlugin extends Plugin
 		if (event.getGameState() == GameState.LOGIN_SCREEN)
 		{
 			obtained.clear();
-			tracked.clear();
+			SwingUtilities.invokeLater(() -> trackedProfile(true));
 			refresh();
 		}
 	}
@@ -251,18 +252,32 @@ public class ClogCompanionPlugin extends Plugin
 		});
 	}
 
+	private void trackedProfile(boolean gone)
+	{
+		TrackedList list = tracked;
+		if (list == null)
+		{
+			return;
+		}
+		if (gone)
+		{
+			list.clear();
+		}
+		else
+		{
+			list.load();
+		}
+	}
+
 	private void pin(RatedSlot slot)
 	{
-		if (slot != null)
-		{
-			tracked.add(slot.getItem().getId());
-		}
 		if (slot == null)
 		{
 			configManager.unsetRSProfileConfiguration(ClogCompanionConfig.GROUP, PINNED_KEY);
 		}
 		else
 		{
+			tracked.add(slot.getItem().getId());
 			configManager.setRSProfileConfiguration(ClogCompanionConfig.GROUP, PINNED_KEY, slot.getItem().getId());
 		}
 		refresh();

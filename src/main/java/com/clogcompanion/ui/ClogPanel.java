@@ -18,9 +18,9 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import javax.swing.BorderFactory;
-import javax.swing.ButtonGroup;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -220,7 +220,8 @@ public class ClogPanel extends PluginPanel
 		roll.addActionListener(e ->
 		{
 			closeRoll();
-			dialog = new RollDialog(SwingUtilities.getWindowAncestor(this), itemManager, visible, onPin);
+			List<RatedSlot> pool = visible.stream().filter(s -> !s.isObtained()).collect(Collectors.toList());
+			dialog = new RollDialog(SwingUtilities.getWindowAncestor(this), itemManager, pool, onPin);
 			dialog.setVisible(true);
 		});
 		countRow.add(roll, BorderLayout.EAST);
@@ -340,9 +341,11 @@ public class ClogPanel extends PluginPanel
 	private void render()
 	{
 		list.removeAll();
-		count.setText(visible.size() + " of " + slots.size() + " slots");
-		roll.setEnabled(!visible.isEmpty());
-		roll.setToolTipText(visible.isEmpty() ? "Nothing matches your filters" : "Pick a random slot from the list below");
+		boolean trackedView = viewTracked.isSelected();
+		count.setText(trackedView ? visible.size() + " tracked" : visible.size() + " of " + slots.size() + " slots");
+		boolean rollable = visible.stream().anyMatch(s -> !s.isObtained());
+		roll.setEnabled(rollable);
+		roll.setToolTipText(rollable ? "Pick a random slot from the list below" : "Nothing left to roll here");
 		for (RatedSlot slot : visible.subList(0, Math.min(shown, visible.size())))
 		{
 			list.add(new ClogItemRow(slot, itemManager, tracked.contains(slot.getItem().getId()), () ->

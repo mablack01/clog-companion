@@ -1,5 +1,6 @@
 package com.clogcompanion.account;
 
+import com.clogcompanion.ClogCompanionConfig;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.util.Collections;
@@ -10,7 +11,6 @@ import net.runelite.client.config.ConfigManager;
 /** Slots the player has chosen to go for, persisted per RuneScape profile. */
 public class TrackedList
 {
-	static final String GROUP = "clog-companion";
 	static final String KEY = "trackedSlots";
 
 	private final ConfigManager configManager;
@@ -72,7 +72,7 @@ public class TrackedList
 	public void load()
 	{
 		slotIds.clear();
-		Set<String> saved = configManager.getRSProfileConfiguration(GROUP, KEY, new TypeToken<Set<String>>()
+		Set<String> saved = configManager.getRSProfileConfiguration(ClogCompanionConfig.GROUP, KEY, new TypeToken<Set<String>>()
 		{
 		}.getType());
 		if (saved != null)
@@ -88,6 +88,6 @@ public class TrackedList
 
 	private void save()
 	{
-		configManager.setRSProfileConfiguration(GROUP, KEY, gson.toJson(slotIds));
+		configManager.setRSProfileConfiguration(ClogCompanionConfig.GROUP, KEY, gson.toJson(slotIds));
 	}
 }

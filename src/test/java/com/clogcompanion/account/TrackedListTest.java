@@ -3,7 +3,6 @@ package com.clogcompanion.account;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
@@ -18,6 +17,7 @@ import java.util.HashSet;
 import java.util.Set;
 import net.runelite.client.config.ConfigManager;
 import org.junit.Test;
+import org.mockito.ArgumentCaptor;
 
 public class TrackedListTest
 {
@@ -34,7 +34,10 @@ public class TrackedListTest
 		assertTrue(t.contains("zulrah:tanzanite_fang"));
 		assertFalse(t.toggle("zulrah:tanzanite_fang"));
 		assertEquals(0, t.size());
-		verify(cm, times(2)).setRSProfileConfiguration(eq("clog-companion"), eq("trackedSlots"), any());
+		ArgumentCaptor<String> json = ArgumentCaptor.forClass(String.class);
+		verify(cm, times(2)).setRSProfileConfiguration(eq("clog-companion"), eq("trackedSlots"), json.capture());
+		assertEquals("[\"zulrah:tanzanite_fang\"]", json.getAllValues().get(0));
+		assertEquals("[]", json.getAllValues().get(1));
 	}
 
 	@Test
