@@ -58,6 +58,16 @@ public class ObtainedTracker
 		return dirty;
 	}
 
+	/** Marks every slot sharing an item name (item ids reported by the game can be variants of the wiki's). */
+	public void markItemName(String name)
+	{
+		for (ClogItem item : dataset.byName(name))
+		{
+			synced = true;
+			dirty |= itemIds.add(item.getItemId());
+		}
+	}
+
 	/** Persists pending marks; returns true if anything was written. */
 	public boolean flush()
 	{

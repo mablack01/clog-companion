@@ -2,6 +2,7 @@ package com.clogcompanion;
 
 import com.clogcompanion.account.AccountStateReader;
 import com.clogcompanion.account.ObtainedTracker;
+import com.clogcompanion.account.TrackedList;
 import com.clogcompanion.data.ClogDataset;
 import com.clogcompanion.data.Diaries;
 import com.clogcompanion.engine.ClogFilter;
@@ -77,6 +78,7 @@ public class ClogCompanionPlugin extends Plugin
 	@Getter
 	private ClogDataset dataset;
 	private ObtainedTracker obtained;
+	private TrackedList tracked;
 	private ClogFilter filter;
 	private ClogPanel panel;
 	private NavigationButton navButton;
@@ -88,10 +90,11 @@ public class ClogCompanionPlugin extends Plugin
 		dataset = ClogDataset.load(gson);
 		log.debug("Clog Companion loaded {} slots across {} entries", dataset.getItems().size(), dataset.getSources().size());
 		obtained = new ObtainedTracker(dataset, configManager, gson);
+		tracked = new TrackedList(configManager, gson);
 		filter = new ClogFilter();
 		filter.setHideObtained(config.hideObtained());
 		filter.setOnlyMeetsRequirements(config.onlyMeetsRequirements());
-		panel = new ClogPanel(itemManager, filter, this::persistFilter, this::pin, () -> pin(null));
+		panel = new ClogPanel(itemManager, filter, tracked, this::persistFilter, this::pin, () -> pin(null));
 		BufferedImage icon = ImageUtil.loadImageResource(getClass(), "icon.png");
 		navButton = NavigationButton.builder()
 			.tooltip("Clog Companion")
@@ -103,6 +106,7 @@ public class ClogCompanionPlugin extends Plugin
 		if (client.getGameState() == GameState.LOGGED_IN)
 		{
 			obtained.load();
+			tracked.load();
 		}
 		refresh();
 	}
@@ -116,6 +120,7 @@ public class ClogCompanionPlugin extends Plugin
 		panel = null;
 		filter = null;
 		obtained = null;
+		tracked = null;
 		dataset = null;
 	}
 
@@ -123,7 +128,8 @@ public class ClogCompanionPlugin extends Plugin
 	@Subscribe
 	public void onRuneScapeProfileChanged(RuneScapeProfileChanged event)
 	{
-		if (event.getNewProfile() == null)
+		boolean gone = event.getNewProfile() == null;
+		if (gone)
 		{
 			obtained.clear();
 		}
@@ -131,6 +137,8 @@ public class ClogCompanionPlugin extends Plugin
 		{
 			obtained.load();
 		}
+		// The tracked list is EDT-owned (row buttons mutate it); queue before refresh() queues its own EDT work.
+		SwingUtilities.invokeLater(() -> trackedProfile(gone));
 		refresh();
 	}
 
@@ -140,6 +148,7 @@ public class ClogCompanionPlugin extends Plugin
 		if (event.getGameState() == GameState.LOGIN_SCREEN)
 		{
 			obtained.clear();
+			SwingUtilities.invokeLater(() -> trackedProfile(true));
 			refresh();
 		}
 	}
@@ -163,7 +172,12 @@ public class ClogCompanionPlugin extends Plugin
 		Object[] args = event.getScriptEvent().getArguments();
 		if (args != null && args.length > 1 && args[1] instanceof Integer)
 		{
-			obtained.markItemId((Integer) args[1]);
+			int itemId = (Integer) args[1];
+			if (itemId > 0)
+			{
+				obtained.markItemId(itemId);
+				obtained.markItemName(itemManager.getItemComposition(itemId).getName());
+			}
 		}
 	}
 
@@ -241,6 +255,23 @@ public class ClogCompanionPlugin extends Plugin
 		});
 	}
 
+	private void trackedProfile(boolean gone)
+	{
+		TrackedList list = tracked;
+		if (list == null)
+		{
+			return;
+		}
+		if (gone)
+		{
+			list.clear();
+		}
+		else
+		{
+			list.load();
+		}
+	}
+
 	private void pin(RatedSlot slot)
 	{
 		if (slot == null)
@@ -249,6 +280,7 @@ public class ClogCompanionPlugin extends Plugin
 		}
 		else
 		{
+			tracked.add(slot.getItem().getId());
 			configManager.setRSProfileConfiguration(ClogCompanionConfig.GROUP, PINNED_KEY, slot.getItem().getId());
 		}
 		refresh();

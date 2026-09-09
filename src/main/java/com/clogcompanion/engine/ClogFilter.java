@@ -13,7 +13,7 @@ import lombok.Setter;
 @Setter
 public class ClogFilter
 {
-	private Set<Tier> tiers = EnumSet.allOf(Tier.class);
+	private Set<Tier> tiers = EnumSet.range(Tier.EASY, Tier.GRIND);
 	private Category category;
 	private boolean hideObtained = true;
 	private boolean onlyMeetsRequirements;
