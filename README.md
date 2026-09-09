@@ -15,8 +15,9 @@ you already own, sort by fastest, keep a tracked list of the slots you\'re going
 
 <img width="252" height="813" alt="Screenshot 2026-09-09 at 3 57 40 PM" src="https://github.com/user-attachments/assets/9086fcd0-f4da-4afb-bfd7-5cd8c943dd7e" />
 <img width="242" height="817" alt="Screenshot 2026-09-09 at 3 57 46 PM" src="https://github.com/user-attachments/assets/08553dfe-4765-4da9-b055-bbe538b8b5d1" />
-<img width="265" height="182" alt="Screenshot 2026-09-09 at 3 57 55 PM" src="https://github.com/user-attachments/assets/e7fe51af-cab1-4979-8f8d-a8f858dec754" />
 <img width="248" height="822" alt="Screenshot 2026-09-09 at 3 58 27 PM" src="https://github.com/user-attachments/assets/3b1e3a35-844c-4cf1-a1b2-50d218db5804" />
+
+<img width="265" height="182" alt="Screenshot 2026-09-09 at 3 57 55 PM" src="https://github.com/user-attachments/assets/e7fe51af-cab1-4979-8f8d-a8f858dec754" />
 
 Data and tests are free for the Plugin Hub's review budget; only `src/main/java` counts, so
 logic stays in Java and bulk data stays in JSON.
