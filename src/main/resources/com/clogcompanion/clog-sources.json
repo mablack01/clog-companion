@@ -1,254 +1,1538 @@
 [
- {"id": "abyssal_sire", "name": "Abyssal Sire", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"skills": {"SLAYER": 85}}, "notes": "Per kill. Whip/dagger/bludgeon rates are per kill via the unsired at the Font of Consumption."},
- {"id": "alchemical_hydra", "name": "Alchemical Hydra", "category": "BOSSES", "minutesPerAttempt": 3.5, "setupMinutes": 0,
-  "requirements": {"skills": {"SLAYER": 95}}, "notes": "Per kill including banking."},
- {"id": "amoxliatl", "name": "Amoxliatl", "category": "BOSSES", "minutesPerAttempt": 2, "setupMinutes": 0,
-  "requirements": {"quests": ["THE_HEART_OF_DARKNESS"]}, "notes": "Per kill."},
- {"id": "araxxor", "name": "Araxxor", "category": "BOSSES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {"skills": {"SLAYER": 92}}, "notes": "Per kill."},
- {"id": "barrows_chests", "name": "Barrows Chests", "category": "BOSSES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {"quests": ["PRIEST_IN_PERIL"]}, "notes": "Per chest with all six brothers killed."},
- {"id": "brutus", "name": "Brutus", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill; estimate, boss is new."},
- {"id": "bryophyta", "name": "Bryophyta", "category": "BOSSES", "minutesPerAttempt": 12, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill including farming a mossy key from moss giants."},
- {"id": "callisto_and_artio", "name": "Callisto and Artio", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per Artio kill in the Wilderness."},
- {"id": "cerberus", "name": "Cerberus", "category": "BOSSES", "minutesPerAttempt": 2.5, "setupMinutes": 0,
-  "requirements": {"skills": {"SLAYER": 91}}, "notes": "Per kill."},
- {"id": "chaos_elemental", "name": "Chaos Elemental", "category": "BOSSES", "minutesPerAttempt": 2, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "chaos_fanatic", "name": "Chaos Fanatic", "category": "BOSSES", "minutesPerAttempt": 1.5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "commander_zilyana", "name": "Commander Zilyana", "category": "BOSSES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {"skills": {"AGILITY": 70}}, "notes": "Per kill including kill count."},
- {"id": "corporeal_beast", "name": "Corporeal Beast", "category": "BOSSES", "minutesPerAttempt": 6, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill in a small team. Requires Summer's End."},
- {"id": "crazy_archaeologist", "name": "Crazy archaeologist", "category": "BOSSES", "minutesPerAttempt": 1.5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "dagannoth_kings", "name": "Dagannoth Kings", "category": "BOSSES", "minutesPerAttempt": 1.5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill of the relevant king."},
- {"id": "deranged_archaeologist", "name": "Deranged Archaeologist", "category": "BOSSES", "minutesPerAttempt": 1.5, "setupMinutes": 0,
-  "requirements": {"quests": ["BONE_VOYAGE"]}, "notes": "Per kill."},
- {"id": "doom_of_mokhaiotl", "name": "Doom of Mokhaiotl", "category": "BOSSES", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per delve run; estimate, boss is new."},
- {"id": "duke_sucellus", "name": "Duke Sucellus", "category": "BOSSES", "minutesPerAttempt": 3.5, "setupMinutes": 0,
-  "requirements": {"quests": ["DESERT_TREASURE_II__THE_FALLEN_EMPIRE"]}, "notes": "Per kill."},
- {"id": "the_fight_caves", "name": "The Fight Caves", "category": "BOSSES", "minutesPerAttempt": 45, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per completed run."},
- {"id": "fortis_colosseum", "name": "Fortis Colosseum", "category": "BOSSES", "minutesPerAttempt": 40, "setupMinutes": 0,
-  "requirements": {"quests": ["CHILDREN_OF_THE_SUN"]}, "notes": "Per completed run."},
- {"id": "the_gauntlet", "name": "The Gauntlet", "category": "BOSSES", "minutesPerAttempt": 9, "setupMinutes": 0,
-  "requirements": {"quests": ["SONG_OF_THE_ELVES"]}, "notes": "Per Corrupted Gauntlet completion."},
- {"id": "general_graardor", "name": "General Graardor", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"skills": {"STRENGTH": 70}}, "notes": "Per kill including kill count."},
- {"id": "giant_mole", "name": "Giant Mole", "category": "BOSSES", "minutesPerAttempt": 2, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "grotesque_guardians", "name": "Grotesque Guardians", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"skills": {"SLAYER": 75}}, "notes": "Per kill."},
- {"id": "hespori", "name": "Hespori", "category": "BOSSES", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {"skills": {"FARMING": 65}}, "notes": "Per kill; the seed grows in ~32 h so real time is gated by the cycle."},
- {"id": "the_hueycoatl", "name": "The Hueycoatl", "category": "BOSSES", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill in a group."},
- {"id": "the_inferno", "name": "The Inferno", "category": "BOSSES", "minutesPerAttempt": 90, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per completed run."},
- {"id": "kalphite_queen", "name": "Kalphite Queen", "category": "BOSSES", "minutesPerAttempt": 3.5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "king_black_dragon", "name": "King Black Dragon", "category": "BOSSES", "minutesPerAttempt": 1.5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "kraken", "name": "Kraken", "category": "BOSSES", "minutesPerAttempt": 1.5, "setupMinutes": 0,
-  "requirements": {"skills": {"SLAYER": 87}}, "notes": "Per kill."},
- {"id": "kreearra", "name": "Kree'arra", "category": "BOSSES", "minutesPerAttempt": 3.5, "setupMinutes": 0,
-  "requirements": {"skills": {"RANGED": 70}}, "notes": "Per kill including kill count."},
- {"id": "kril_tsutsaroth", "name": "K'ril Tsutsaroth", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"skills": {"HITPOINTS": 70}}, "notes": "Per kill including kill count."},
- {"id": "the_leviathan", "name": "The Leviathan", "category": "BOSSES", "minutesPerAttempt": 3.5, "setupMinutes": 0,
-  "requirements": {"quests": ["DESERT_TREASURE_II__THE_FALLEN_EMPIRE"]}, "notes": "Per kill."},
- {"id": "the_mad_angel", "name": "The Mad Angel", "category": "BOSSES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill; estimate, boss is new."},
- {"id": "maggot_king", "name": "Maggot King", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill; estimate, boss is new."},
- {"id": "moons_of_peril", "name": "Moons of Peril", "category": "BOSSES", "minutesPerAttempt": 8, "setupMinutes": 0,
-  "requirements": {"quests": ["PERILOUS_MOONS"]}, "notes": "Per run of all three moons (one chest)."},
- {"id": "nex", "name": "Nex", "category": "BOSSES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {"quests": ["THE_FROZEN_DOOR"]}, "notes": "Per kill in a team."},
- {"id": "the_nightmare", "name": "The Nightmare", "category": "BOSSES", "minutesPerAttempt": 6, "setupMinutes": 0,
-  "requirements": {"quests": ["PRIEST_IN_PERIL"]}, "notes": "Per kill in a team."},
- {"id": "obor", "name": "Obor", "category": "BOSSES", "minutesPerAttempt": 12, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill including farming a giant key from hill giants."},
- {"id": "phantom_muspah", "name": "Phantom Muspah", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"quests": ["SECRETS_OF_THE_NORTH"]}, "notes": "Per kill."},
- {"id": "royal_titans", "name": "Royal Titans", "category": "BOSSES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "sarachnis", "name": "Sarachnis", "category": "BOSSES", "minutesPerAttempt": 2, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "scorpia", "name": "Scorpia", "category": "BOSSES", "minutesPerAttempt": 2.5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "scurrius", "name": "Scurrius", "category": "BOSSES", "minutesPerAttempt": 1.5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "shellbane_gryphon", "name": "Shellbane Gryphon", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill; estimate, boss is new."},
- {"id": "skotizo", "name": "Skotizo", "category": "BOSSES", "minutesPerAttempt": 40, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill including assembling a dark totem in the Catacombs."},
- {"id": "tempoross", "name": "Tempoross", "category": "BOSSES", "minutesPerAttempt": 2, "setupMinutes": 0,
-  "requirements": {"skills": {"FISHING": 35}}, "notes": "Per reward-pool search; a 10 minute game gives roughly five."},
- {"id": "thermonuclear_smoke_devil", "name": "Thermonuclear smoke devil", "category": "BOSSES", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {"skills": {"SLAYER": 93}}, "notes": "Per kill."},
- {"id": "vardorvis", "name": "Vardorvis", "category": "BOSSES", "minutesPerAttempt": 2.5, "setupMinutes": 0,
-  "requirements": {"quests": ["DESERT_TREASURE_II__THE_FALLEN_EMPIRE"]}, "notes": "Per kill."},
- {"id": "venenatis_and_spindel", "name": "Venenatis and Spindel", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per Spindel kill in the Wilderness."},
- {"id": "vetion_and_calvarion", "name": "Vet'ion and Calvar'ion", "category": "BOSSES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per Calvar'ion kill in the Wilderness."},
- {"id": "vorkath", "name": "Vorkath", "category": "BOSSES", "minutesPerAttempt": 2, "setupMinutes": 0,
-  "requirements": {"quests": ["DRAGON_SLAYER_II"]}, "notes": "Per kill."},
- {"id": "the_whisperer", "name": "The Whisperer", "category": "BOSSES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {"quests": ["DESERT_TREASURE_II__THE_FALLEN_EMPIRE"]}, "notes": "Per kill."},
- {"id": "wintertodt", "name": "Wintertodt", "category": "BOSSES", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {"skills": {"FIREMAKING": 50}}, "notes": "Per supply crate (one game)."},
- {"id": "yama", "name": "Yama", "category": "BOSSES", "minutesPerAttempt": 6, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill; estimate, boss is new."},
- {"id": "zalcano", "name": "Zalcano", "category": "BOSSES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {"quests": ["SONG_OF_THE_ELVES"]}, "notes": "Per kill in a group."},
- {"id": "zulrah", "name": "Zulrah", "category": "BOSSES", "minutesPerAttempt": 1.5, "setupMinutes": 0,
-  "requirements": {"quests": ["REGICIDE"]}, "notes": "Per kill."},
-
- {"id": "chambers_of_xeric", "name": "Chambers of Xeric", "category": "RAIDS", "minutesPerAttempt": 30, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per raid in a small team; rates assume ~7% unique chance per raid."},
- {"id": "theatre_of_blood", "name": "Theatre of Blood", "category": "RAIDS", "minutesPerAttempt": 25, "setupMinutes": 0,
-  "requirements": {"quests": ["PRIEST_IN_PERIL"]}, "notes": "Per raid in a team; rates assume ~11% unique chance per raid."},
- {"id": "tombs_of_amascut", "name": "Tombs of Amascut", "category": "RAIDS", "minutesPerAttempt": 30, "setupMinutes": 0,
-  "requirements": {"quests": ["BENEATH_CURSED_SANDS"]}, "notes": "Per raid at ~300 invocation; rates assume ~4% unique chance per raid."},
-
- {"id": "beginner_treasure_trails", "name": "Beginner Treasure Trails", "category": "CLUES", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per casket, including getting and solving the clue."},
- {"id": "easy_treasure_trails", "name": "Easy Treasure Trails", "category": "CLUES", "minutesPerAttempt": 8, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per casket, including getting and solving the clue."},
- {"id": "medium_treasure_trails", "name": "Medium Treasure Trails", "category": "CLUES", "minutesPerAttempt": 12, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per casket, including getting and solving the clue."},
- {"id": "hard_treasure_trails", "name": "Hard Treasure Trails", "category": "CLUES", "minutesPerAttempt": 18, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per casket, including getting and solving the clue."},
- {"id": "elite_treasure_trails", "name": "Elite Treasure Trails", "category": "CLUES", "minutesPerAttempt": 25, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per casket, including getting and solving the clue."},
- {"id": "master_treasure_trails", "name": "Master Treasure Trails", "category": "CLUES", "minutesPerAttempt": 30, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per casket, including getting and solving the clue."},
- {"id": "hard_treasure_trail_rewards_rare", "name": "Hard Treasure Trail Rewards (Rare)", "category": "CLUES", "minutesPerAttempt": 18, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per hard casket."},
- {"id": "elite_treasure_trail_rewards_rare", "name": "Elite Treasure Trail Rewards (Rare)", "category": "CLUES", "minutesPerAttempt": 25, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per elite casket."},
- {"id": "master_treasure_trail_rewards_rare", "name": "Master Treasure Trail Rewards (Rare)", "category": "CLUES", "minutesPerAttempt": 30, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per master casket."},
- {"id": "shared_treasure_trail_rewards", "name": "Shared Treasure Trail Rewards", "category": "CLUES", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per casket of the cheapest tier that gives the item."},
- {"id": "scroll_cases", "name": "Scroll Cases", "category": "CLUES", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per casket."},
-
- {"id": "barbarian_assault", "name": "Barbarian Assault", "category": "MINIGAMES", "minutesPerAttempt": 20, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per full 10-wave run; most rewards are bought with honour points."},
- {"id": "barracuda_trials", "name": "Barracuda Trials", "category": "MINIGAMES", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per trial; estimate."},
- {"id": "brimhaven_agility_arena", "name": "Brimhaven Agility Arena", "category": "MINIGAMES", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {"skills": {"AGILITY": 20}}, "notes": "Per ~10 tickets; rewards are bought with tickets."},
- {"id": "castle_wars", "name": "Castle Wars", "category": "MINIGAMES", "minutesPerAttempt": 22, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per game including the lobby wait; rewards are bought with tickets."},
- {"id": "fishing_trawler", "name": "Fishing Trawler", "category": "MINIGAMES", "minutesPerAttempt": 12, "setupMinutes": 0,
-  "requirements": {"skills": {"FISHING": 15}}, "notes": "Per successful trip."},
- {"id": "giants_foundry", "name": "Giants' Foundry", "category": "MINIGAMES", "minutesPerAttempt": 6, "setupMinutes": 0,
-  "requirements": {"skills": {"SMITHING": 15}, "quests": ["SLEEPING_GIANTS"]}, "notes": "Per sword; rewards are bought with reputation."},
- {"id": "gnome_restaurant", "name": "Gnome Restaurant", "category": "MINIGAMES", "minutesPerAttempt": 6, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per delivery."},
- {"id": "guardians_of_the_rift", "name": "Guardians of the Rift", "category": "MINIGAMES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"skills": {"RUNECRAFT": 27}, "quests": ["TEMPLE_OF_THE_EYE"]}, "notes": "Per reward search; a game gives about three."},
- {"id": "hallowed_sepulchre", "name": "Hallowed Sepulchre", "category": "MINIGAMES", "minutesPerAttempt": 8, "setupMinutes": 0,
-  "requirements": {"skills": {"AGILITY": 52}, "quests": ["SINS_OF_THE_FATHER"]}, "notes": "Per full run; the grand coffin needs 92 Agility."},
- {"id": "last_man_standing", "name": "Last Man Standing", "category": "MINIGAMES", "minutesPerAttempt": 6, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per game; rewards are bought with points."},
- {"id": "magic_training_arena", "name": "Magic Training Arena", "category": "MINIGAMES", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {"skills": {"MAGIC": 33}}, "notes": "Per ~10 minutes of rooms; rewards are bought with pizazz points."},
- {"id": "mahogany_homes", "name": "Mahogany Homes", "category": "MINIGAMES", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {"skills": {"CONSTRUCTION": 20}}, "notes": "Per contract; rewards are bought with carpenter points."},
- {"id": "mastering_mixology", "name": "Mastering Mixology", "category": "MINIGAMES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"skills": {"HERBLORE": 60}}, "notes": "Per order; rewards are bought with resin."},
- {"id": "pest_control", "name": "Pest Control", "category": "MINIGAMES", "minutesPerAttempt": 4, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per game; rewards are bought with commendations."},
- {"id": "rogues_den", "name": "Rogues' Den", "category": "MINIGAMES", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"skills": {"AGILITY": 50, "THIEVING": 50}}, "notes": "Per maze completion."},
- {"id": "shades_of_mortton", "name": "Shades of Mort'ton", "category": "MINIGAMES", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {"quests": ["SHADES_OF_MORTTON"]}, "notes": "Per shade chest opened, including getting the key."},
- {"id": "soul_wars", "name": "Soul Wars", "category": "MINIGAMES", "minutesPerAttempt": 15, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per game; rewards are bought with zeal."},
- {"id": "temple_trekking", "name": "Temple Trekking", "category": "MINIGAMES", "minutesPerAttempt": 8, "setupMinutes": 0,
-  "requirements": {"quests": ["IN_AID_OF_THE_MYREQUE"]}, "notes": "Per trek."},
- {"id": "tithe_farm", "name": "Tithe Farm", "category": "MINIGAMES", "minutesPerAttempt": 20, "setupMinutes": 0,
-  "requirements": {"skills": {"FARMING": 34}}, "notes": "Per round; rewards are bought with points."},
- {"id": "trouble_brewing", "name": "Trouble Brewing", "category": "MINIGAMES", "minutesPerAttempt": 20, "setupMinutes": 0,
-  "requirements": {"quests": ["CABIN_FEVER"]}, "notes": "Per game; rewards are bought with pieces of eight."},
- {"id": "vale_totems", "name": "Vale Totems", "category": "MINIGAMES", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per totem; estimate."},
- {"id": "volcanic_mine", "name": "Volcanic Mine", "category": "MINIGAMES", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {"skills": {"MINING": 50}, "quests": ["BONE_VOYAGE"]}, "notes": "Per game; rewards are bought with points."},
-
- {"id": "aerial_fishing", "name": "Aerial Fishing", "category": "OTHER", "minutesPerAttempt": 0.1, "setupMinutes": 0,
-  "requirements": {"skills": {"FISHING": 43, "HUNTER": 35}}, "notes": "Per catch."},
- {"id": "all_pets", "name": "All Pets", "category": "OTHER", "minutesPerAttempt": null, "setupMinutes": 0,
-  "requirements": {}, "notes": "Each pet uses the time of the entry it comes from."},
- {"id": "boat_paints", "name": "Boat Paints", "category": "OTHER", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Estimate."},
- {"id": "camdozaal", "name": "Camdozaal", "category": "OTHER", "minutesPerAttempt": 0.5, "setupMinutes": 0,
-  "requirements": {"quests": ["BELOW_ICE_MOUNTAIN"]}, "notes": "Per action (mining, fishing, or a golem kill)."},
- {"id": "champions_challenge", "name": "Champion's Challenge", "category": "OTHER", "minutesPerAttempt": 0.3, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill of a monster that drops the scroll."},
- {"id": "chompy_bird_hunting", "name": "Chompy Bird Hunting", "category": "OTHER", "minutesPerAttempt": 0.5, "setupMinutes": 0,
-  "requirements": {"quests": ["BIG_CHOMPY_BIRD_HUNTING"]}, "notes": "Per chompy killed; hats unlock at kill-count milestones."},
- {"id": "colossal_wyrm_agility", "name": "Colossal Wyrm Agility", "category": "OTHER", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"skills": {"AGILITY": 50}}, "notes": "Per lap; rewards are bought with termites."},
- {"id": "creature_creation", "name": "Creature Creation", "category": "OTHER", "minutesPerAttempt": 2, "setupMinutes": 0,
-  "requirements": {"quests": ["TOWER_OF_LIFE"]}, "notes": "Per creature made and killed."},
- {"id": "cyclopes", "name": "Cyclopes", "category": "OTHER", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill in the Warriors' Guild."},
- {"id": "elder_chaos_druids", "name": "Elder Chaos Druids", "category": "OTHER", "minutesPerAttempt": 0.5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "forestry", "name": "Forestry", "category": "OTHER", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per forestry event."},
- {"id": "fossil_island_notes", "name": "Fossil Island Notes", "category": "OTHER", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {"quests": ["BONE_VOYAGE"]}, "notes": "Per skilling action on Fossil Island."},
- {"id": "gloughs_experiments", "name": "Glough's Experiments", "category": "OTHER", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {"quests": ["MONKEY_MADNESS_II"]}, "notes": "Per demonic gorilla kill."},
- {"id": "hunter_guild", "name": "Hunter Guild", "category": "OTHER", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {"skills": {"HUNTER": 46}, "quests": ["CHILDREN_OF_THE_SUN"]}, "notes": "Per rumour."},
- {"id": "lost_schematics", "name": "Lost Schematics", "category": "OTHER", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Estimate."},
- {"id": "monkey_backpacks", "name": "Monkey Backpacks", "category": "OTHER", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {"skills": {"AGILITY": 48}, "quests": ["MONKEY_MADNESS_I"]}, "notes": "Per Ape Atoll lap; backpacks unlock at lap-count milestones."},
- {"id": "motherlode_mine", "name": "Motherlode Mine", "category": "OTHER", "minutesPerAttempt": 0.1, "setupMinutes": 0,
-  "requirements": {"skills": {"MINING": 30}}, "notes": "Per pay-dirt; rewards are bought with golden nuggets."},
- {"id": "my_notes", "name": "My Notes", "category": "OTHER", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Estimate."},
- {"id": "ocean_encounters", "name": "Ocean Encounters", "category": "OTHER", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Estimate."},
- {"id": "random_events", "name": "Random Events", "category": "OTHER", "minutesPerAttempt": 40, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per random event; they arrive roughly every 40 minutes of play."},
- {"id": "revenants", "name": "Revenants", "category": "OTHER", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill."},
- {"id": "rooftop_agility", "name": "Rooftop Agility", "category": "OTHER", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per lap; graceful is bought with marks of grace."},
- {"id": "sailing_miscellaneous", "name": "Sailing Miscellaneous", "category": "OTHER", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Estimate."},
- {"id": "sea_treasures", "name": "Sea Treasures", "category": "OTHER", "minutesPerAttempt": 10, "setupMinutes": 0,
-  "requirements": {}, "notes": "Estimate."},
- {"id": "shayzien_armour", "name": "Shayzien Armour", "category": "OTHER", "minutesPerAttempt": 2, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per lizardman shaman / soldier reward roll."},
- {"id": "shooting_stars", "name": "Shooting Stars", "category": "OTHER", "minutesPerAttempt": 15, "setupMinutes": 0,
-  "requirements": {"skills": {"MINING": 10}}, "notes": "Per star; rewards are bought with stardust."},
- {"id": "skilling_pets", "name": "Skilling Pets", "category": "OTHER", "minutesPerAttempt": null, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per-action rates depend on level; not yet modelled."},
- {"id": "slayer", "name": "Slayer", "category": "OTHER", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per kill of the monster with the best rate; superior-only items are per superior."},
- {"id": "tormented_demons", "name": "Tormented Demons", "category": "OTHER", "minutesPerAttempt": 3, "setupMinutes": 0,
-  "requirements": {"quests": ["WHILE_GUTHIX_SLEEPS"]}, "notes": "Per kill."},
- {"id": "tzhaar", "name": "TzHaar", "category": "OTHER", "minutesPerAttempt": 1, "setupMinutes": 0,
-  "requirements": {}, "notes": "Per TzHaar kill."},
- {"id": "miscellaneous", "name": "Miscellaneous", "category": "OTHER", "minutesPerAttempt": 5, "setupMinutes": 0,
-  "requirements": {}, "notes": "Mixed sources; per-attempt time is a rough average."}
+ {
+  "id": "abyssal_sire",
+  "name": "Abyssal Sire",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "SLAYER": 85
+   }
+  },
+  "notes": "Per kill. Whip/dagger/bludgeon rates are per kill via the unsired at the Font of Consumption.",
+  "challenge": 3
+ },
+ {
+  "id": "alchemical_hydra",
+  "name": "Alchemical Hydra",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "SLAYER": 95
+   }
+  },
+  "notes": "Per kill including banking.",
+  "challenge": 4
+ },
+ {
+  "id": "amoxliatl",
+  "name": "Amoxliatl",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "THE_HEART_OF_DARKNESS"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "araxxor",
+  "name": "Araxxor",
+  "category": "BOSSES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "SLAYER": 92
+   }
+  },
+  "notes": "Per kill.",
+  "challenge": 4
+ },
+ {
+  "id": "barrows_chests",
+  "name": "Barrows Chests",
+  "category": "BOSSES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "PRIEST_IN_PERIL"
+   ]
+  },
+  "notes": "Per chest with all six brothers killed.",
+  "challenge": 2
+ },
+ {
+  "id": "brutus",
+  "name": "Brutus",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill; estimate, boss is new.",
+  "challenge": 1
+ },
+ {
+  "id": "bryophyta",
+  "name": "Bryophyta",
+  "category": "BOSSES",
+  "minutesPerAttempt": 12,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill including farming a mossy key from moss giants.",
+  "challenge": 1
+ },
+ {
+  "id": "callisto_and_artio",
+  "name": "Callisto and Artio",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per Artio kill in the Wilderness.",
+  "challenge": 3
+ },
+ {
+  "id": "cerberus",
+  "name": "Cerberus",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "SLAYER": 91
+   }
+  },
+  "notes": "Per kill.",
+  "challenge": 3
+ },
+ {
+  "id": "chaos_elemental",
+  "name": "Chaos Elemental",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "chaos_fanatic",
+  "name": "Chaos Fanatic",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1.5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "commander_zilyana",
+  "name": "Commander Zilyana",
+  "category": "BOSSES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "AGILITY": 70
+   }
+  },
+  "notes": "Per kill including kill count.",
+  "challenge": 3
+ },
+ {
+  "id": "corporeal_beast",
+  "name": "Corporeal Beast",
+  "category": "BOSSES",
+  "minutesPerAttempt": 6,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill in a small team. Requires Summer's End.",
+  "challenge": 3
+ },
+ {
+  "id": "crazy_archaeologist",
+  "name": "Crazy archaeologist",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1.5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "dagannoth_kings",
+  "name": "Dagannoth Kings",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1.5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill of the relevant king.",
+  "challenge": 3
+ },
+ {
+  "id": "deranged_archaeologist",
+  "name": "Deranged Archaeologist",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "BONE_VOYAGE"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "doom_of_mokhaiotl",
+  "name": "Doom of Mokhaiotl",
+  "category": "BOSSES",
+  "minutesPerAttempt": 10,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per delve run; estimate, boss is new.",
+  "challenge": 4
+ },
+ {
+  "id": "duke_sucellus",
+  "name": "Duke Sucellus",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 3
+ },
+ {
+  "id": "the_fight_caves",
+  "name": "The Fight Caves",
+  "category": "BOSSES",
+  "minutesPerAttempt": 45,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per completed run.",
+  "challenge": 3
+ },
+ {
+  "id": "fortis_colosseum",
+  "name": "Fortis Colosseum",
+  "category": "BOSSES",
+  "minutesPerAttempt": 40,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "CHILDREN_OF_THE_SUN"
+   ]
+  },
+  "notes": "Per completed run.",
+  "challenge": 5
+ },
+ {
+  "id": "the_gauntlet",
+  "name": "The Gauntlet",
+  "category": "BOSSES",
+  "minutesPerAttempt": 9,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "SONG_OF_THE_ELVES"
+   ]
+  },
+  "notes": "Per Corrupted Gauntlet completion.",
+  "challenge": 3
+ },
+ {
+  "id": "general_graardor",
+  "name": "General Graardor",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "STRENGTH": 70
+   }
+  },
+  "notes": "Per kill including kill count.",
+  "challenge": 3
+ },
+ {
+  "id": "giant_mole",
+  "name": "Giant Mole",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 1
+ },
+ {
+  "id": "grotesque_guardians",
+  "name": "Grotesque Guardians",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "SLAYER": 75
+   }
+  },
+  "notes": "Per kill.",
+  "challenge": 3
+ },
+ {
+  "id": "hespori",
+  "name": "Hespori",
+  "category": "BOSSES",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "FARMING": 65
+   }
+  },
+  "notes": "Per kill; the seed grows in ~32 h so real time is gated by the cycle.",
+  "challenge": 2
+ },
+ {
+  "id": "the_hueycoatl",
+  "name": "The Hueycoatl",
+  "category": "BOSSES",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill in a group.",
+  "challenge": 3
+ },
+ {
+  "id": "the_inferno",
+  "name": "The Inferno",
+  "category": "BOSSES",
+  "minutesPerAttempt": 90,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per completed run.",
+  "challenge": 5
+ },
+ {
+  "id": "kalphite_queen",
+  "name": "Kalphite Queen",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3.5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 3
+ },
+ {
+  "id": "king_black_dragon",
+  "name": "King Black Dragon",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1.5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 1
+ },
+ {
+  "id": "kraken",
+  "name": "Kraken",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "SLAYER": 87
+   }
+  },
+  "notes": "Per kill.",
+  "challenge": 1
+ },
+ {
+  "id": "kreearra",
+  "name": "Kree'arra",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "RANGED": 70
+   }
+  },
+  "notes": "Per kill including kill count.",
+  "challenge": 3
+ },
+ {
+  "id": "kril_tsutsaroth",
+  "name": "K'ril Tsutsaroth",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "HITPOINTS": 70
+   }
+  },
+  "notes": "Per kill including kill count.",
+  "challenge": 3
+ },
+ {
+  "id": "the_leviathan",
+  "name": "The Leviathan",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 4
+ },
+ {
+  "id": "the_mad_angel",
+  "name": "The Mad Angel",
+  "category": "BOSSES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill; estimate, boss is new.",
+  "challenge": 3
+ },
+ {
+  "id": "maggot_king",
+  "name": "Maggot King",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill; estimate, boss is new.",
+  "challenge": 3
+ },
+ {
+  "id": "moons_of_peril",
+  "name": "Moons of Peril",
+  "category": "BOSSES",
+  "minutesPerAttempt": 8,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "PERILOUS_MOONS"
+   ]
+  },
+  "notes": "Per run of all three moons (one chest).",
+  "challenge": 2
+ },
+ {
+  "id": "nex",
+  "name": "Nex",
+  "category": "BOSSES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "THE_FROZEN_DOOR"
+   ]
+  },
+  "notes": "Per kill in a team.",
+  "challenge": 4
+ },
+ {
+  "id": "the_nightmare",
+  "name": "The Nightmare",
+  "category": "BOSSES",
+  "minutesPerAttempt": 6,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "PRIEST_IN_PERIL"
+   ]
+  },
+  "notes": "Per kill in a team.",
+  "challenge": 4
+ },
+ {
+  "id": "obor",
+  "name": "Obor",
+  "category": "BOSSES",
+  "minutesPerAttempt": 12,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill including farming a giant key from hill giants.",
+  "challenge": 1
+ },
+ {
+  "id": "phantom_muspah",
+  "name": "Phantom Muspah",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "SECRETS_OF_THE_NORTH"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 3
+ },
+ {
+  "id": "royal_titans",
+  "name": "Royal Titans",
+  "category": "BOSSES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "sarachnis",
+  "name": "Sarachnis",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "scorpia",
+  "name": "Scorpia",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2.5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "scurrius",
+  "name": "Scurrius",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1.5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 1
+ },
+ {
+  "id": "shellbane_gryphon",
+  "name": "Shellbane Gryphon",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill; estimate, boss is new.",
+  "challenge": 2
+ },
+ {
+  "id": "skotizo",
+  "name": "Skotizo",
+  "category": "BOSSES",
+  "minutesPerAttempt": 40,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill including assembling a dark totem in the Catacombs.",
+  "challenge": 2
+ },
+ {
+  "id": "tempoross",
+  "name": "Tempoross",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "FISHING": 35
+   }
+  },
+  "notes": "Per reward-pool search; a 10 minute game gives roughly five.",
+  "pointsPerAttempt": 12,
+  "pointsUnit": "spirit flakes",
+  "challenge": 1
+ },
+ {
+  "id": "thermonuclear_smoke_devil",
+  "name": "Thermonuclear smoke devil",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "SLAYER": 93
+   }
+  },
+  "notes": "Per kill.",
+  "challenge": 1
+ },
+ {
+  "id": "vardorvis",
+  "name": "Vardorvis",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 4
+ },
+ {
+  "id": "venenatis_and_spindel",
+  "name": "Venenatis and Spindel",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per Spindel kill in the Wilderness.",
+  "challenge": 3
+ },
+ {
+  "id": "vetion_and_calvarion",
+  "name": "Vet'ion and Calvar'ion",
+  "category": "BOSSES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per Calvar'ion kill in the Wilderness.",
+  "challenge": 3
+ },
+ {
+  "id": "vorkath",
+  "name": "Vorkath",
+  "category": "BOSSES",
+  "minutesPerAttempt": 2,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "DRAGON_SLAYER_II"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 3
+ },
+ {
+  "id": "the_whisperer",
+  "name": "The Whisperer",
+  "category": "BOSSES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 4
+ },
+ {
+  "id": "wintertodt",
+  "name": "Wintertodt",
+  "category": "BOSSES",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "FIREMAKING": 50
+   }
+  },
+  "notes": "Per supply crate (one game).",
+  "challenge": 1
+ },
+ {
+  "id": "yama",
+  "name": "Yama",
+  "category": "BOSSES",
+  "minutesPerAttempt": 6,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill; estimate, boss is new.",
+  "challenge": 4
+ },
+ {
+  "id": "zalcano",
+  "name": "Zalcano",
+  "category": "BOSSES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "SONG_OF_THE_ELVES"
+   ]
+  },
+  "notes": "Per kill in a group.",
+  "challenge": 2
+ },
+ {
+  "id": "zulrah",
+  "name": "Zulrah",
+  "category": "BOSSES",
+  "minutesPerAttempt": 1.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "REGICIDE"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 3
+ },
+ {
+  "id": "chambers_of_xeric",
+  "name": "Chambers of Xeric",
+  "category": "RAIDS",
+  "minutesPerAttempt": 30,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per raid in a small team; rates assume ~7% unique chance per raid.",
+  "challenge": 4
+ },
+ {
+  "id": "theatre_of_blood",
+  "name": "Theatre of Blood",
+  "category": "RAIDS",
+  "minutesPerAttempt": 25,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "PRIEST_IN_PERIL"
+   ]
+  },
+  "notes": "Per raid in a team; rates assume ~11% unique chance per raid.",
+  "challenge": 5
+ },
+ {
+  "id": "tombs_of_amascut",
+  "name": "Tombs of Amascut",
+  "category": "RAIDS",
+  "minutesPerAttempt": 30,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "BENEATH_CURSED_SANDS"
+   ]
+  },
+  "notes": "Per raid at ~300 invocation; rates assume ~4% unique chance per raid.",
+  "challenge": 3
+ },
+ {
+  "id": "beginner_treasure_trails",
+  "name": "Beginner Treasure Trails",
+  "category": "CLUES",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per casket, including getting and solving the clue.",
+  "challenge": 1
+ },
+ {
+  "id": "easy_treasure_trails",
+  "name": "Easy Treasure Trails",
+  "category": "CLUES",
+  "minutesPerAttempt": 8,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per casket, including getting and solving the clue.",
+  "challenge": 1
+ },
+ {
+  "id": "medium_treasure_trails",
+  "name": "Medium Treasure Trails",
+  "category": "CLUES",
+  "minutesPerAttempt": 12,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per casket, including getting and solving the clue.",
+  "challenge": 2
+ },
+ {
+  "id": "hard_treasure_trails",
+  "name": "Hard Treasure Trails",
+  "category": "CLUES",
+  "minutesPerAttempt": 18,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per casket, including getting and solving the clue.",
+  "challenge": 2
+ },
+ {
+  "id": "elite_treasure_trails",
+  "name": "Elite Treasure Trails",
+  "category": "CLUES",
+  "minutesPerAttempt": 25,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per casket, including getting and solving the clue.",
+  "challenge": 3
+ },
+ {
+  "id": "master_treasure_trails",
+  "name": "Master Treasure Trails",
+  "category": "CLUES",
+  "minutesPerAttempt": 30,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per casket, including getting and solving the clue.",
+  "challenge": 4
+ },
+ {
+  "id": "hard_treasure_trail_rewards_rare",
+  "name": "Hard Treasure Trail Rewards (Rare)",
+  "category": "CLUES",
+  "minutesPerAttempt": 18,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per hard casket.",
+  "challenge": 2
+ },
+ {
+  "id": "elite_treasure_trail_rewards_rare",
+  "name": "Elite Treasure Trail Rewards (Rare)",
+  "category": "CLUES",
+  "minutesPerAttempt": 25,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per elite casket.",
+  "challenge": 3
+ },
+ {
+  "id": "master_treasure_trail_rewards_rare",
+  "name": "Master Treasure Trail Rewards (Rare)",
+  "category": "CLUES",
+  "minutesPerAttempt": 30,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per master casket.",
+  "challenge": 4
+ },
+ {
+  "id": "shared_treasure_trail_rewards",
+  "name": "Shared Treasure Trail Rewards",
+  "category": "CLUES",
+  "minutesPerAttempt": 10,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per casket of the cheapest tier that gives the item.",
+  "challenge": 2
+ },
+ {
+  "id": "scroll_cases",
+  "name": "Scroll Cases",
+  "category": "CLUES",
+  "minutesPerAttempt": 10,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per casket.",
+  "challenge": 3
+ },
+ {
+  "id": "barbarian_assault",
+  "name": "Barbarian Assault",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 20,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per full 10-wave run; most rewards are bought with honour points.",
+  "pointsPerAttempt": 330,
+  "pointsUnit": "honour points",
+  "challenge": 3
+ },
+ {
+  "id": "barracuda_trials",
+  "name": "Barracuda Trials",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per trial attempt; rank rewards need a target time, so a few attempts each.",
+  "challenge": 3
+ },
+ {
+  "id": "brimhaven_agility_arena",
+  "name": "Brimhaven Agility Arena",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 10,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "AGILITY": 20
+   }
+  },
+  "notes": "Per ~10 tickets; rewards are bought with tickets.",
+  "pointsPerAttempt": 10,
+  "pointsUnit": "vouchers",
+  "challenge": 1
+ },
+ {
+  "id": "castle_wars",
+  "name": "Castle Wars",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 22,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per game including the lobby wait; rewards are bought with tickets.",
+  "pointsPerAttempt": 2.7,
+  "pointsUnit": "tickets",
+  "challenge": 1
+ },
+ {
+  "id": "fishing_trawler",
+  "name": "Fishing Trawler",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 12,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "FISHING": 15
+   }
+  },
+  "notes": "Per successful trip.",
+  "challenge": 1
+ },
+ {
+  "id": "giants_foundry",
+  "name": "Giants' Foundry",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 6,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "SMITHING": 15
+   },
+   "quests": [
+    "SLEEPING_GIANTS"
+   ]
+  },
+  "notes": "Per sword; rewards are bought with reputation.",
+  "pointsPerAttempt": 123,
+  "pointsUnit": "reputation",
+  "challenge": 1
+ },
+ {
+  "id": "gnome_restaurant",
+  "name": "Gnome Restaurant",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 6,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per delivery.",
+  "challenge": 1
+ },
+ {
+  "id": "guardians_of_the_rift",
+  "name": "Guardians of the Rift",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "RUNECRAFT": 27
+   },
+   "quests": [
+    "TEMPLE_OF_THE_EYE"
+   ]
+  },
+  "notes": "Per reward search; a game gives about three.",
+  "pointsPerAttempt": 1.93,
+  "pointsUnit": "abyssal pearls",
+  "challenge": 1
+ },
+ {
+  "id": "hallowed_sepulchre",
+  "name": "Hallowed Sepulchre",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 8,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "AGILITY": 52
+   },
+   "quests": [
+    "SINS_OF_THE_FATHER"
+   ]
+  },
+  "notes": "Per full run; the grand coffin needs 92 Agility.",
+  "pointsPerAttempt": 26,
+  "pointsUnit": "hallowed marks",
+  "challenge": 3
+ },
+ {
+  "id": "last_man_standing",
+  "name": "Last Man Standing",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 6,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per game; rewards are bought with points.",
+  "pointsPerAttempt": 2.5,
+  "pointsUnit": "points",
+  "challenge": 3
+ },
+ {
+  "id": "magic_training_arena",
+  "name": "Magic Training Arena",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 10,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "MAGIC": 33
+   }
+  },
+  "notes": "Per ~10 minutes of rooms; rewards are bought with pizazz points.",
+  "pointsPerAttempt": 2000,
+  "pointsUnit": "pizazz points",
+  "challenge": 1
+ },
+ {
+  "id": "mahogany_homes",
+  "name": "Mahogany Homes",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "CONSTRUCTION": 20
+   }
+  },
+  "notes": "Per contract; rewards are bought with carpenter points.",
+  "pointsPerAttempt": 4,
+  "pointsUnit": "carpenter points",
+  "challenge": 1
+ },
+ {
+  "id": "mastering_mixology",
+  "name": "Mastering Mixology",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "HERBLORE": 60
+   }
+  },
+  "notes": "Per order (~1 min); rewards are bought with resin.",
+  "pointsPerAttempt": 118,
+  "pointsUnit": "resin",
+  "challenge": 1
+ },
+ {
+  "id": "pest_control",
+  "name": "Pest Control",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 4,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per game; rewards are bought with commendations.",
+  "pointsPerAttempt": 5,
+  "pointsUnit": "commendations",
+  "challenge": 1
+ },
+ {
+  "id": "rogues_den",
+  "name": "Rogues' Den",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "AGILITY": 50,
+    "THIEVING": 50
+   }
+  },
+  "notes": "Per maze completion.",
+  "challenge": 1
+ },
+ {
+  "id": "shades_of_mortton",
+  "name": "Shades of Mort'ton",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "SHADES_OF_MORTTON"
+   ]
+  },
+  "notes": "Per shade chest opened, including getting the key.",
+  "challenge": 1
+ },
+ {
+  "id": "soul_wars",
+  "name": "Soul Wars",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 15,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per game; rewards are bought with zeal.",
+  "pointsPerAttempt": 50,
+  "pointsUnit": "zeal",
+  "challenge": 1
+ },
+ {
+  "id": "temple_trekking",
+  "name": "Temple Trekking",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 8,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "IN_AID_OF_THE_MYREQUE"
+   ]
+  },
+  "notes": "Per trek.",
+  "challenge": 1
+ },
+ {
+  "id": "tithe_farm",
+  "name": "Tithe Farm",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 20,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "FARMING": 34
+   }
+  },
+  "notes": "Per round; rewards are bought with points.",
+  "pointsPerAttempt": 35,
+  "pointsUnit": "points",
+  "challenge": 1
+ },
+ {
+  "id": "trouble_brewing",
+  "name": "Trouble Brewing",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 20,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "CABIN_FEVER"
+   ]
+  },
+  "notes": "Per game; rewards are bought with pieces of eight.",
+  "pointsPerAttempt": 120,
+  "pointsUnit": "pieces of eight",
+  "challenge": 1
+ },
+ {
+  "id": "vale_totems",
+  "name": "Vale Totems",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per totem; estimate.",
+  "challenge": 1
+ },
+ {
+  "id": "volcanic_mine",
+  "name": "Volcanic Mine",
+  "category": "MINIGAMES",
+  "minutesPerAttempt": 10,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "MINING": 50
+   },
+   "quests": [
+    "BONE_VOYAGE"
+   ]
+  },
+  "notes": "Per game; rewards are bought with points.",
+  "pointsPerAttempt": 1700,
+  "pointsUnit": "points",
+  "challenge": 2
+ },
+ {
+  "id": "aerial_fishing",
+  "name": "Aerial Fishing",
+  "category": "OTHER",
+  "minutesPerAttempt": 0.1,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "FISHING": 43,
+    "HUNTER": 35
+   }
+  },
+  "notes": "Per catch.",
+  "pointsPerAttempt": 0.0172,
+  "pointsUnit": "molch pearls",
+  "challenge": 1
+ },
+ {
+  "id": "all_pets",
+  "name": "All Pets",
+  "category": "OTHER",
+  "minutesPerAttempt": null,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Each pet uses the rate and per-attempt time of the entry it comes from.",
+  "challenge": 1
+ },
+ {
+  "id": "boat_paints",
+  "name": "Boat Paints",
+  "category": "OTHER",
+  "minutesPerAttempt": 10,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per ~10 minutes of charting; god paints unlock after fully charting an ocean.",
+  "challenge": 1
+ },
+ {
+  "id": "camdozaal",
+  "name": "Camdozaal",
+  "category": "OTHER",
+  "minutesPerAttempt": 0.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "BELOW_ICE_MOUNTAIN"
+   ]
+  },
+  "notes": "Per action (golem kill, deposit crushed, fish caught).",
+  "challenge": 1
+ },
+ {
+  "id": "champions_challenge",
+  "name": "Champion's Challenge",
+  "category": "OTHER",
+  "minutesPerAttempt": 0.3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill of a monster that drops a scroll (1/5,000).",
+  "challenge": 2
+ },
+ {
+  "id": "chompy_bird_hunting",
+  "name": "Chompy Bird Hunting",
+  "category": "OTHER",
+  "minutesPerAttempt": 0.5,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "BIG_CHOMPY_BIRD_HUNTING"
+   ]
+  },
+  "notes": "Per chompy killed; hats unlock at kill-count milestones.",
+  "challenge": 1
+ },
+ {
+  "id": "colossal_wyrm_agility",
+  "name": "Colossal Wyrm Agility",
+  "category": "OTHER",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "AGILITY": 50
+   }
+  },
+  "notes": "Per lap; rewards are bought with termites.",
+  "pointsPerAttempt": 3.9,
+  "pointsUnit": "termites",
+  "challenge": 1
+ },
+ {
+  "id": "creature_creation",
+  "name": "Creature Creation",
+  "category": "OTHER",
+  "minutesPerAttempt": 2,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "TOWER_OF_LIFE"
+   ]
+  },
+  "notes": "Per creature made and killed.",
+  "challenge": 1
+ },
+ {
+  "id": "cyclopes",
+  "name": "Cyclopes",
+  "category": "OTHER",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill in the Warriors' Guild.",
+  "challenge": 1
+ },
+ {
+  "id": "elder_chaos_druids",
+  "name": "Elder Chaos Druids",
+  "category": "OTHER",
+  "minutesPerAttempt": 0.5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 1
+ },
+ {
+  "id": "forestry",
+  "name": "Forestry",
+  "category": "OTHER",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per forestry event (~1/9 chance of any given event type); ~175 anima-infused bark per event.",
+  "pointsPerAttempt": 175,
+  "pointsUnit": "bark",
+  "challenge": 1
+ },
+ {
+  "id": "fossil_island_notes",
+  "name": "Fossil Island Notes",
+  "category": "OTHER",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "BONE_VOYAGE"
+   ]
+  },
+  "notes": "Per skilling action on Fossil Island.",
+  "challenge": 1
+ },
+ {
+  "id": "gloughs_experiments",
+  "name": "Glough's Experiments",
+  "category": "OTHER",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "MONKEY_MADNESS_II"
+   ]
+  },
+  "notes": "Per demonic gorilla kill.",
+  "challenge": 3
+ },
+ {
+  "id": "hunter_guild",
+  "name": "Hunter Guild",
+  "category": "OTHER",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "HUNTER": 46
+   },
+   "quests": [
+    "CHILDREN_OF_THE_SUN"
+   ]
+  },
+  "notes": "Per rumour.",
+  "challenge": 1
+ },
+ {
+  "id": "lost_schematics",
+  "name": "Lost Schematics",
+  "category": "OTHER",
+  "minutesPerAttempt": 15,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per island visit: dig the key, then open the lockbox.",
+  "challenge": 1
+ },
+ {
+  "id": "monkey_backpacks",
+  "name": "Monkey Backpacks",
+  "category": "OTHER",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "AGILITY": 48
+   },
+   "quests": [
+    "MONKEY_MADNESS_I"
+   ]
+  },
+  "notes": "Per full Ape Atoll lap after Monkey Madness II.",
+  "challenge": 1
+ },
+ {
+  "id": "motherlode_mine",
+  "name": "Motherlode Mine",
+  "category": "OTHER",
+  "minutesPerAttempt": 0.1,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "MINING": 30
+   }
+  },
+  "notes": "Per pay-dirt; rewards are bought with golden nuggets.",
+  "pointsPerAttempt": 0.0274,
+  "pointsUnit": "golden nuggets",
+  "challenge": 1
+ },
+ {
+  "id": "my_notes",
+  "name": "My Notes",
+  "category": "OTHER",
+  "minutesPerAttempt": 0.2,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per skeleton rummaged in the Ancient Cavern.",
+  "challenge": 1
+ },
+ {
+  "id": "ocean_encounters",
+  "name": "Ocean Encounters",
+  "category": "OTHER",
+  "minutesPerAttempt": 30,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per giant clam encounter (~1 h cooldown between them).",
+  "challenge": 1
+ },
+ {
+  "id": "random_events",
+  "name": "Random Events",
+  "category": "OTHER",
+  "minutesPerAttempt": 40,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per random event; they arrive roughly every 40 minutes of play.",
+  "challenge": 1
+ },
+ {
+  "id": "revenants",
+  "name": "Revenants",
+  "category": "OTHER",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill.",
+  "challenge": 2
+ },
+ {
+  "id": "rooftop_agility",
+  "name": "Rooftop Agility",
+  "category": "OTHER",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per lap; graceful is bought with marks of grace.",
+  "pointsPerAttempt": 0.21,
+  "pointsUnit": "marks of grace",
+  "challenge": 1
+ },
+ {
+  "id": "sailing_miscellaneous",
+  "name": "Sailing Miscellaneous",
+  "category": "OTHER",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per sea-monster kill or salvage sorted.",
+  "challenge": 1
+ },
+ {
+  "id": "sea_treasures",
+  "name": "Sea Treasures",
+  "category": "OTHER",
+  "minutesPerAttempt": 10,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Estimate.",
+  "challenge": 1
+ },
+ {
+  "id": "shayzien_armour",
+  "name": "Shayzien Armour",
+  "category": "OTHER",
+  "minutesPerAttempt": 2,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per lizardman shaman / soldier reward roll.",
+  "challenge": 1
+ },
+ {
+  "id": "shooting_stars",
+  "name": "Shooting Stars",
+  "category": "OTHER",
+  "minutesPerAttempt": 15,
+  "setupMinutes": 0,
+  "requirements": {
+   "skills": {
+    "MINING": 10
+   }
+  },
+  "notes": "Per star; rewards are bought with stardust.",
+  "pointsPerAttempt": 235,
+  "pointsUnit": "stardust",
+  "challenge": 1
+ },
+ {
+  "id": "skilling_pets",
+  "name": "Skilling Pets",
+  "category": "OTHER",
+  "minutesPerAttempt": 60,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per hour of the best common method at ~99; rates use the wiki's 1/(B - 25 x level) formula.",
+  "challenge": 1
+ },
+ {
+  "id": "slayer",
+  "name": "Slayer",
+  "category": "OTHER",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per kill of the monster with the best rate; superior-only items are per superior.",
+  "challenge": 2
+ },
+ {
+  "id": "tormented_demons",
+  "name": "Tormented Demons",
+  "category": "OTHER",
+  "minutesPerAttempt": 3,
+  "setupMinutes": 0,
+  "requirements": {
+   "quests": [
+    "WHILE_GUTHIX_SLEEPS"
+   ]
+  },
+  "notes": "Per kill.",
+  "challenge": 3
+ },
+ {
+  "id": "tzhaar",
+  "name": "TzHaar",
+  "category": "OTHER",
+  "minutesPerAttempt": 1,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Per TzHaar kill.",
+  "challenge": 1
+ },
+ {
+  "id": "miscellaneous",
+  "name": "Miscellaneous",
+  "category": "OTHER",
+  "minutesPerAttempt": 5,
+  "setupMinutes": 0,
+  "requirements": {},
+  "notes": "Mixed sources; per-attempt time is a rough average.",
+  "challenge": 1
+ }
 ]

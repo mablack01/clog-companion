@@ -33,7 +33,41 @@ public class DifficultyEngine
 		return OptionalDouble.of(source.getSetupMinutes() + attempts(rate) * source.getMinutesPerAttempt());
 	}
 
+	/** The item's own challenge when set, else its source's. */
+	public static int challenge(ClogItem item, ClogSource source)
+	{
+		Integer own = item.getChallenge();
+		return own != null ? Math.max(1, Math.min(5, own)) : source == null ? 1 : source.getChallenge();
+	}
+
+	/** Combined rating: the time tier, raised to a floor set by the challenge (3 = Medium, 4 = Long, 5 = Grind). */
 	public Tier tier(ClogItem item, ClogSource source)
+	{
+		Tier byTime = timeTier(item, source);
+		if (byTime == Tier.UNRATED)
+		{
+			return byTime;
+		}
+		Tier floor = challengeFloor(challenge(item, source));
+		return floor.ordinal() > byTime.ordinal() ? floor : byTime;
+	}
+
+	static Tier challengeFloor(int challenge)
+	{
+		switch (challenge)
+		{
+			case 5:
+				return Tier.GRIND;
+			case 4:
+				return Tier.LONG;
+			case 3:
+				return Tier.MEDIUM;
+			default:
+				return Tier.EASY;
+		}
+	}
+
+	private Tier timeTier(ClogItem item, ClogSource source)
 	{
 		OptionalDouble minutes = expectedMinutes(item, source);
 		if (!minutes.isPresent())

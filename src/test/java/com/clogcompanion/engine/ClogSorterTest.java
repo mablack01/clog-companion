@@ -17,9 +17,9 @@ public class ClogSorterTest
 {
 	private static RatedSlot slot(String name, Double rate, OptionalDouble minutes)
 	{
-		ClogSource src = new ClogSource("s", "Src", Category.BOSSES, 1.0, 0.0, Requirements.none(), null);
-		ClogItem it = new ClogItem("s:" + name, "s", null, 1, name, rate, "", null);
-		return new RatedSlot(it, src, minutes.isPresent() ? Tier.EASY : Tier.UNRATED, minutes, Collections.emptyList(), false);
+		ClogSource src = new ClogSource("s", "Src", Category.BOSSES, 1.0, 0.0, Requirements.none(), null, null);
+		ClogItem it = new ClogItem("s:" + name, "s", null, 1, name, rate, "", null, null);
+		return new RatedSlot(it, src, minutes.isPresent() ? Tier.EASY : Tier.UNRATED, 1, minutes, Collections.emptyList(), false);
 	}
 
 	private static final RatedSlot B = slot("B", 0.5, OptionalDouble.of(20));
@@ -41,6 +41,16 @@ public class ClogSorterTest
 	public void rarestIsAscendingRateUnknownLast()
 	{
 		assertEquals(Arrays.asList("a", "B", "c"), order(ClogSorter.RAREST));
+	}
+
+	@Test
+	public void easiestOrdersByTierThenTime()
+	{
+		RatedSlot hardButQuick = slot("d", 0.9, OptionalDouble.of(1));
+		hardButQuick = new RatedSlot(hardButQuick.getItem(), hardButQuick.getSource(), Tier.LONG, 4, OptionalDouble.of(1), Collections.emptyList(), false);
+		List<String> order = Arrays.asList(C, hardButQuick, B, A).stream().sorted(ClogSorter.EASIEST)
+			.map(r -> r.getItem().getName()).collect(Collectors.toList());
+		assertEquals(Arrays.asList("a", "B", "d", "c"), order);
 	}
 
 	@Test

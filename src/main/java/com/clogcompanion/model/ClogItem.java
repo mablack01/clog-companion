@@ -19,4 +19,6 @@ public class ClogItem
 	Double rate;
 	String rateText;
 	String wikiUrl;
+	/** Overrides the source's challenge for one slot (e.g. a conditional drop from an otherwise easy boss). */
+	Integer challenge;
 }

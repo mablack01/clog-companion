@@ -17,11 +17,18 @@ public class ClogSource
 	/** One-time cost before the first attempt. */
 	Double setupMinutes;
 	Requirements requirements;
+	/** 1 (afk skilling) to 5 (Inferno-class); how hard one attempt is, independent of how long it takes. */
+	Integer challenge;
 	String notes;
 
 	public boolean isRated()
 	{
 		return minutesPerAttempt != null && setupMinutes != null;
+	}
+
+	public int getChallenge()
+	{
+		return challenge == null ? 1 : Math.max(1, Math.min(5, challenge));
 	}
 
 	public Requirements getRequirements()

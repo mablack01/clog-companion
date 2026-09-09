@@ -17,12 +17,12 @@ public class ClogDatasetValidateTest
 {
 	private static ClogSource source(String id, Category cat, Requirements req)
 	{
-		return new ClogSource(id, id, cat, 1.0, 0.0, req, null);
+		return new ClogSource(id, id, cat, 1.0, 0.0, req, null, null);
 	}
 
 	private static ClogItem item(String id, String sourceId, String timeSourceId)
 	{
-		return new ClogItem(id, sourceId, timeSourceId, 1, id, 0.5, "1/2", null);
+		return new ClogItem(id, sourceId, timeSourceId, 1, id, 0.5, "1/2", null, null);
 	}
 
 	@Test

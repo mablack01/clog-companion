@@ -38,6 +38,23 @@ public class SlotRaterTest
 	}
 
 	@Test
+	public void curatedChallengeSurvivesRegeneration()
+	{
+		assertEquals(Tier.GRIND, tierOf("the_inferno:infernal_cape"));
+		assertEquals(Tier.LONG, tierOf("phantom_muspah:charged_ice"));
+		assertEquals(Tier.GRIND, tierOf("araxxor:coagulated_venom"));
+		assertEquals(Tier.GRIND, tierOf("tombs_of_amascut:cursed_phalanx"));
+		assertEquals(Tier.EASY, tierOf("giant_mole:mole_claw"));
+		assertEquals(Tier.MEDIUM, tierOf("dagannoth_kings:berserker_ring"));
+	}
+
+	private static Tier tierOf(String id)
+	{
+		ClogItem item = DATA.byId(id).orElseThrow(AssertionError::new);
+		return RATER.rate(item, AccountState.empty(), Collections.emptySet()).getTier();
+	}
+
+	@Test
 	public void fastestRatedSlotsLookSane()
 	{
 		List<RatedSlot> fastest = RATER.rateAll(AccountState.empty(), Collections.emptySet()).stream()
