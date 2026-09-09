@@ -67,7 +67,7 @@ public class DifficultyEngine
 		}
 	}
 
-	public Tier timeTier(ClogItem item, ClogSource source)
+	private Tier timeTier(ClogItem item, ClogSource source)
 	{
 		OptionalDouble minutes = expectedMinutes(item, source);
 		if (!minutes.isPresent())

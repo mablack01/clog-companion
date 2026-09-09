@@ -97,6 +97,9 @@ public class DifficultyEngineTest
 		assertEquals(Tier.GRIND, EXPECTED.tier(conditional, source(3.0, 0.0)));
 		assertEquals(5, DifficultyEngine.challenge(conditional, easyBoss));
 		assertEquals(Tier.UNRATED, EXPECTED.tier(item(null), easyBoss));
+		assertEquals(1, DifficultyEngine.challenge(item(1.0), new ClogSource("s", "S", Category.BOSSES, 1.0, 0.0, null, 0, null)));
+		assertEquals(5, DifficultyEngine.challenge(item(1.0), new ClogSource("s", "S", Category.BOSSES, 1.0, 0.0, null, 7, null)));
+		assertEquals(1, DifficultyEngine.challenge(item(1.0), null));
 	}
 
 	@Test

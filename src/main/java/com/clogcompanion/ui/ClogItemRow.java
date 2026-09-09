@@ -48,7 +48,7 @@ class ClogItemRow extends JPanel
 		right.setOpaque(false);
 		JLabel timeLabel = label(DifficultyEngine.formatMinutes(slot.getMinutes()), ColorScheme.TEXT_COLOR, FontManager.getRunescapeFont());
 		timeLabel.setHorizontalAlignment(SwingConstants.RIGHT);
-		JLabel tierLabel = label(slot.getTier().name() + "  " + challengeDots(slot.getChallenge()), tierColor(slot.getTier()), FontManager.getRunescapeSmallFont());
+		JLabel tierLabel = label(slot.getTier().name() + "  " + slot.getChallenge() + "/5", tierColor(slot.getTier()), FontManager.getRunescapeSmallFont());
 		tierLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		right.add(timeLabel);
 		right.add(tierLabel);
@@ -57,7 +57,7 @@ class ClogItemRow extends JPanel
 		setMaximumSize(new Dimension(Integer.MAX_VALUE, getPreferredSize().height));
 
 		String notes = slot.getSource().getNotes();
-		setToolTipText("<html>" + detail + "<br>Challenge " + slot.getChallenge() + "/5 " + challengeDots(slot.getChallenge())
+		setToolTipText("<html>" + detail + "<br>Challenge " + slot.getChallenge() + "/5"
 			+ (notes == null || notes.isEmpty() ? "" : "<br>" + notes) + "<br><i>Click for the wiki page</i></html>");
 		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		addMouseListener(new MouseAdapter()
@@ -103,17 +103,6 @@ class ClogItemRow extends JPanel
 			itemManager.getImage(slot.getItem().getItemId()).addTo(icon);
 		}
 		return icon;
-	}
-
-	/** "●●●○○" for challenge 3. */
-	static String challengeDots(int challenge)
-	{
-		StringBuilder sb = new StringBuilder();
-		for (int i = 1; i <= 5; i++)
-		{
-			sb.append(i <= challenge ? '●' : '○');
-		}
-		return sb.toString();
 	}
 
 	static Color tierColor(Tier tier)

@@ -217,7 +217,6 @@ public class ClogPanel extends PluginPanel
 		JScrollPane scroll = new JScrollPane(listWrapper);
 		scroll.setBorder(null);
 		scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		scroll.getVerticalScrollBar().setUnitIncrement(16);
 		add(scroll, BorderLayout.CENTER);
 
 		more.setFocusPainted(false);

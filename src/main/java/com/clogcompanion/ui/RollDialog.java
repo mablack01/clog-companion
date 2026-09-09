@@ -122,7 +122,7 @@ class RollDialog extends JDialog
 		}
 		name.setText(slot.getItem().getName());
 		detail.setText(slot.getSource().getName() + "  ·  " + DifficultyEngine.formatMinutes(slot.getMinutes()) + "  ·  " + slot.getTier()
-			+ " " + ClogItemRow.challengeDots(slot.getChallenge()));
+			+ " " + slot.getChallenge() + "/5");
 	}
 
 	@Override
