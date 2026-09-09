@@ -8,9 +8,11 @@ import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Insets;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
@@ -25,7 +27,7 @@ class ClogItemRow extends JPanel
 	private static final Color MEDIUM = new Color(230, 200, 60);
 	private static final Color LONG = new Color(235, 130, 40);
 
-	ClogItemRow(RatedSlot slot, ItemManager itemManager)
+	ClogItemRow(RatedSlot slot, ItemManager itemManager, boolean tracked, Runnable onToggleTrack)
 	{
 		super(new BorderLayout(6, 0));
 		setBackground(ColorScheme.DARKER_GRAY_COLOR);
@@ -35,7 +37,8 @@ class ClogItemRow extends JPanel
 
 		JPanel text = new JPanel(new GridLayout(0, 1));
 		text.setOpaque(false);
-		text.add(label(slot.getItem().getName(), ColorScheme.TEXT_COLOR, FontManager.getRunescapeBoldFont()));
+		text.add(label(slot.getItem().getName() + (slot.isObtained() ? "  (done)" : ""),
+			slot.isObtained() ? ColorScheme.PROGRESS_COMPLETE_COLOR : ColorScheme.TEXT_COLOR, FontManager.getRunescapeBoldFont()));
 		String detail = slot.getSource().getName() + "  ·  " + slot.getItem().getRateText();
 		text.add(label(detail, ColorScheme.LIGHT_GRAY_COLOR, FontManager.getRunescapeSmallFont()));
 		if (!slot.getUnmet().isEmpty())
@@ -52,7 +55,17 @@ class ClogItemRow extends JPanel
 		tierLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		right.add(timeLabel);
 		right.add(tierLabel);
-		add(right, BorderLayout.EAST);
+		JPanel east = new JPanel(new BorderLayout(4, 0));
+		east.setOpaque(false);
+		east.add(right, BorderLayout.CENTER);
+		JButton track = new JButton(tracked ? "×" : "+");
+		track.setToolTipText(tracked ? "Stop tracking" : "Track this slot");
+		track.setForeground(tracked ? ColorScheme.BRAND_ORANGE : ColorScheme.LIGHT_GRAY_COLOR);
+		track.setMargin(new Insets(0, 3, 0, 3));
+		track.setFocusPainted(false);
+		track.addActionListener(e -> onToggleTrack.run());
+		east.add(track, BorderLayout.EAST);
+		add(east, BorderLayout.EAST);
 
 		setMaximumSize(new Dimension(Integer.MAX_VALUE, getPreferredSize().height));
 

@@ -2,6 +2,7 @@ package com.clogcompanion;
 
 import com.clogcompanion.account.AccountStateReader;
 import com.clogcompanion.account.ObtainedTracker;
+import com.clogcompanion.account.TrackedList;
 import com.clogcompanion.data.ClogDataset;
 import com.clogcompanion.data.Diaries;
 import com.clogcompanion.engine.ClogFilter;
@@ -77,6 +78,7 @@ public class ClogCompanionPlugin extends Plugin
 	@Getter
 	private ClogDataset dataset;
 	private ObtainedTracker obtained;
+	private TrackedList tracked;
 	private ClogFilter filter;
 	private ClogPanel panel;
 	private NavigationButton navButton;
@@ -88,10 +90,11 @@ public class ClogCompanionPlugin extends Plugin
 		dataset = ClogDataset.load(gson);
 		log.debug("Clog Companion loaded {} slots across {} entries", dataset.getItems().size(), dataset.getSources().size());
 		obtained = new ObtainedTracker(dataset, configManager, gson);
+		tracked = new TrackedList(configManager, gson);
 		filter = new ClogFilter();
 		filter.setHideObtained(config.hideObtained());
 		filter.setOnlyMeetsRequirements(config.onlyMeetsRequirements());
-		panel = new ClogPanel(itemManager, filter, this::persistFilter, this::pin, () -> pin(null));
+		panel = new ClogPanel(itemManager, filter, tracked, this::persistFilter, this::pin, () -> pin(null));
 		BufferedImage icon = ImageUtil.loadImageResource(getClass(), "icon.png");
 		navButton = NavigationButton.builder()
 			.tooltip("Clog Companion")
@@ -103,6 +106,7 @@ public class ClogCompanionPlugin extends Plugin
 		if (client.getGameState() == GameState.LOGGED_IN)
 		{
 			obtained.load();
+			tracked.load();
 		}
 		refresh();
 	}
@@ -116,6 +120,7 @@ public class ClogCompanionPlugin extends Plugin
 		panel = null;
 		filter = null;
 		obtained = null;
+		tracked = null;
 		dataset = null;
 	}
 
@@ -126,10 +131,12 @@ public class ClogCompanionPlugin extends Plugin
 		if (event.getNewProfile() == null)
 		{
 			obtained.clear();
+			tracked.clear();
 		}
 		else
 		{
 			obtained.load();
+			tracked.load();
 		}
 		refresh();
 	}
@@ -140,6 +147,7 @@ public class ClogCompanionPlugin extends Plugin
 		if (event.getGameState() == GameState.LOGIN_SCREEN)
 		{
 			obtained.clear();
+			tracked.clear();
 			refresh();
 		}
 	}
@@ -243,6 +251,10 @@ public class ClogCompanionPlugin extends Plugin
 
 	private void pin(RatedSlot slot)
 	{
+		if (slot != null)
+		{
+			tracked.add(slot.getItem().getId());
+		}
 		if (slot == null)
 		{
 			configManager.unsetRSProfileConfiguration(ClogCompanionConfig.GROUP, PINNED_KEY);

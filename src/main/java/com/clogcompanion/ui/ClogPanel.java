@@ -1,5 +1,6 @@
 package com.clogcompanion.ui;
 
+import com.clogcompanion.account.TrackedList;
 import com.clogcompanion.engine.ClogFilter;
 import com.clogcompanion.engine.ClogSorter;
 import com.clogcompanion.engine.DifficultyEngine;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.DefaultListCellRenderer;
@@ -60,8 +62,12 @@ public class ClogPanel extends PluginPanel
 	private final JPanel pinned = new JPanel(new BorderLayout(6, 0));
 	private final Consumer<RatedSlot> onPin;
 	private final Runnable onUnpin;
+	private final TrackedList tracked;
+	private final JToggleButton viewAll = new JToggleButton("All", true);
+	private final JToggleButton viewTracked = new JToggleButton("Tracked");
+	private final JButton clearDone = new JButton("Clear completed");
 
-	public ClogPanel(ItemManager itemManager, ClogFilter filter, Runnable onFilterPersist, Consumer<RatedSlot> onPin, Runnable onUnpin)
+	public ClogPanel(ItemManager itemManager, ClogFilter filter, TrackedList tracked, Runnable onFilterPersist, Consumer<RatedSlot> onPin, Runnable onUnpin)
 	{
 		super(false);
 		this.itemManager = itemManager;
@@ -69,6 +75,7 @@ public class ClogPanel extends PluginPanel
 		this.onFilterPersist = onFilterPersist;
 		this.onPin = onPin;
 		this.onUnpin = onUnpin;
+		this.tracked = tracked;
 		setLayout(new BorderLayout());
 		setBackground(ColorScheme.DARK_GRAY_COLOR);
 
@@ -90,6 +97,19 @@ public class ClogPanel extends PluginPanel
 		top.add(Box.createVerticalStrut(4));
 		top.add(pinned);
 		top.add(Box.createVerticalStrut(6));
+
+		JPanel views = new JPanel(new GridLayout(1, 2, 2, 0));
+		views.setOpaque(false);
+		ButtonGroup group = new ButtonGroup();
+		for (JToggleButton b : new JToggleButton[]{viewAll, viewTracked})
+		{
+			b.setFocusPainted(false);
+			b.addActionListener(e -> apply());
+			group.add(b);
+			views.add(b);
+		}
+		top.add(views);
+		top.add(Box.createVerticalStrut(4));
 
 		JPanel tiers = new JPanel(new GridLayout(1, 0, 2, 0));
 		tiers.setOpaque(false);
@@ -204,6 +224,15 @@ public class ClogPanel extends PluginPanel
 		});
 		countRow.add(roll, BorderLayout.EAST);
 		top.add(countRow);
+		clearDone.setFocusPainted(false);
+		clearDone.setToolTipText("Remove tracked slots you now own");
+		clearDone.addActionListener(e ->
+		{
+			tracked.clearCompleted(slots.stream().filter(RatedSlot::isObtained).map(s -> s.getItem().getId()).collect(Collectors.toSet()));
+			apply();
+		});
+		clearDone.setVisible(false);
+		top.add(clearDone);
 		add(top, BorderLayout.NORTH);
 
 		list.setLayout(new BoxLayout(list, BoxLayout.Y_AXIS));
@@ -291,7 +320,13 @@ public class ClogPanel extends PluginPanel
 
 	private void apply(boolean resetPaging)
 	{
-		visible = slots.stream().filter(filter::test).sorted((ClogSorter) sort.getSelectedItem()).collect(Collectors.toList());
+		// The tracked view shows everything you chose, including what you have since obtained.
+		boolean trackedView = viewTracked.isSelected();
+		visible = slots.stream()
+			.filter(s -> trackedView ? tracked.contains(s.getItem().getId()) : filter.test(s))
+			.sorted((ClogSorter) sort.getSelectedItem()).collect(Collectors.toList());
+		viewTracked.setText("Tracked (" + tracked.size() + ")");
+		clearDone.setVisible(trackedView && visible.stream().anyMatch(RatedSlot::isObtained));
 		shown = resetPaging ? PAGE : Math.max(PAGE, shown);
 		render();
 	}
@@ -304,7 +339,11 @@ public class ClogPanel extends PluginPanel
 		roll.setToolTipText(visible.isEmpty() ? "Nothing matches your filters" : "Pick a random slot from the list below");
 		for (RatedSlot slot : visible.subList(0, Math.min(shown, visible.size())))
 		{
-			list.add(new ClogItemRow(slot, itemManager));
+			list.add(new ClogItemRow(slot, itemManager, tracked.contains(slot.getItem().getId()), () ->
+			{
+				tracked.toggle(slot.getItem().getId());
+				apply(false);
+			}));
 			list.add(Box.createVerticalStrut(3));
 		}
 		if (visible.size() > shown)
