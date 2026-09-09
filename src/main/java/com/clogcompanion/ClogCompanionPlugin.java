@@ -173,8 +173,11 @@ public class ClogCompanionPlugin extends Plugin
 		if (args != null && args.length > 1 && args[1] instanceof Integer)
 		{
 			int itemId = (Integer) args[1];
-			obtained.markItemId(itemId);
-			obtained.markItemName(itemManager.getItemComposition(itemId).getName());
+			if (itemId > 0)
+			{
+				obtained.markItemId(itemId);
+				obtained.markItemName(itemManager.getItemComposition(itemId).getName());
+			}
 		}
 	}
 

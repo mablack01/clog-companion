@@ -62,6 +62,19 @@ public class ObtainedTrackerTest
 	}
 
 	@Test
+	public void nameMarkingCoversVariantIds()
+	{
+		ConfigManager cm = mock(ConfigManager.class);
+		ObtainedTracker t = new ObtainedTracker(DATA, cm, new Gson());
+		t.markItemId(999999);
+		t.markItemName("Plain satchel");
+		assertTrue(t.isSynced());
+		assertTrue(t.obtainedSlotIds().contains("creature_creation:plain_satchel"));
+		t.markItemName("Not a collection log item");
+		assertTrue(t.flush());
+	}
+
+	@Test
 	public void loadRestoresFromProfileConfig()
 	{
 		ConfigManager cm = mock(ConfigManager.class);
