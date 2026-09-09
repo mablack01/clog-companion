@@ -131,6 +131,8 @@ public class ClogPanel extends PluginPanel
 				{
 					set.remove(tier);
 				}
+				// Selected = tier colour, off = grey; the LAF's own selected shading reads as "off".
+				b.setForeground(b.isSelected() ? ClogItemRow.tierColor(tier) : ColorScheme.MEDIUM_GRAY_COLOR);
 				filter.setTiers(set);
 				apply();
 			});
