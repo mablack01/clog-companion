@@ -476,7 +476,7 @@
    "rate": 0.002,
    "rateText": "1/500 per delve 8 completion",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dom",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "all_pets:giant_squirrel",
@@ -1191,7 +1191,7 @@
    "rate": 1.0,
    "rateText": "Always",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Coagulated_venom",
-   "challenge": 4
+   "challenge": 5
   },
   {
    "id": "araxxor:jar_of_venom",
@@ -1389,7 +1389,7 @@
    "rate": 0.3333333333333333,
    "rateText": "Clear Tempor Tantrum at Shark time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Barrel_stand",
-   "challenge": 4
+   "challenge": 3
   },
   {
    "id": "barracuda_trials:captured_wind_mote",
@@ -1400,7 +1400,7 @@
    "rate": 0.3333333333333333,
    "rateText": "Clear Jubbly Jive at Shark time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Captured_wind_mote",
-   "challenge": 4
+   "challenge": 3
   },
   {
    "id": "barracuda_trials:fetid_key",
@@ -1411,7 +1411,7 @@
    "rate": 0.3333333333333333,
    "rateText": "Clear Jubbly Jive at Swordfish time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Fetid_key",
-   "challenge": 4
+   "challenge": 2
   },
   {
    "id": "barracuda_trials:gurtobs_fabric_roll",
@@ -1444,7 +1444,7 @@
    "rate": 0.3333333333333333,
    "rateText": "Clear Gwenith Glide at Shark time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Heart_of_Ithell",
-   "challenge": 4
+   "challenge": 3
   },
   {
    "id": "barracuda_trials:ralphs_fabric_roll",
@@ -1466,7 +1466,7 @@
    "rate": 0.3333333333333333,
    "rateText": "Clear Gwenith Glide at Swordfish time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Serrated_key",
-   "challenge": 4
+   "challenge": 2
   },
   {
    "id": "barracuda_trials:stormy_key",
@@ -1477,7 +1477,7 @@
    "rate": 0.3333333333333333,
    "rateText": "Clear Tempor Tantrum at Swordfish time once (a few attempts)",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Stormy_key",
-   "challenge": 4
+   "challenge": 2
   },
   {
    "id": "barrows_chests:ahrims_hood",
@@ -3017,7 +3017,7 @@
    "rate": 0.0025,
    "rateText": "1/400",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Metamorphic_dust",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "chambers_of_xeric:olmlet",
@@ -3061,7 +3061,7 @@
    "rate": 0.002932551319648094,
    "rateText": "1/341",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Twisted_ancestral_colour_kit",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "chambers_of_xeric:twisted_bow",
@@ -3094,7 +3094,7 @@
    "rate": 0.0005,
    "rateText": "2,000 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_champion",
-   "challenge": 4
+   "challenge": 5
   },
   {
    "id": "chambers_of_xeric:xerics_general",
@@ -3105,7 +3105,7 @@
    "rate": 0.0006666666666666666,
    "rateText": "1,500 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_general",
-   "challenge": 4
+   "challenge": 5
   },
   {
    "id": "chambers_of_xeric:xerics_guard",
@@ -3116,7 +3116,7 @@
    "rate": 0.01,
    "rateText": "100 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_guard",
-   "challenge": 4
+   "challenge": 5
   },
   {
    "id": "chambers_of_xeric:xerics_sentinel",
@@ -3127,7 +3127,7 @@
    "rate": 0.001,
    "rateText": "1,000 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_sentinel",
-   "challenge": 4
+   "challenge": 5
   },
   {
    "id": "chambers_of_xeric:xerics_warrior",
@@ -3138,7 +3138,7 @@
    "rate": 0.002,
    "rateText": "500 completions",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Xeric%27s_warrior",
-   "challenge": 4
+   "challenge": 5
   },
   {
    "id": "champions_challenge:champions_cape",
@@ -4007,7 +4007,7 @@
    "rate": 0.0078125,
    "rateText": "1/128",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Berserker_ring",
-   "challenge": null
+   "challenge": 2
   },
   {
    "id": "dagannoth_kings:dragon_axe",
@@ -4018,7 +4018,7 @@
    "rate": 0.0078125,
    "rateText": "1/128",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragon_axe",
-   "challenge": null
+   "challenge": 2
   },
   {
    "id": "dagannoth_kings:mud_battlestaff",
@@ -4051,7 +4051,7 @@
    "rate": 0.0002,
    "rateText": "1/5,000",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Pet_Dagannoth_Rex",
-   "challenge": null
+   "challenge": 2
   },
   {
    "id": "dagannoth_kings:pet_dagannoth_supreme",
@@ -4095,7 +4095,7 @@
    "rate": 0.0078125,
    "rateText": "1/128",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Warrior_ring",
-   "challenge": null
+   "challenge": 2
   },
   {
    "id": "deranged_archaeologist:steel_ring",
@@ -4139,7 +4139,7 @@
    "rate": 0.002,
    "rateText": "1/500 per delve 8 completion",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Dom",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "doom_of_mokhaiotl:eye_of_ayak_uncharged",
@@ -7153,7 +7153,7 @@
    "rate": 0.028125,
    "rateText": "1/36",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Echo_crystal",
-   "challenge": null
+   "challenge": 4
   },
   {
    "id": "fortis_colosseum:smol_heredit",
@@ -7164,7 +7164,7 @@
    "rate": 0.005,
    "rateText": "1/200",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Smol_Heredit",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "fortis_colosseum:sunfire_fanatic_chausses",
@@ -7175,7 +7175,7 @@
    "rate": 0.015625,
    "rateText": "1/64",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sunfire_fanatic_chausses",
-   "challenge": null
+   "challenge": 4
   },
   {
    "id": "fortis_colosseum:sunfire_fanatic_cuirass",
@@ -7186,7 +7186,7 @@
    "rate": 0.015625,
    "rateText": "1/64",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sunfire_fanatic_cuirass",
-   "challenge": null
+   "challenge": 4
   },
   {
    "id": "fortis_colosseum:sunfire_fanatic_helm",
@@ -7197,7 +7197,7 @@
    "rate": 0.015625,
    "rateText": "1/64",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sunfire_fanatic_helm",
-   "challenge": null
+   "challenge": 4
   },
   {
    "id": "fortis_colosseum:sunfire_splinters",
@@ -7208,7 +7208,7 @@
    "rate": 0.165,
    "rateText": "1/6",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sunfire_splinters",
-   "challenge": null
+   "challenge": 3
   },
   {
    "id": "fortis_colosseum:tonalztics_of_ralos_uncharged",
@@ -18340,7 +18340,7 @@
    "rate": 1.0,
    "rateText": "Always",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Gauntlet_cape",
-   "challenge": null
+   "challenge": 4
   },
   {
    "id": "the_gauntlet:youngllef",
@@ -18714,7 +18714,7 @@
    "rate": 0.005,
    "rateText": "1/200",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Parasitic_egg",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "the_nightmare:slepey_tablet",
@@ -18725,7 +18725,7 @@
    "rate": 0.04,
    "rateText": "1/25",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Slepey_tablet",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "the_nightmare:volatile_orb",
@@ -18879,7 +18879,7 @@
    "rate": 0.0006666666666666666,
    "rateText": "1/1,500",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Holy_ornament_kit",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "theatre_of_blood:justiciar_chestguard",
@@ -18934,7 +18934,7 @@
    "rate": 0.0036363636363636364,
    "rateText": "1/275",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sanguine_dust",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "theatre_of_blood:sanguine_ornament_kit",
@@ -18945,7 +18945,7 @@
    "rate": 0.0006666666666666666,
    "rateText": "1/1,500",
    "wikiUrl": "https://oldschool.runescape.wiki/w/Sanguine_ornament_kit",
-   "challenge": null
+   "challenge": 5
   },
   {
    "id": "theatre_of_blood:sanguinesti_staff_uncharged",

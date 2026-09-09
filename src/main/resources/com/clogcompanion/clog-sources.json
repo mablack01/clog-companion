@@ -77,7 +77,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per kill; estimate, boss is new.",
-  "challenge": 3
+  "challenge": 1
  },
  {
   "id": "bryophyta",
@@ -199,7 +199,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per delve run; estimate, boss is new.",
-  "challenge": 5
+  "challenge": 4
  },
  {
   "id": "duke_sucellus",
@@ -251,7 +251,7 @@
    ]
   },
   "notes": "Per Corrupted Gauntlet completion.",
-  "challenge": 4
+  "challenge": 3
  },
  {
   "id": "general_graardor",
@@ -419,7 +419,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per kill; estimate, boss is new.",
-  "challenge": 2
+  "challenge": 3
  },
  {
   "id": "moons_of_peril",
@@ -535,7 +535,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per kill; estimate, boss is new.",
-  "challenge": 3
+  "challenge": 2
  },
  {
   "id": "skotizo",
@@ -1193,7 +1193,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per ~10 minutes of charting; god paints unlock after fully charting an ocean.",
-  "challenge": 2
+  "challenge": 1
  },
  {
   "id": "camdozaal",
@@ -1348,7 +1348,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per island visit: dig the key, then open the lockbox.",
-  "challenge": 2
+  "challenge": 1
  },
  {
   "id": "monkey_backpacks",
@@ -1365,7 +1365,7 @@
    ]
   },
   "notes": "Per full Ape Atoll lap after Monkey Madness II.",
-  "challenge": 2
+  "challenge": 1
  },
  {
   "id": "motherlode_mine",
@@ -1391,7 +1391,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per skeleton rummaged in the Ancient Cavern.",
-  "challenge": 2
+  "challenge": 1
  },
  {
   "id": "ocean_encounters",
@@ -1421,7 +1421,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per kill.",
-  "challenge": 3
+  "challenge": 2
  },
  {
   "id": "rooftop_agility",
@@ -1443,7 +1443,7 @@
   "setupMinutes": 0,
   "requirements": {},
   "notes": "Per sea-monster kill or salvage sorted.",
-  "challenge": 2
+  "challenge": 1
  },
  {
   "id": "sea_treasures",
