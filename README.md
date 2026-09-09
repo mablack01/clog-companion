@@ -19,9 +19,6 @@ you already own, sort by fastest, keep a tracked list of the slots you\'re going
 
 <img width="265" height="182" alt="Screenshot 2026-09-09 at 3 57 55 PM" src="https://github.com/user-attachments/assets/e7fe51af-cab1-4979-8f8d-a8f858dec754" />
 
-Data and tests are free for the Plugin Hub's review budget; only `src/main/java` counts, so
-logic stays in Java and bulk data stays in JSON.
-
 ## License
 
 BSD 2-Clause. See `LICENSE`.
